@@ -1,6 +1,11 @@
 import './Lesson.css'
+import {ReactNode} from "react";
 
-function Lesson({children}) {
+type lessonProps = {
+  children: ReactNode
+}
+
+function Lesson({children}: lessonProps) {
 
   return (
     <div className="lesson">

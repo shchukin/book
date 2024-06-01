@@ -1,6 +1,11 @@
 import './Thai.css'
+import {ReactNode} from "react";
 
-function Thai({children}) {
+type ThaiProps = {
+  children: ReactNode
+}
+
+function Thai({children}: ThaiProps) {
 
   return (
     <span className="thai">
