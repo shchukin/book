@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Урок 1</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css?1547451955">
+        <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-grid.css?1547451955">
+        <link rel="stylesheet" href="vendors/fontawesome/css/all.css?1547451955">
+        <link rel="stylesheet" href="styles/style.css?1547451955">
+    </head>
+    <body class="body">
+
+        <!--[if IE]>
+            <div class="browserupgrade">
+                Вы используете <strong>устаревший</strong> браузер. Для корректной работы этого сайта и большинства других
+                Вам необходимо <a href="http://browsehappy.com/?locale=ru_RU">обновить ваш браузер</a>.
+            </div>
+        <![endif]-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Fancy Thai Book</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Уроки
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="intro.html">Введение</a>
+                                <a class="dropdown-item active" href="lesson01.html">Урок 1</a>
+                                <a class="dropdown-item disabled" href="#">Урок 2</a>
+                                <a class="dropdown-item disabled" href="#">Урок 3</a>
+                                <a class="dropdown-item disabled" href="#">Урок 4</a>
+                                <a class="dropdown-item disabled" href="#">Урок 5</a>
+                                <a class="dropdown-item disabled" href="#">Урок 6</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Словарик</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Авторы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Поиск">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Искать</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="page">
+            <div class="page__wrap container">
+                <h1 class="page__heading">
+                    Урок 1
+                </h1>
+                <section class="page__contains">
+                    <div class="page__sub-heading">
+                        Содержание урока
+                    </div>
+                    <ul class="toc">
+                        <li class="toc__item">
+                            <a class="toc__link" href="#fonetica">
+                                Фонетика
+                            </a>
+                            <ul class="toc">
+                                <li class="toc__item">
+                                    <a class="toc__link" href="#sostav-sloga">Состав слога</a>
+                                </li>
+                                <li class="toc__item">
+                                    <a class="toc__link" href="#prosodiya-sloga">Просодия слога. Тон</a>
+                                    <ul class="toc">
+                                        <li class="toc__item">
+                                            <a class="toc__link" href="#rovniy-ton">Ровный<sup>0</sup> тон</a>
+                                        </li>
+                                        <li class="toc__item">
+                                            <a class="toc__link" href="#voshodyaschiy-ton">Восходящий<sup>4</sup> тон</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="toc__item">
+                                    <a class="toc__link" href="#glasniye">Гласные</a>
+                                </li>
+                                <li class="toc__item">
+                                    <a class="toc__link" href="#soglasniye">Согласные</a>
+                                </li>
+                                <li class="toc__item">
+                                    <a class="toc__link" href="#intonatsiya">Интонация на уровне слова и предложения</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#graphica">Графика</a>
+                            <ul class="toc">
+                                <li class="toc__item">
+                                    <a class="toc__link" href="#znaki-dlya-glasnih">Знаки для гласных</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#graphicheskiye-uprazhneniya">Графические упражнения</a>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#foneticheskiye-uprazhneniya">Фонетические упражнения</a>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#grammatica">Грамматика</a>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#leksika">Лексика</a>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#novie-slova">Новые слова</a>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#leksiko-grammaticheskiye-uprazhneniya">Лексико-грамматические упражнения</a>
+                        </li>
+                        <li class="toc__item">
+                            <a class="toc__link" href="#testi">Тесты</a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="page__content">
+                    <h2 id="fonetica">Фонетика</h2>
+                    <p>Тайский язык часто называют слоговым языком, так как для языкового сознания носителей тайского языка речь проще делить на слоги, чем на отдельные звуки. Слоги в тайском языке имеют жесткую структуру, определяющую, из скольких элементов может состоять слог и какие звуки могут выступать в роли этих элементов. Это приводит к тому, что общее число слогов тайского языка не столь велико, а их выделение в потоке речи не представляет трудностей.</p>
+                    <h3 id="sostav-sloga">Состав слога</h3>
+                    <p>Максимальный состав слога - <strong>инициаль</strong><sup>*</sup> <em>(согласное начало слога)</em> и <strong>финаль</strong><sup>**</sup>, состоящая из <strong>централи</strong> <em>(слогообразующий гласный)</em> и <strong>терминали</strong> <em>(согласное / полугласное окончание слога)</em>. Минимальный состав слога - финаль из одного слогообразующего гласного.</p>
+
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic001.jpg" alt="">
+                        <figcaption class="figure-caption text-center">Состав слога</figcaption>
+                    </figure>
+
+                    <hr>
+                    <p>
+                        <small><sup>*</sup>Запомните выделенные жирным шрифтом термины, так как они будут часто использоваться при объяснении правил тайской орфографии.</small>
+                        <br>
+                        <small><sup>**</sup>Также называется рифмой.</small>
+                    </p>
+                    <hr>
+
+                    <p>Слоги, оканчивающиеся на /п/, /т/, /к/ или краткий гласный, в тайской лингвистической традиции называются «<strong>мертвыми</strong>», все остальные слоги, соответственно, называются «<strong>живыми</strong>».</p>
+
+                    <h3 id="prosodiya-sloga">Просодия слога. Тон</h3>
+                    <p>Аккустическое единство слога в тайском языке обеспечивается за счет особой просодической (интонационной) характеристики - тона. Тон также имеет смыслоразличительное значение, поэтому ошибки в тонах могут привести к полному искажению смысла высказывания. Так как именно внутри слога происходит тонкая подгонка составляющих слог звуков, отрабатывать звуки рекомендуется в составе слога с тоном.</p>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            Тон в транскрипции
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">В нашей транскрипции тоны обозначаются с помощью цифр<sup>01234</sup> в конце слога.</p>
+                        </div>
+                    </div>
+
+                    <p>Тайские тоны принято делить на две группы - ровные (различающиеся в первую очередь регистром / высотой) и динамические (обладающие модуляцией голоса).</p>
+
+                    <div class="card text-center bg-light">
+                        <p class="card-header">
+                            Прослушайте пять односложных слов, различающихся только тоном
+                        </p>
+                        <div class="card-body">
+                            <p class="card-text">/ кха:<sup>0</sup>/ / кха:<sup>1</sup>/ / кха:<sup>2</sup>/ / кха:<sup>3</sup>/ / кха:<sup>4</sup>/</p>
+                            <audio class="mt-3" src="audio/01-00-01.mp3" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                    <div class="card text-center bg-light">
+                        <p class="card-header">
+                            Прослушайте пары морфем, различающихся только тоном
+                        </p>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <big>คอ</big> <em>горло</em> — <big>ขอ</big> <em>просить</em>
+                            </p>
+                            <p class="card-text">
+                                <big>คาย</big> <em>выплевывать</em> — <big>ขาย</big> <em>продавать </em>
+                            </p>
+                            <p class="card-text">
+                                <big>มา</big> <em>приходить</em> — <big>หมา</big> <em>собака</em>
+                            </p>
+                            <p class="card-text">
+                                <big>มี</big> <em>иметь</em> — <big>หมี</big> <em>медведь </em>
+                            </p>
+                            <p class="card-text">
+                                <big>นอน</big> <em>лежать</em> — <big>หนอน</big> <em>гусеница</em>
+                            </p>
+                            <audio class="mt-3" src="audio/01-00-02.mp3" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                    <p>
+                        В процессе овладения тонами необходимо помнить, что различия между тонами не абсолютные, а относительные: не нужно стараться точно воспроизвести высоту тона диктора, достаточно в привычном<sup>*</sup> вам диапазоне высот воспроизвести относительные различия между тонами.</p>
+                    <p>
+                        Перед отработкой тонов сначала найдите нейтральную для своего речевота высоту. Например, произнесите русское <em>а</em> или <em>э</em> («слово-паразит», которое замещает паузу, когда говорящий ищет нужное слово). После этого досчно энергично произнесите междометие а с интонацией вопроса или удивле=.~я (отметьте, что в конце произнесения вы купираетесь» в верхнюю границу вашего диапазона). затем произнесите то же а, но с интонацией, характерной для контекста утверждения, согласия и понимания собеседника (или да, произносимое с удовлетворением). Таким образом вы пол чите представление о нижней границе вашего диапазона. Эти три точки можно считать 0, 40-50 и 100 на оси ординат приводимых ниже графиков.
+                    </p>
+
+                    <h3 id="rovniy-ton">Ровный тон</h3>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic002.jpg" alt="">
+                    </figure>
+                    <p>
+                        По высоте данный тон также называют средним тоном, однако более важной
+                        представляется характеристика данного тона с точки зрения изменения высоты голоса в процессе произнесения, поэтому мы будем называть его ровным. Только этот тайский тон можно тянуть бесконечно долго и «ровно». Наблюдаемое на графике некоторое изменение высоты в начале и в конце произнесения ровного тона получается без каких-либо усилий со стороны говорящего: это результат инерции нашего речевого аппарата. Поэтому при произнесении ровного тона нужно в первую очередь стремиться держать высоту голоса на одном уровне. Произносить ровный тон нужно чуть выше «средней» высоты, для того чтобы максимально расподобить его с нижним тоном (см. с. 71). Это также помогает разработать речевой аппарат и физически ощущать тоновый язык в каждом слоге.
+
+                    </p>
+
+
+                    <hr>
+                    <small><sup>*</sup>Привычный диапазон - это некоторая условность. Так как для тайского языка этот диапазон шире, чем диапазон русской речи, поэтому изучающему тайский нужно работать над существенным расширением «привычного» диапазона. Однако это не означает, что тайскую речь нужно превращать в постоянное пение и насилие над связками.</small>
+                    <hr>
+
+                    <h3 id="voshodyaschiy-ton">Восходящий тон</h3>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic003.jpg" alt="">
+                    </figure>
+
+                    <p>Название тона может ввести в заблуждение: модуляция голоса при произнесении этого тона не сводится к одному лишь подъему. Контур тона представляет собой почти одинаковое по высоте понижение и повышение голоса с небольшой задержкой в нижней точке диапазона. В русской речи похожую интонацию можно услышать при убаюкивании ребенка словом а-(г)-а или в игривом да.</p>
+                    <p>Опознается тон не только по перепаду высот, но и по характерному «провалу» в интенсивности (воспринимается почти как пауза в середине). Этим фактом можно воспользоваться при отработке восходящего тона: сначала произносим гласный с понижающейся, а потом с восходящей интонацией. Затем пытаемся соединить эти два контура на максимально низком уровне достаточно длительной (ровной) перемычкой. После этого при произнесении тона концентрируем свое внимание на низкой (максимально низко и достаточно продолжительно) и восходящей (доводить до уровня выше среднего тона) частях контура, чтобы «падающая» часть не доминировала и тон не уподоблялся падающему.</p>
+
+                    <h3 id="glasniye">Гласные</h3>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic004.jpg" alt="">
+                    </figure>
+
+                    <p>Особенность тайской вокалической системы - в противопоставлении простых гласных по долготе. В большинстве случаев это противопоставление фонематическое (то есть используется для различения слогоморфем / слов), поэтому мы не можем «тянуты» тайский гласный сколько нам хочется и должны привыкать следить за тем, сколько времени у нас уходит на произнесение гласного. В нашей транскрипции краткость гласного не будет специально отмечаться, а долгота будет обозначаться с помощью знака «:», например, /а/ (краткое) и /а:/ (долгое). Для отработки правильной реализации противопоставления по долготе нужно не только растягивать долгие, но и несколько укорачивать краткие гласные<sup>.</p>
+
+                    <hr>
+                    <small><sup>*</sup> в качестве примера можно ориентироваться на различие по долготе гласных первого и второго слога слова палка в восклицательном предложении Вот это палка, всем палкам папка!
+                    </small>
+                    <hr>
+
+                    <h4 class="letter badge badge-light">а</h4>
+
+                    <p>Гласный нижнего подъема среднего ряда. Больше похож на последний звук в русском слове <em>трава</em>, чем на более задний первый звук слова палка.</p>
+                    <br>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic005.jpg" alt="">
+                    </figure>
+
+                    <br>
+                    <br>
+
+                    <h4 class="letter badge badge-light">ɔ</h4>
+                    <p>Огубленный гласный средне-нижнего подъема заднего ряда. Не имеет соответствия в русском языке: рот открывается несколько шире, чем при произнесении русского /о/.</p>
+                    <br>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic006.jpg" alt="">
+                    </figure>
+
+                    <br>
+                    <br>
+                    <h4 class="letter badge badge-light">и</h4>
+                    <p>Гласный верхнего подъема (закрытый) переднего ряда, похож на русский в слове <em>сила</em>, но произносится с более широко растянутыми губами.</p>
+                    <br>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic007.jpg" alt="">
+                    </figure>
+
+                    <br>
+                    <br>
+                    <h4 class="letter badge badge-light">у</h4>
+                    <p>Гласный верхнего подъема заднего ряда, похож на русский /у/ в слове <em>пуля</em>.</p>
+                    <br>
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="content/pic008.jpg" alt="">
+                    </figure>
+
+                    <h3 id="soglasniye">Согласные</h3>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <i class="fa fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="card-body">
+                            <ul class="card-text">
+                                <li>Тайские согласные не противопоставляются по мягкости / твердости и никогда не смягчаются перед гласными /и/ или /и:/.</li>
+                                <li>Большая часть тайских согласных отличается от похожих русских звуков местом образования.</li>
+                                <li>Тайские согласные противопоставлены не только по глухости / звонкости, но и по наличию или отсутствию придыхания.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Придыхание - это дополнительная артикуляция, которая сопровождает произ‑
+                            несение согласного.
+                                <br>Представляет собой достаточно продолжительный <em>x</em>-образный шум от прохождения струи воздуха после разрыва смычки.
+                                <br>Для правильной реализации придыхания смычку нужно разрывать как можно резче, а после ее разрыва продолжать интенсивно выдыхать воздух, немного сузив межсвязочную щель.
+                                <br>Аналогия - звук, получающийся, когда дуют на стекло, чтобы оно запотело, или на замерзпи3е руки.
+                                <br>Не старайтесь произносить русский <em>x</em> - он образуется намного ближе и с подъемом спинки языка. Если в процессе произнесения придыхательного согласного поднести руку ко рту, то в момент размыкания смычки можно почувствовать ощутимый yдар от потока выходящего воздуха.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="consonant">
+                        <h4 class="consonant__preview letter badge badge-light">п</h4>
+                        <img class="consonant__illustration" src="content/pic009.jpg" alt="">
+                        <dl class="consonant__data">
+                            <dt>место образования</dt>
+                            <dd>губно-губной</dd>
+                            <dt>способ образования</dt>
+                            <dd>смычный</dd>
+                            <dt>шум / тон</dt>
+                            <dd>глухой</dd>
+                            <dt>дополнительная артикуляция</dt>
+                            <dd>непридыхательный</dd>
+                            <i class="fa fa-hand-point-right"></i> <b style="color: #666">Похож на русский твердый /п/ в слове пол.</b>
+                        </dl>
+                    </div>
+
+                    <div class="consonant">
+                        <h4 class="consonant__preview letter badge badge-light">пх</h4>
+                        <img class="consonant__illustration" src="content/pic010.jpg" alt="">
+                        <dl class="consonant__data">
+                            <dt>место образования</dt>
+                            <dd>губно-губной</dd>
+                            <dt>способ образования</dt>
+                            <dd>смычный</dd>
+                            <dt>шум / тон</dt>
+                            <dd>глухой</dd>
+                            <dt>дополнительная артикуляция</dt>
+                            <dd>придыхательный</dd>
+                            <i class="fa fa-hand-point-right"></i> <b style="color: #666">Отличается от /п/ наличием придыхания.</b>
+                        </dl>
+                    </div>
+
+                    <div class="consonant">
+                        <h4 class="consonant__preview letter badge badge-light">т</h4>
+                        <img class="consonant__illustration" src="content/pic009.jpg" alt="">
+                        <dl class="consonant__data">
+                            <dt>место образования</dt>
+                            <dd>губно-губной</dd>
+                            <dt>способ образования</dt>
+                            <dd>смычный</dd>
+                            <dt>шум / тон</dt>
+                            <dd>глухой</dd>
+                            <dt>дополнительная артикуляция</dt>
+                            <dd>непридыхательный</dd>
+                            <i class="fa fa-hand-point-right"></i> <b style="color: #666">Похож на русский твердый /п/ в слове пол.</b>
+                        </dl>
+                    </div>
+
+                    <div class="consonant">
+                        <h4 class="consonant__preview letter badge badge-light">тх</h4>
+                        <img class="consonant__illustration" src="content/pic010.jpg" alt="">
+                        <dl class="consonant__data">
+                            <dt>место образования</dt>
+                            <dd>губно-губной</dd>
+                            <dt>способ образования</dt>
+                            <dd>смычный</dd>
+                            <dt>шум / тон</dt>
+                            <dd>глухой</dd>
+                            <dt>дополнительная артикуляция</dt>
+                            <dd>придыхательный</dd>
+                            <i class="fa fa-hand-point-right"></i> <b style="color: #666">Отличается от /п/ наличием придыхания.</b>
+                        </dl>
+                    </div>
+
+                    <div class="consonant">
+                        <h4 class="consonant__preview letter badge badge-light">с</h4>
+                        <img class="consonant__illustration" src="content/pic009.jpg" alt="">
+                        <dl class="consonant__data">
+                            <dt>место образования</dt>
+                            <dd>губно-губной</dd>
+                            <dt>способ образования</dt>
+                            <dd>смычный</dd>
+                            <dt>шум / тон</dt>
+                            <dd>глухой</dd>
+                            <dt>дополнительная артикуляция</dt>
+                            <dd>непридыхательный</dd>
+                            <i class="fa fa-hand-point-right"></i> <b style="color: #666">Похож на русский твердый /п/ в слове пол.</b>
+                        </dl>
+                    </div>
+
+                    <div class="consonant">
+                        <h4 class="consonant__preview letter badge badge-light">сх</h4>
+                        <img class="consonant__illustration" src="content/pic010.jpg" alt="">
+                        <dl class="consonant__data">
+                            <dt>место образования</dt>
+                            <dd>губно-губной</dd>
+                            <dt>способ образования</dt>
+                            <dd>смычный</dd>
+                            <dt>шум / тон</dt>
+                            <dd>глухой</dd>
+                            <dt>дополнительная артикуляция</dt>
+                            <dd>придыхательный</dd>
+                            <i class="fa fa-hand-point-right"></i> <b style="color: #666">Отличается от /п/ наличием придыхания.</b>
+                        </dl>
+                    </div>
+
+                    <h3 id="intonatsiya">Интонация на уровне слова и предложения</h3>
+                    <p>Следующий после слога уровень просодии тайского языка - уровень между слогом (слогоморфемой) и предложением. На этом уровне слоги объединяются в более крупные единицы с помощью правил сочетания тонов и выделения. Чаще всего эти единицы состоят из нескольких слогов. В силу различия в подходах к определению слова в тайском языке эти единицы можно называть словами, фонетическими словами, словосочетаниями или - термин, используемый нами далее, - синтагмами. Между составляющими синтагму слогами нет паузы, поэтому тон каждого слога в некоторой степени подстраивается под тон предшествующего или следующего за ним слога. Внутри синтагмы один слог обычно произносится несколько отчетливее. Такой слог иногда даже называют ударным. Конечно, речь не идет об ударении, как в русском языке. Тайское «ударение» представляет собой произнесение слога, при котором тон и гласный реализуются полностью, т. е. как в случае изолированного произнесения слога. На произнесение же слогов в «неударной» позиции отводится меньшее время, за счет чего тон и характер гласного могут несколько изменяться. «Ударение» в большинстве случаев падает на последний слог синтагмы. Нельзя сказать, что тайское «ударение» несет смыслоразличительную функцию, но тем не менее это важная характеристика звучащей речи, которую изучающий не может
+                        игнорировать.
+                    </p>
+                    <p>В предложении синтагмы разделяются паузами, и их «ударные» слоги получают дополнительное выделение в зависимости от позиции синтагмы в предложении и от интонации всего предложения. Таким образом, в предложении один-два слога получают максимальное выделение, а другие ударные слоги уступают им по степени выделенности.</p>
+                    <p>Длительность пауз в предложении также различается. Максимальной длительностью обладает пауза между подлежащим и глагольным сказуемым.</p>
+
+                    <h2 id="graphica">Графика</h2>
+
+                    <p>Тайское письмо, 700-летие которого отмечалось в 1983 году, - это алфавитно-слоговое письмо с орфографией, представляющей существенную трудность для изучающего тайский язык.</p>
+                    <p>Непривычная для носителя русского языка графическая основа тайского письма восходит к древнеиндийским письменностям. Однако непривычна не только графика, но и сам способ обозначения языковых единиц.</p>
+                    <p>Тайское письмо восходит к слоговым письменностям, поэтому знаки тай</p>
+                    <p>ского алфавита* записывают не фонемы, а слоги**, т. е. сочетание согласного звука с базовым (присущим) гласным /а/ или /э:/. Для записи слогов с другими гласными используются специальные, не включаемые в состав алфавита знаки для гласных, которые пишутся над, под, после или до знака для согласного звука. Хотя такого рода знаки часто называют гласными буквами, в системе тайского письма они могут появляться только при согласном или при традиционно относимом к согласным знаке) (= «ноль согласного» / гортанная смычка + /э:/), что говорит об их подчиненном, несамостоятельном положении в системе тайского письма</p>
+                    <p>Все буквы тайского алфавита имеют традиционные названия, которые состоят из чтения буквы с базовым гласным /э:/ и знаменательного слова, которое записывается с помощью данной буквы. Например, первая буква алфавита называется /кэ:° кай1/, т. е. кэ:о из слова «курица» (см. графическое упражнение 1).
+                    </p>
+                    <p>Количество согласных букв превышает количество согласных звуков современного тайского языка почти в два раза; так как буквы записывают слоги, а слоги с разным тоном для носителя тайского языка - это разные слоги, вполне логично использовать различные знаки для записи слогов с разным тоном.
+                    </p>
+                    <p>Традиционно тайские согласные делятся на три класса: высокий, средний и низкий. Например, согласные данного урока распределяются по трем классам следующим образом:
+                    </p>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            Высокий класс
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                &nbsp;&nbsp;ข&nbsp;/кхɔ:<sup>4</sup>/
+                                &nbsp;&nbsp;ถ&nbsp;/тхɔ:<sup>4</sup>/
+                                &nbsp;&nbsp;ผ&nbsp;/пхɔ:<sup>4</sup>/
+                                &nbsp;&nbsp;ส&nbsp;/схɔ:<sup>4</sup>/
+                                &nbsp;&nbsp;ห&nbsp;/ххɔ:<sup>4</sup>/
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            Средний класс
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                &nbsp;&nbsp;ก&nbsp;/кɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ต&nbsp;/тɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ป&nbsp;/пɔ:<sup>0</sup>/
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            Низкий класс
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                ค /кхɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ท&nbsp;/тхɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;พ&nbsp;/пхɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ช&nbsp;/сɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ฮ&nbsp;/хɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ม&nbsp;/мɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;น&nbsp;/нɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ว&nbsp;/вɔ:<sup>0</sup>/
+                                &nbsp;&nbsp;ย&nbsp;/йɔ:<sup>0</sup>/
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>В приведенных выше примерах букв можно обнаружить корреляцию между классом буквы и тоном слога: буквы низкого и среднего класса записывают слоги с ровным тоном, а буквы высокого класса записывают слоги с восходящим тоном. Однако это лишь верхушка айсберга! Тон в тайском письме передается  множеством средств со следующей иерархией:</p>
+
+                    <ol>
+                        <li>Структура слога («живой» или «мертвый», долгота слогообразующей гласной).</li>
+                        <li>Класс буквы.</li>
+                        <li>Нечитаемые буквы.</li>
+                        <li>Специальные знаки для тона.</li>
+                    </ol>
+
+                    <p>Запомните следующие правила тайского письма:</p>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <i class="fa fa-pencil-alt"></i>
+                            1:&nbsp;&nbsp;&nbsp;Тоны ровный<sup>0</sup>, восходящий<sup>4</sup>
+                        </div>
+                        <div class="card-body" style="background: white">
+                            <img class="img-fluid" src="content/pic011.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <i class="fa fa-pencil-alt"></i>
+                            2:&nbsp;&nbsp;&nbsp;Буква ฮ
+                        </div>
+                        <div class="card-body" style="background: white">
+                            <p class="card-text">
+                                Буква ฮ используется для записи слогов с инициалью <b>/х/</b> достаточно редко, главным образом в междометиях, звукоподражаниях и в заимствованных словах.
+                                <br>Буква ฮ используется для записи английских заимствований, начинающихся с буквы <b>h</b>.
+                            </p>
+
+                            <div class="hand-note">
+                                <i class="fa fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;ฮอคกี้ /хɔ:к<sup>2</sup>ки:<sup>2</sup>/ от английского hockey
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <i class="fa fa-pencil-alt"></i>
+                            3:&nbsp;&nbsp;&nbsp;Буква ห
+                        </div>
+                        <div class="card-body" style="background: white">
+                            <p class="card-text">
+                                Буква ห помимо записи слогов с инициалью <b>/х/</b> также используется в качестве «нечитаемой буквы». Буква переводит следующую за ней букву в высокий класс, иначе говоря, указывает на то, что следующая за ней буква подчиняется («читается» по) правилам для букв высокого класса.</p>
+
+                            <div class="hand-note">
+                                <i class="fa fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;หนู /ну: <sup>4</sup>/
+                                &nbsp;&nbsp;หมอ&nbsp;/мɔ:&nbsp;<sup>4</sup>/
+                                &nbsp;&nbsp;หวี&nbsp;/ви:&nbsp;<sup>4</sup>/
+                            </div>
+                            <p>Обратите внимание на то, что такой способ употребления не является универсальным средством обозначения тона: «нечитаемой» буква ห мо‑ жет быть лишь перед отдельными согласными низкого класса — ม น ร ล ง ว ย.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 id="znaki-dlya-glasnih">Знаки для гласных</h3>
+
+                    <p>Для обозначения на письме открытых финалей в тайском письме используется 18 специальных знаков для гласных, три согласные буквы ย /йэ:<sup>0</sup> йакз/, ว /вэ:<sup>0</sup> вэ:н<sup>4</sup>/ и อ /а:нг<sup>1</sup>/, а также их сочетания.</p>
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <i class="fa fa-pencil-alt"></i>
+                            4:&nbsp;&nbsp;&nbsp;Знак อา
+                        </div>
+                        <div class="card-body" style="background: white">
+                            <p class="card-text">
+                                Знак <span style="font-size: 40px" "><span style="color: #aaa;">อ</span>า</span> после согласных букв используется для записи фонемы <b>/а:/</b>. Пишется сверху вниз, с отступом от предшествующей буквы. По высоте равен буквам без надстрочных или подстрочных элементов.
+                            </p>
+                            <div class="hand-note">
+                                <i class="fa fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;คา /кха:<sup>0</sup>/
+                                &nbsp;&nbsp;ทา&nbsp;/тха:<sup>0</sup>/
+                                &nbsp;&nbsp;มา&nbsp;/ма:<sup>0</sup>/
+                                &nbsp;&nbsp;หวี&nbsp;/ви:&nbsp;<sup>4</sup>/
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 id="graphicheskiye-uprazhneniya">Графические упражнения</h2>
+
+                    <p>1. Пропечатайте и пропишите буквы из урока</p>
+
+                    <div class="typing-exercise">
+                        <div class="typing-exercise__data">
+                            <div class="typing-exercise__key">
+                                ก
+                            </div>
+                            <div class="typing-exercise__name">
+                                ไก่ кɔ:<sup>0</sup> кай<sup>1</sup> «курица»
+                            </div>
+                        </div>
+                        <div class="typing-exercise__widget playground">
+                            <div class="playground__background">ก ก ก ก ก ก ก ก ก ก ก ก ก</div>
+                            <textarea class="playground__widget area" rows="1"></textarea>
+                        </div>
+                        <div class="typing-exercise__hint note">
+                            Клавиша с английской <kbd class="key">D</kbd>
+                        </div>
+                    </div>
+
+                    <div class="typing-exercise">
+                        <div class="typing-exercise__data">
+                            <div class="typing-exercise__key">
+                                ค
+                            </div>
+                            <div class="typing-exercise__name">
+                                ควาย кхɔ:<sup>0</sup> кхуа:й<sup>0</sup> «буйвол»
+                            </div>
+                        </div>
+                        <div class="typing-exercise__widget playground">
+                            <div class="playground__background">ค ค ค ค ค ค ค ค ค ค ค ค</div>
+                            <textarea class="playground__widget area" rows="1"></textarea>
+                        </div>
+                        <div class="typing-exercise__hint note">
+                            Клавиша с <kbd class="key">9</kbd>
+                        </div>
+                    </div>
+
+                    <div class="typing-exercise">
+                        <div class="typing-exercise__data">
+                            <div class="typing-exercise__key">
+                                ข
+                            </div>
+                            <div class="typing-exercise__name">
+                                ไข่ кхɔ:<sup>4</sup> кхай<sup>1</sup> «буйвол»
+                            </div>
+                        </div>
+                        <div class="typing-exercise__widget playground">
+                            <div class="playground__background">ข ข ข ข ข ข ข ข ข ข ข ข ข</div>
+                            <textarea class="playground__widget area" rows="1"></textarea>
+                        </div>
+                        <div class="typing-exercise__hint note">
+                            Клавиша с <kbd class="key">-</kbd> (сразу после нуля)
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <p>2. Запишите в тайской графике следующие слоги</p>
+                    <br>
+
+                    <div class="symbols">
+                        <span class="symbols__question">кха:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="คา" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">тхи:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ที" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">на:й⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="นาย" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">cу:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="สู" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">пха:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="พา" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">cа:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="สา" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ха:й⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ฮาย" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">нɔ:н⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="นอน" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ма:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="มา" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">йу:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ยู" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">йай:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ยาย" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">вау:⁰</span>
+                        <input class="symbols__answer fill" type="text" data-answer="วาว" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">тхɔ:⁴</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ถอ" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">су:н⁴</span>
+                        <input class="symbols__answer fill" type="text" data-answer="สูน" size="4">
+                    </div>
+
+                    <br>
+                    <br>
+                    <p>3. Запишите в транскрипции следующие слоги</p>
+                    <br>
+
+                    <div class="symbols">
+                        <span class="symbols__question">คา</span>
+                        <input class="symbols__answer fill" type="text" data-answer="кха:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ที</span>
+                        <input class="symbols__answer fill" type="text" data-answer="тхи:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">นาย</span>
+                        <input class="symbols__answer fill" type="text" data-answer="на:й0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">สู</span>
+                        <input class="symbols__answer fill" type="text" data-answer="cу:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">พา</span>
+                        <input class="symbols__answer fill" type="text" data-answer="пха:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">สา</span>
+                        <input class="symbols__answer fill" type="text" data-answer="cа:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ฮาย</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ха:й0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">นอน</span>
+                        <input class="symbols__answer fill" type="text" data-answer="но:н0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">มา</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ма:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ยู</span>
+                        <input class="symbols__answer fill" type="text" data-answer="йу:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ยาย</span>
+                        <input class="symbols__answer fill" type="text" data-answer="йай:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">วาว</span>
+                        <input class="symbols__answer fill" type="text" data-answer="вау:0" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">ถอ</span>
+                        <input class="symbols__answer fill" type="text" data-answer="тхо:4" size="4">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">สูน</span>
+                        <input class="symbols__answer fill" type="text" data-answer="су:н4" size="4">
+                    </div>
+
+                    <div class="note" style="font-style: italic; margin-top: 20px;">
+                        Символ "нуля" будет автоматически преобразован в "⁰",
+                        а буква "о" преобразуется в "ɔ"
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <p>4. Преобразуйте слог, заменив начальную букву в данных слогах</p>
+                    <ul>
+                        <li>
+                            Ровный⁰ тон замените на восходящий⁴
+                            <br>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ผ" size="2" value="พ">
+                                <span class="symbols__question">อน</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ข" size="2" value="ค">
+                                <span class="symbols__question">า</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ถ" size="2" value="ท">
+                                <span class="symbols__question">อ</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="หม" size="2" value="ม">
+                                <span class="symbols__question">า</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="หท" size="2" value="ท">
+                                <span class="symbols__question">าน</span>
+                            </div>
+
+                        </li>
+                        <li style="margin-top: 20px">
+                            Восходящий⁴ замените на ровный⁰
+                            <br>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ค" size="2" value="ข">
+                                <span class="symbols__question">าว</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="น" size="2" value="หน">
+                                <span class="symbols__question">า</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ว" size="2" value="หว">
+                                <span class="symbols__question">าน</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ฮ" size="2" value="ห">
+                                <span class="symbols__question">อ</span>
+                            </div>
+
+                            <div class="symbols symbols--single">
+                                <input class="symbols__answer fill" type="text" data-answer="ท" size="2" value="ถ">
+                                <span class="symbols__question">อย</span>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <h2 id="foneticheskiye-uprazhneniya">Фонетические упражнения</h2>
+
+                    <p>1. Прочитайте</p>
+
+                    <div class="card text-center bg-light">
+                        <p class="card-header">
+                            Открытые слоги, тон ровный⁰
+                        </p>
+                        <div class="card-body">
+                            <p class="card-text">กา กอ กี กู ปา ปอ ปี ปู ตา ตอ ตี ตู</p>
+                            <audio class="mt-3" src="audio/01-01-01-01.mp3" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                    <div class="card text-center bg-light">
+                        <p class="card-header">
+                            Закрытые слоги, тон ровный⁰
+                        </p>
+                        <div class="card-body">
+                            <p class="card-text" style="max-width: 400px; margin-left: auto; margin-right: auto;">กาน กาม กาย กาว กอน กอม กอย กีน กีม กูน กูม ตาน ตาม ตาย ตาว ตอน ตอม ตอย ตีน ตีม ตูน ตูม ปาน ปาม ปาย ปาว ปดน ปอม ปอย ปีน ปีม ปูน ปูม</p>
+                            <audio class="mt-3" src="audio/01-01-01-02.mp3" controls="controls"></audio>
+                        </div>
+                    </div>
+
+                    <div class="card text-center bg-light">
+                        <p class="card-header">
+                            Открытый слог, придыхательная инициаль, долгий гласный, тон ровный⁰:
+                        </p>
+                        <div class="card-body">
+                            <p class="card-text" style="max-width: 400px; margin-left: auto; margin-right: auto;">พา คา ทา ฮา พอ คอ ทอ ฮอ พ๊ ค๊ ท๊ ฮี พู คู ทู ฮู</p>
+                            <audio class="mt-3" src="audio/01-01-01-03.mp3" controls="controls"></audio>
+                        </div>
+                    </div>
+
+
+                    <h2 id="grammatica">Грамматика</h2>
+
+                    <h3>Порядок слов. Объектная и предикативная конструкции</h3>
+
+                    <p>Все грамматические отношения, которые носитель русского языка привык выражать с помощью словоизменения (окончаний), в тайском языке если и выражаются, то либо порядком слов, либо служебными словами, либо лексически или контекстом, а чаще сочетанием этих средств. Значения, которые в русском языке относятся к грамматическим (т. е. выражающимся обязательно, напр., род, число, время), в тайском языке таковыми не являются, а поэтому чаще выражаются только в случае, если их невозможно установить из ситуации или контекста. Принадлежность тайского слова к определенному лексико-грамматическому классу (далее используется привычный термин «части речи») устанавливается не из формы слова, а из его семантики и сочетаемости с другими словами. Практически это означает, что, запоминая новое тайское слово, требуется также запомнить, к какой части речи оно относится. С полным набором критериев выделения частей речи в тайском языке мы познакомимся позже по мере освоения фонетики и лексики, а в первом уроке мы рассмотрим лишь две части речи - существительное и глагол. Различия между этими частями речи понятны любому носителю русского языка: сначала интуитивно, а со школы и вполне осознанно. Естественно, что из школьного определения существительного и глагола для тайского языка будут актуальны лишь семантические критерии: существительное называет предмет, а глагол - состояние или действие предмета.</p>
+
+                    <p>Принадлежность слов к определенной части речи и их позиция по отношению к другим словам (порядок слов) в тайском языке определяют характер связывающей эти слова грамматической связи, поэтому грамматику тайского языка можно называть грамматикой порядка слов. Например, в русском языке<sup>*</sup> грамматические связи между словами в нижеприведенных парах одинаковы:</p>
+
+                    <ul>
+                        <li>«мама читает» и «читает мама»</li>
+                        <li>«читаю книгу» и «книгу читаю»</li>
+                        <li>«[На столе -] новая книга» и «книга новая [на столе]».</li>
+                    </ul>
+
+                    <p>Однако так как в тайском языке вместо согласования по форме используется <strong>соположение</strong><sup>**</sup>, т. е. порядок слов, любое изменение порядка слов меняет грамматические отношения между словами, поэтому в тайском языке перестановки, похожие на вышеприведенные, приведут к изменению или полной потере смысла исходных сочетаний. В тайском языке определенным грамматическим отношениям соответствует определенный (строгий) порядок расположения слов, который нагляднее всего представлять в виде таблицы из двух столбцов, которые в грамматиках называют:</p>
+
+                    <ul>
+                        <li><strong>предшествование - следование</strong></li>
+                        <li><strong>правая позиция - левая позиция</strong></li>
+                        <li><strong>начальная позиция - конечная позиция</strong></li>
+                    </ul>
+
+                    <p>Мы будем использовать простое цифровое обозначение: позиция ① и позиция ②<sup>***</sup>.</p>
+
+                    <p>Запомним первые два правила порядка слов (ПС) тайского языка: порядок слов в объектной конструкции (см. Схему 1) и порядок слов в предикативной конструкции (см. Схему 2).</p>
+
+
+                    <hr>
+                    <small>
+                        <div>
+                            <sup>*</sup>В котором связи выражаются уподоблением формы зависимого слова главному по роду, числу, падежу или изменением формы зависимого слова.
+                        </div>
+                        <div>
+                            <sup>**</sup>Аналог в русской грамматике - примыкание.
+                        </div>
+                        <div>
+                            <sup>***</sup>Учтите, что описываемые схемами грамматические связи могут быть не только контактными (т. е. предполагающими следование первого и второго слова строго друг за другом), но и бесконтактными (т. е. допускающими постановку определенных слов между ними). Поэтому не стоит думать, например, что предложение в тайском всегда состоит из двух-трех слов. См. урок 2.
+                        </div>
+                    </small>
+
+                    <table class="table text-center">
+                        <caption>Схема 1: Порядок слов в объектной конструкции</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">①</span>
+                                </th>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">②</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>глагол</td>
+                                <td>существительное</td>
+                            </tr>
+                            <tr>
+                                <td>действие</td>
+                                <td>объект</td>
+                            </tr>
+                            <tr>
+                                <td>сказуемое</td>
+                                <td>дополнение</td>
+                            </tr>
+                            <tr>
+                                <td>ถาม</td>
+                                <td>ยาย</td>
+                            </tr>
+                            <tr>
+                                <td>спросить</td>
+                                <td>бабушку</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table text-center">
+                        <caption>Схема 2: Порядок слов в предикативной конструкции</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">①</span>
+                                </th>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">②</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>существительное</td>
+                                <td>глагол</td>
+                            </tr>
+                            <tr>
+                                <td>субъект</td>
+                                <td>действие</td>
+                            </tr>
+                            <tr>
+                                <td>подлежащее</td>
+                                <td>сказуемое</td>
+                            </tr>
+                            <tr>
+                                <td>ยาย</td>
+                                <td>ถาม</td>
+                            </tr>
+                            <tr>
+                                <td>бабушка</td>
+                                <td>спрашивает</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Из этих двух правил порядка слов несложно вывести базовый порядок слов в тайском предложении: он похож на русский с тем лишь различием, что в майском порядок членов предложения не может быть изменен без использования дополнительных служебных слов (см. схему на с. 41).</p>
+                    <p>При всей теоретической равнозначности участников предикативных отношений в тайском языке настоящим центром предложения является глагольное сказуемое. Семантика (значение) сказуемого уточняет синтаксические функции слов, находящихся в препозиции (до) и постпозиции (после) к сказуемому. Поэтому для синтаксического разбора предложения удобно ориентироваться именно на сказуемое. Имя существительное / именная группа в позиции перед сказуемым чаще всего будет подлежащим или группой подлежащего. Имя существительное / именная группа в позиции после глагольного сказуемого чаще всего объект<sup>*</sup>.</p>
+                    <p>Чаще всего подлежащее - это субъект (производитель) действия, а объект ‑ это предмет или лицо, с которым производится действие. Однако точное определение семантических ролей членов предложения зависит как от семантики сказуемого, так и от семантики самих этих членов предложения. Например, у глаголов движения в позиции объекта чаще всего будут слова со значением места, обозначающие конечную точку или направление движения.</p>
+
+                    <table class="table text-center table-responsive-sm">
+                        <caption>Схема 3: Базовый порядок слов тайского предложения</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">S</span>
+                                </th>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">V</span>
+                                </th>
+                                <th scope="col">
+                                    <span style="font-weight: normal; font-size: 30px">O</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>подлежащее</td>
+                                <td>сказуемое</td>
+                                <td>дополнение</td>
+                            </tr>
+                            <tr>
+                                <td>субъект</td>
+                                <td>предикат</td>
+                                <td>объект</td>
+                            </tr>
+                            <tr>
+                                <td>ตา</td>
+                                <td>ถาม</td>
+                                <td>ยาย</td>
+                            </tr>
+                            <tr>
+                                <td>Дедушка</td>
+                                <td>спрашивает</td>
+                                <td>бабушку.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                        <small style="display: block;"><sup>*</sup>Мы используем этот термин, чтобы избежать возникновения ненужных ассоциаций с дополнением в русском языке.</small>
+                        <small style="display: block;"><sup>*</sup>Минимальные значимые единицы.</small>
+                    <hr>
+
+
+                    <h2 id="leksika">Лексика</h2>
+
+                    <p>Отсутствие словоизменения носитель русского языка еще вполне может представить (например, пародируя речь иностранцев: «я читпать книга). Намного сложнее понять и привыкнуть к другой особенности тайского языка - отсутствию в письменных текстах не только знаков препинания, но и пробелов. Пробелы между словами отсутствуют по той причине, что слова в нашем привычном понимании в тайском языке практически отсутствуют.</p>
+                    <p>Тайская речь достаточно легко разбивается на морфемы**, которые на фонетическом уровне (как правило) совпадают со слогом (поэтому тайский язык также называют слогоморфемным языком). Правила сочетания морфем в единицы более высоких уровней в общем одинаковы, что существенно размывает границы между словом, словосочетанием и даже предложением. С другой стороны, мы можем выделить целый ряд многосложных единиц, которые обладают многими из привычных нам признаков слова (в первую очередь семантической оформленностью, семантической валентностью, воспроизводимостью, информативностью, в меньшей степени фонетической оформленностью). Так как такого рода многосложные единицы целесообразнее заучивать как одну единицу, от термина «слово» мы отказываться не будем. Для односложных единиц мы будем чаще применять термин «морфема».</p>
+                    <p>Морфемы в тайском языке, как правило, многозначны, поэтому их соотнесенность с объектами или процессами реальности в речи обеспечивается определенным окружением, контекстом. Например, тайская морфема กิน кин⁰ в зависимости от контекста может иметь значение «есть» или «заниматы»<sup>*</sup>.</p>
+
+                    <h2 id="novie-slova">Новые слова</h2>
+
+                    <div class="dictionary">
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">1.</div>
+                            <div class="dictionary__thai">ยาย</div>
+                            <div class="dictionary__script">йа:й⁰</div>
+                            <div class="dictionary__translation">бабушка (по материнской линии)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">2.</div>
+                            <div class="dictionary__thai">ตา</div>
+                            <div class="dictionary__script">та:⁰</div>
+                            <div class="dictionary__translation">дедушка (по материнской линии)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">3.</div>
+                            <div class="dictionary__thai">สา</div>
+                            <div class="dictionary__script">са:4</div>
+                            <div class="dictionary__translation">Са (женское имя)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">4.</div>
+                            <div class="dictionary__thai">ยาม</div>
+                            <div class="dictionary__script">йа:м⁰</div>
+                            <div class="dictionary__translation">охранник, сторож</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">5.</div>
+                            <div class="dictionary__thai">ถาม</div>
+                            <div class="dictionary__script">тха:м4</div>
+                            <div class="dictionary__translation">спрашивать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">6.</div>
+                            <div class="dictionary__thai">ทา</div>
+                            <div class="dictionary__script">тха:°</div>
+                            <div class="dictionary__translation">красить, втирать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">7.</div>
+                            <div class="dictionary__thai">ขาย</div>
+                            <div class="dictionary__script">кха:й4</div>
+                            <div class="dictionary__translation">продавать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">8.</div>
+                            <div class="dictionary__thai">นอน</div>
+                            <div class="dictionary__script">нɔ:н</div>
+                            <div class="dictionary__translation">лежать (о6 одушевл. предметах); спать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">1.</div>
+                            <div class="dictionary__thai">ยาย</div>
+                            <div class="dictionary__script">йа:й⁰</div>
+                            <div class="dictionary__translation">бабушка (по материнской линии)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">2.</div>
+                            <div class="dictionary__thai">ตา</div>
+                            <div class="dictionary__script">та:⁰</div>
+                            <div class="dictionary__translation">дедушка (по материнской линии)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">3.</div>
+                            <div class="dictionary__thai">สา</div>
+                            <div class="dictionary__script">са:4</div>
+                            <div class="dictionary__translation">Са (женское имя)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">4.</div>
+                            <div class="dictionary__thai">ยาม</div>
+                            <div class="dictionary__script">йа:м⁰</div>
+                            <div class="dictionary__translation">охранник, сторож</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">5.</div>
+                            <div class="dictionary__thai">ถาม</div>
+                            <div class="dictionary__script">тха:м4</div>
+                            <div class="dictionary__translation">спрашивать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">6.</div>
+                            <div class="dictionary__thai">ทา</div>
+                            <div class="dictionary__script">тха:°</div>
+                            <div class="dictionary__translation">красить, втирать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">7.</div>
+                            <div class="dictionary__thai">ขาย</div>
+                            <div class="dictionary__script">кха:й4</div>
+                            <div class="dictionary__translation">продавать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">8.</div>
+                            <div class="dictionary__thai">นอน</div>
+                            <div class="dictionary__script">нɔ:н</div>
+                            <div class="dictionary__translation">лежать (о6 одушевл. предметах); спать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">1.</div>
+                            <div class="dictionary__thai">ยาย</div>
+                            <div class="dictionary__script">йа:й⁰</div>
+                            <div class="dictionary__translation">бабушка (по материнской линии)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">2.</div>
+                            <div class="dictionary__thai">ตา</div>
+                            <div class="dictionary__script">та:⁰</div>
+                            <div class="dictionary__translation">дедушка (по материнской линии)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">3.</div>
+                            <div class="dictionary__thai">สา</div>
+                            <div class="dictionary__script">са:4</div>
+                            <div class="dictionary__translation">Са (женское имя)</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">4.</div>
+                            <div class="dictionary__thai">ยาม</div>
+                            <div class="dictionary__script">йа:м⁰</div>
+                            <div class="dictionary__translation">охранник, сторож</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">5.</div>
+                            <div class="dictionary__thai">ถาม</div>
+                            <div class="dictionary__script">тха:м4</div>
+                            <div class="dictionary__translation">спрашивать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">6.</div>
+                            <div class="dictionary__thai">ทา</div>
+                            <div class="dictionary__script">тха:°</div>
+                            <div class="dictionary__translation">красить, втирать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">7.</div>
+                            <div class="dictionary__thai">ขาย</div>
+                            <div class="dictionary__script">кха:й4</div>
+                            <div class="dictionary__translation">продавать</div>
+                        </div>
+                        <div class="dictionary__item">
+                            <div class="dictionary__index">8.</div>
+                            <div class="dictionary__thai">นอน</div>
+                            <div class="dictionary__script">нɔ:н</div>
+                            <div class="dictionary__translation">лежать (о6 одушевл. предметах); спать</div>
+                        </div>
+                    </div>
+
+
+
+                    <h2 id="leksiko-grammaticheskiye-uprazhneniya">Лексико-грамматические упражнения</h2>
+
+                    <br>
+                    <p>1. Прочитайте вслед за диктором и переведите на русский</p>
+                    <br>
+
+
+                    <audio class="mt-3" src="audio/01-03-01.mp3" controls="controls"></audio>
+
+                    <br>
+                    <br>
+
+
+                    <div class="symbols symbols--long">
+                        <span class="symbols__question">ยายถามตา</span>
+                        <input class="symbols__answer fill" type="text" data-answer="Бабушка спрашивает дедушку" size="30">
+                    </div>
+
+                    <div class="symbols symbols--long">
+                        <span class="symbols__question">ตาทายา</span>
+                        <input class="symbols__answer fill" type="text" data-answer="Дедушка втирает лекарство" size="30">
+                    </div>
+
+                    <div class="symbols symbols--long">
+                        <span class="symbols__question">สาขายหนู</span>
+                        <input class="symbols__answer fill" type="text" data-answer="Са продает свинину" size="30">
+                    </div>
+
+                    <div class="symbols symbols--long">
+                        <span class="symbols__question">ยามนอน</span>
+                        <input class="symbols__answer fill" type="text" data-answer="Охранник спит" size="30">
+                    </div>
+
+                    <div class="symbols symbols--long">
+                        <span class="symbols__question">ยายสอนหนู</span>
+                        <input class="symbols__answer fill" type="text" data-answer="Бабушка учит мышь" size="30">
+                    </div>
+
+                    <div class="symbols symbols--long">
+                        <span class="symbols__question">ตาคอยยาย</span>
+                        <input class="symbols__answer fill" type="text" data-answer="Дедушка ждет бабушку" size="30">
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <p>2. Переведите на тайский</p>
+                    <br>
+
+                    <div class="symbols">
+                        <span class="symbols__question">Бабушка спрашивает дедушку</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ยายถามตา" size="10">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">Дедушка втирает лекарство</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ตาทายา" size="10">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">Са продает свинину</span>
+                        <input class="symbols__answer fill" type="text" data-answer="สาขายหนู" size="10">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">Охранник спит</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ยามนอน" size="10">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">Бабушка учит мышь</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ยายสอนหนู" size="10">
+                    </div>
+
+                    <div class="symbols">
+                        <span class="symbols__question">Дедушка ждет бабушку</span>
+                        <input class="symbols__answer fill" type="text" data-answer="ตาคอยยาย" size="10">
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <h2 id="testi">Тесты</h2>
+
+                    <p>
+                        Прослушав запись выберите правильный вариант
+                    </p>
+
+                    <div class="row" style="font-size: 20px;">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="a">
+                                        <label class="form-check-label">ตา</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="a">
+                                        <label class="form-check-label">คา</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="b">
+                                        <label class="form-check-label">คอ</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="b">
+                                        <label class="form-check-label">กอ</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="c">
+                                        <label class="form-check-label">พา</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="c">
+                                        <label class="form-check-label">ปา</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="d">
+                                        <label class="form-check-label">ทา</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="d">
+                                        <label class="form-check-label">ตา</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="e">
+                                        <label class="form-check-label">กี</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="e">
+                                        <label class="form-check-label">คี</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="f">
+                                        <label class="form-check-label">ปูน</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="f">
+                                        <label class="form-check-label">พูน</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="g">
+                                        <label class="form-check-label">ทาม</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="g">
+                                        <label class="form-check-label">ตาม</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="h">
+                                        <label class="form-check-label">พาม</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="h">
+                                        <label class="form-check-label">ปาม</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="i">
+                                        <label class="form-check-label">กาย</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="i">
+                                        <label class="form-check-label">คาย</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <audio src="audio/01-05-01.mp3" controls="controls"></audio>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="j">
+                                        <label class="form-check-label">ทอย</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="j">
+                                        <label class="form-check-label">ตอย</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="vendors/bootstrap/js/bootstrap.js"></script>
+
+        <!-- Temp -->
+        <script src="scripts/temp.js?1547451955"></script>
+
+    </body>
+</html>
+
+
