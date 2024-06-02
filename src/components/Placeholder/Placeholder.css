@@ -2,9 +2,10 @@
     margin-top: 0.05em;
     margin-bottom: -0.05em;
     font-family: var(--font-placeholder);
+    font-size: 1.1em;
     color: #D8D8D8;
 }
 
 .placeholder--text-alike {
-    color: inherit;
+    color: var(--script-color);
 }

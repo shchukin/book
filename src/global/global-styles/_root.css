@@ -1,10 +1,12 @@
 :root {
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-thai: "Sarabun", sans-serif;
     --font-placeholder: "Tahoma";
     --body-font-size: 16px;
     --body-line-height: 24px;
-    --font-color: #333333;
+    --main-text-color: #333333;
     --script-color: #666666;
+    --body-background-color: #FFFFFF;
     /*--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);*/
     /*--transition-hover: 100ms ease;*/
     /*--transition-show: 1200ms var(--ease-out-quint);*/
@@ -31,3 +33,13 @@
         --container-padding: 16px;
     }
 }
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background-color: #1E1E1E;
+        --main-text-color: #DDDDDD;
+        --script-color: #7b7b7b;
+    }
+}
+

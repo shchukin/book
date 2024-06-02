@@ -4,6 +4,7 @@ import './global/global-styles/global-style.css';
 import Lesson from "./components/Lesson/Lesson.tsx";
 import Thai from "./components/Thai/Thai.tsx";
 import Script from "./components/Script/Script.tsx";
+import Placeholder from "./components/Placeholder/Placeholder.tsx";
 
 function App() {
 
@@ -95,10 +96,10 @@ function App() {
         <h2>Долгие гласные</h2>
 
         <div>
-          <Thai>◌า</Thai> <Script>aː</Script> - Знак долгой гласной <Script>aː</Script> располагается после согласной буквы.
+          <Thai><Placeholder/>า</Thai> <Script>aː</Script> - Знак долгой гласной <Script>aː</Script> располагается после согласной буквы.
         </div>
         <div>
-          <Thai>◌อ</Thai> <Script>ɔː</Script> - знак долгой гласной <Script>ɔː</Script> располагается после согласной буквы.
+          <Thai><Placeholder/>อ</Thai> <Script>ɔː</Script> - знак долгой гласной <Script>ɔː</Script> располагается после согласной буквы.
         </div>
 
         ี [иː] - знак гласной [иː] располагается над согласной буквой.
