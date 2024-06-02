@@ -10,113 +10,121 @@ import Voiced from "./components/Voiced/Voiced.tsx";
 import Big from "./components/Big/Big.tsx";
 import Airy from "./components/Airy/Airy.tsx";
 import Nobr from "./components/Nobr/Nobr.tsx";
+import Row from "./components/Row/Row.tsx";
+import Heading from "./components/Heading/Heading.tsx";
 
 function App() {
 
   return (
     <>
-      {/*<div>*/}
-      {/*  <a href="https://vitejs.dev" target="_blank">*/}
-      {/*    <img src={viteLogo} className="logo" alt="Vite logo" />*/}
-      {/*  </a>*/}
-      {/*  <a href="https://react.dev" target="_blank">*/}
-      {/*    <img src={reactLogo} className="logo react" alt="React logo" />*/}
-      {/*  </a>*/}
-      {/*</div>*/}
       <Lesson>
-        <h1>Урок 1</h1>
 
-        <h2>Буквы высокого класса</h2>
+        <Heading level={1}>
+          Урок 1
+        </Heading>
 
-        <div>
+
+        <Heading level={2}>
+          Буквы высокого класса
+        </Heading>
+
+        <Row>
           <Big><Thai>ผ</Thai></Big> <Script>пхɔ:ˇ</Script> — «пчела» <Script>пхынг^</Script>
-        </div>
+        </Row>
 
-        <div>
+        <Row>
           <Big><Thai>ข</Thai></Big> <Script>кхɔ:ˇ</Script> — «яйцо» <Script>кхай`</Script>
-        </div>
+        </Row>
 
-        <div>
+        <Row>
           <Big><Thai>ถ</Thai></Big> <Script>тхɔ:ˇ</Script> — «пакет»<Script>тхунгˇ</Script>
-        </div>
+        </Row>
 
-        <div>
+        <Row>
           <Big><Thai>ส</Thai></Big> <Script>сɔ:ˇ</Script> — «тигр» <Script>сы:аˇ</Script>
-        </div>
+        </Row>
 
-        <div>
+        <Row>
           <Big><Thai>ห</Thai></Big> <Script>хɔ:ˇ</Script> — «ящик» <Script>хи:п`</Script>
-        </div>
+        </Row>
+
+        <Row>
+          <Big>
+            <Thai>ผ ข ถ ส ห</Thai>
+          </Big>
+        </Row>
 
 
-        <Big><Thai>ผ ข ถ ส ห</Thai></Big>
+        <Heading level={2}>
+          Буквы низкого класса
+        </Heading>
 
-        <h2>Буквы низкого класса</h2>
-
-        <div>
+        <Row>
           <Big><Thai>พ</Thai></Big> <Script>пхɔ:</Script> — «чаша», точнее, основание для подношений, <Script>пха:н</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ค</Thai></Big> <Script>кхɔ:</Script> — «буйвол» <Script>кхва:й</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ท</Thai></Big> <Script>тхɔ:</Script> — «военный» <Script>тхаʹха:нˇ</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ซ</Thai></Big> <Script>сɔ:</Script> — «цепь» <Script>со: ˆ</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ม</Thai></Big> <Script>мɔ:</Script> — «лошадь» <Script>ма: ʹ</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>น</Thai></Big> <Script>нɔ:</Script> — «мышь» <Script>ну:ˇ</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ย</Thai></Big> <Script>йɔ:</Script> — «Якшас», мифологический персонаж <Script>йакʹ</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ว</Thai></Big> <Script>вɔ:</Script> — «кольцо» <Script>вэ:нˇ</Script>
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai>ฮ</Thai></Big> <Script>хɔ:</Script> — «филин» <Script>нокʹ ху:кˆ</Script>
-        </div>
+        </Row>
 
         <Big><Thai>พ ค ท ซ ม น ย ว ฮ</Thai></Big>
 
 
-        <h2>Буквы среднего класса</h2>
-        <div>
-          <Big><Thai>ก</Thai></Big> <Script>кɔ:</Script> — «курица» <Script>кай`</Script>
-        </div>
-        <div>
-          <Big><Thai>ป</Thai></Big> <Script>пɔ:</Script> — «рыба» <Script>пла:</Script>
-        </div>
-        <div>
-          <Big><Thai>ต</Thai></Big> <Script>тɔ:</Script> — «черепаха» <Script>тау`</Script>
-        </div>
+        <Heading level={2}>Буквы среднего класса</Heading>
 
+        <Row>
+          <Big><Thai>ก</Thai></Big> <Script>кɔ:</Script> — «курица» <Script>кай`</Script>
+        </Row>
+        <Row>
+          <Big><Thai>ป</Thai></Big> <Script>пɔ:</Script> — «рыба» <Script>пла:</Script>
+        </Row>
+        <Row>
+          <Big><Thai>ต</Thai></Big> <Script>тɔ:</Script> — «черепаха» <Script>тау`</Script>
+        </Row>
 
         <Big><Thai>ก ป ต</Thai></Big>
 
-        <h2>Долгие гласные</h2>
 
-        <div>
+        <Heading level={2}>Долгие гласные</Heading>
+
+        <Row>
           <Big><Thai><Placeholder/>า</Thai></Big> <Script>aː</Script> — Знак долгой гласной <Script>aː</Script> располагается после согласной буквы.
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai><Placeholder/>อ</Thai></Big> <Script>ɔː</Script> — знак долгой гласной <Script>ɔː</Script> располагается после согласной буквы.
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai><Placeholder/>ี</Thai></Big> <Script>иː</Script> — знак гласной <Script>иː</Script> располагается над согласной буквой.
-        </div>
-        <div>
+        </Row>
+        <Row>
           <Big><Thai><Placeholder/>ู</Thai></Big> <Script>уː</Script> — знак гласной <Script>у:</Script> располагается под согласной буквой под правым краем.
-        </div>
+        </Row>
 
         <Big><Thai>กา กอ กี กู</Thai></Big>
 
 
-        <h2>Фонетические упражнения</h2>
+        <Heading level={2}>Фонетические упражнения</Heading>
+
         <Exercise>
           <ExerciseHead>
             1. Прослушайте и повторяйте за диктором слоги с долгими гласными ровным тоном.
@@ -376,8 +384,10 @@ function App() {
           </ExerciseEntry>
         </Exercise>
 
-
-        <h2>Упражнения на подстановку</h2>
+        <Heading level={2}>
+          Упражнения на подстановку
+        </Heading>
+        
         <p>7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:</p>
 
         พอม คา ทู ซอน ฮอ ยี มา วี นา ทาม วาน คาย มี ทอน ฮาย พี ยาม นู ซี ฮู นอน มาย
