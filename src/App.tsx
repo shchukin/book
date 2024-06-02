@@ -7,6 +7,7 @@ import Script from "./components/Script/Script.tsx";
 import Placeholder from "./components/Placeholder/Placeholder.tsx";
 import {Exercise, ExerciseHead, ExerciseEntry} from './components/Exercise/Exercise.tsx';
 import Voiced from "./components/Voiced/Voiced.tsx";
+import Big from "./components/Big/Big.tsx";
 
 function App() {
 
@@ -26,90 +27,91 @@ function App() {
         <h2>Буквы высокого класса</h2>
 
         <div>
-          <Thai>ผ</Thai> <Script>пхɔ:ˇ</Script> - «пчела» <Script>пхынг^</Script>
+          <Big><Thai>ผ</Thai></Big> <Script>пхɔ:ˇ</Script> — «пчела» <Script>пхынг^</Script>
         </div>
 
         <div>
-          <Thai>ข</Thai> <Script>кхɔ:ˇ</Script> - «яйцо» <Script>кхай`</Script>
+          <Big><Thai>ข</Thai></Big> <Script>кхɔ:ˇ</Script> — «яйцо» <Script>кхай`</Script>
         </div>
 
         <div>
-          <Thai>ถ</Thai> <Script>тхɔ:ˇ</Script> – «пакет»<Script>тхунгˇ</Script>
+          <Big><Thai>ถ</Thai></Big> <Script>тхɔ:ˇ</Script> — «пакет»<Script>тхунгˇ</Script>
         </div>
 
         <div>
-          <Thai>ส</Thai> <Script>сɔ:ˇ</Script> - «тигр» <Script>сы:аˇ</Script>
+          <Big><Thai>ส</Thai></Big> <Script>сɔ:ˇ</Script> — «тигр» <Script>сы:аˇ</Script>
         </div>
 
         <div>
-          <Thai>ห</Thai> <Script>хɔ:ˇ</Script> - «ящик» <Script>хи:п`</Script>
+          <Big><Thai>ห</Thai></Big> <Script>хɔ:ˇ</Script> — «ящик» <Script>хи:п`</Script>
         </div>
 
 
-        <b><Thai>ผ ข ถ ส ห</Thai></b>
+        <Big><Thai>ผ ข ถ ส ห</Thai></Big>
 
         <h2>Буквы низкого класса</h2>
 
         <div>
-          <Thai>พ</Thai> <Script>пхɔ:</Script> - «чаша», точнее, основание для подношений, <Script>пха:н</Script>
+          <Big><Thai>พ</Thai></Big> <Script>пхɔ:</Script> — «чаша», точнее, основание для подношений, <Script>пха:н</Script>
         </div>
         <div>
-          <Thai>ค</Thai> <Script>кхɔ:</Script> - «буйвол» <Script>кхва:й</Script>
+          <Big><Thai>ค</Thai></Big> <Script>кхɔ:</Script> — «буйвол» <Script>кхва:й</Script>
         </div>
         <div>
-          <Thai>ท</Thai> <Script>тхɔ:</Script> - «военный» <Script>тхаʹха:нˇ</Script>
+          <Big><Thai>ท</Thai></Big> <Script>тхɔ:</Script> — «военный» <Script>тхаʹха:нˇ</Script>
         </div>
         <div>
-          <Thai>ซ</Thai> <Script>сɔ:</Script> - «цепь» <Script>со: ˆ</Script>
+          <Big><Thai>ซ</Thai></Big> <Script>сɔ:</Script> — «цепь» <Script>со: ˆ</Script>
         </div>
         <div>
-          <Thai>ม</Thai> <Script>мɔ:</Script>- «лошадь» <Script>ма: ʹ</Script>
+          <Big><Thai>ม</Thai></Big> <Script>мɔ:</Script> — «лошадь» <Script>ма: ʹ</Script>
         </div>
         <div>
-          <Thai>น</Thai> <Script>нɔ:</Script>- «мышь» <Script>ну:ˇ</Script>
+          <Big><Thai>น</Thai></Big> <Script>нɔ:</Script> — «мышь» <Script>ну:ˇ</Script>
         </div>
         <div>
-          <Thai>ย</Thai> <Script>йɔ:</Script> - «Якшас», мифологический персонаж <Script>йакʹ</Script>
+          <Big><Thai>ย</Thai></Big> <Script>йɔ:</Script> — «Якшас», мифологический персонаж <Script>йакʹ</Script>
         </div>
         <div>
-          <Thai>ว</Thai> <Script>вɔ:</Script>- «кольцо» <Script>вэ:нˇ</Script>
+          <Big><Thai>ว</Thai></Big> <Script>вɔ:</Script> — «кольцо» <Script>вэ:нˇ</Script>
         </div>
         <div>
-          <Thai>ฮ</Thai> <Script>хɔ:</Script>- «филин» <Script>нокʹ ху:кˆ</Script>
+          <Big><Thai>ฮ</Thai></Big> <Script>хɔ:</Script> — «филин» <Script>нокʹ ху:кˆ</Script>
         </div>
 
-        <b><Thai>พ ค ท ซ ม น ย ว ฮ</Thai></b>
+        <Big><Thai>พ ค ท ซ ม น ย ว ฮ</Thai></Big>
 
 
         <h2>Буквы среднего класса</h2>
         <div>
-          <Thai>ก</Thai> <Script>кɔ:</Script>- «курица» <Script>кай`</Script>
+          <Big><Thai>ก</Thai></Big> <Script>кɔ:</Script> — «курица» <Script>кай`</Script>
         </div>
         <div>
-          <Thai>ป</Thai> <Script>пɔ:</Script>- «рыба» <Script>пла:</Script>
+          <Big><Thai>ป</Thai></Big> <Script>пɔ:</Script> — «рыба» <Script>пла:</Script>
         </div>
         <div>
-          <Thai>ต</Thai> <Script>тɔ:</Script>- «черепаха» <Script>тау`</Script>
+          <Big><Thai>ต</Thai></Big> <Script>тɔ:</Script> — «черепаха» <Script>тау`</Script>
         </div>
 
 
-        <b><Thai>ก ป ต</Thai></b>
+        <Big><Thai>ก ป ต</Thai></Big>
 
         <h2>Долгие гласные</h2>
 
         <div>
-          <Thai><Placeholder/>า</Thai> <Script>aː</Script> - Знак долгой гласной <Script>aː</Script> располагается после согласной буквы.
+          <Big><Thai><Placeholder/>า</Thai></Big> <Script>aː</Script> — Знак долгой гласной <Script>aː</Script> располагается после согласной буквы.
         </div>
         <div>
-          <Thai><Placeholder/>อ</Thai> <Script>ɔː</Script> - знак долгой гласной <Script>ɔː</Script> располагается после согласной буквы.
+          <Big><Thai><Placeholder/>อ</Thai></Big> <Script>ɔː</Script> — знак долгой гласной <Script>ɔː</Script> располагается после согласной буквы.
         </div>
         <div>
-          <Thai><Placeholder/>ี</Thai> <Script>иː</Script> - знак гласной <Script>иː</Script> располагается над согласной буквой.
+          <Big><Thai><Placeholder/>ี</Thai></Big> <Script>иː</Script> — знак гласной <Script>иː</Script> располагается над согласной буквой.
         </div>
         <div>
-          <Thai><Placeholder/>ู</Thai> <Script>уː</Script> - знак гласной <Script>у:</Script> располагается под согласной буквой под правым краем.
+          <Big><Thai><Placeholder/>ู</Thai></Big> <Script>уː</Script> — знак гласной <Script>у:</Script> располагается под согласной буквой под правым краем.
         </div>
-        <b><Thai>กา กอ กี กู</Thai></b>
+
+        <Big><Thai>กา กอ กี กู</Thai></Big>
 
 
         <h2>Фонетические упражнения</h2>
@@ -118,19 +120,15 @@ function App() {
             1. Прослушайте и повторяйте за диктором слоги с долгими гласными ровным тоном.
           </ExerciseHead>
           <ExerciseEntry>
-            <div>
-              а) открытые слоги:
-            </div>
+            а) открытые слоги:
             <Voiced audioFile="01-kaa-taa-paa.mp3">
-              <big><Thai>กา ตา ปา ซา ยา มา วา นา กอ ปอ ตอ ซอ มอ ยอ วอ นอ กู ปู ตู ยู มู วู นู กี ปี ตี ซี ยี มี นี</Thai></big>
+              <Big><Thai>กา ตา ปา ซา ยา มา วา นา กอ ปอ ตอ ซอ มอ ยอ วอ นอ กู ปู ตู ยู มู วู นู กี ปี ตี ซี ยี มี นี</Thai></Big>
             </Voiced>
           </ExerciseEntry>
           <ExerciseEntry>
-            <div>
-              б) закрытые слоги:
-            </div>
+            б) закрытые слоги:
             <Voiced audioFile="02-kaam-kaay-taay.mp3">
-              <big><Thai>กาม กาย ตาย ตาว ปาน ปาม ปาว ซาน ซาย วาน กอน ตอน ปอย นอน ยอย ตูน ปูน มูน นูม ตีน วีม ยีน</Thai></big>
+              <Big><Thai>กาม กาย ตาย ตาว ปาน ปาม ปาว ซาน ซาย วาน กอน ตอน ปอย นอน ยอย ตูน ปูน มูน นูม ตีน วีม ยีน</Thai></Big>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -142,19 +140,15 @@ function App() {
           2. Прослушайте и повторяйте за диктором слоги с долгими гласными восходящим тоном:
           </ExerciseHead>
           <ExerciseEntry>
-            <div>
-              а) открытые слоги:
-            </div>
+            а) открытые слоги:
             <Voiced audioFile="03-pha-kha-tha.mp3">
-              <big><Thai>ผา ขา ถา สา หา หยา หมา ถู หู หมู หนู หวู หยู ขอ สอ หอ หมอ หนอ หยอ หนี หมี สี หวี หยี</Thai></big>
+              <Big><Thai>ผา ขา ถา สา หา หยา หมา ถู หู หมู หนู หวู หยู ขอ สอ หอ หมอ หนอ หยอ หนี หมี สี หวี หยี</Thai></Big>
             </Voiced>
           </ExerciseEntry>
           <ExerciseEntry>
-            <div>
-              б) закрытые слоги:
-            </div>
+            б) закрытые слоги:
             <Voiced audioFile="04-phan-kham-thau.mp3">
-              <big><Thai>ผาน ขาม ถาว สาย หาน ถาย หาย ผอม ขอม ถอย สอน หอย ถูม สูน ขูน หูม ผีน หนีม หวีม</Thai></big>
+              <Big><Thai>ผาน ขาม ถาว สาย หาน ถาย หาย ผอม ขอม ถอย สอน หอย ถูม สูน ขูน หูม ผีน หนีม หวีม</Thai></Big>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -167,7 +161,7 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="05-phii-khii-thii.mp3">
-              <big><Thai>ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน</Thai></big>
+              <Big><Thai>ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน</Thai></Big>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -180,7 +174,7 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="06-kaa-khaa-kaay-khaay.mp3">
-              <big><Thai>กา – คา กาย – คาย ตาว – ทาว ปาว – พาว ตี – ที ปอ – พอ กอย – คอย ตู – ทู ปี – พี ปูม – พูม</Thai></big>
+              <Big><Thai>กา – คา กาย – คาย ตาว – ทาว ปาว – พาว ตี – ที ปอ – พอ กอย – คอย ตู – ทู ปี – พี ปูม – พูม</Thai></Big>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -193,7 +187,7 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="07-phii-phii-khaa-khaa.mp3">
-              <big><Thai>พี – ผี คา – ขา ซา – สา ฮา – หา วา – หวา ทาว – ถาว นาว – หนาว ยอม – หยอม คอม - ขอม ซอย -สอย ที – ถี มี – หมี ยู – หยู</Thai></big>
+              <Big><Thai>พี – ผี คา – ขา ซา – สา ฮา – หา วา – หวา ทาว – ถาว นาว – หนาว ยอม – หยอม คอม - ขอม ซอย -สอย ที – ถี มี – หมี ยู – หยู</Thai></Big>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -206,7 +200,7 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="08-phaa-phaa-thau-thau.mp3">
-              <big><Thai>ผา – พา ถาว – ทาว หวาน – วาน หา – ฮา นาย – หนาย ขอ – คอ หยอ – ยอ ขอม – คอม สอย– ซอย ถี – ที หมี – มี สู – ซู หนู – นู</Thai></big>
+              <Big><Thai>ผา – พา ถาว – ทาว หวาน – วาน หา – ฮา นาย – หนาย ขอ – คอ หยอ – ยอ ขอม – คอม สอย– ซอย ถี – ที หมี – มี สู – ซู หนู – นู</Thai></Big>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
