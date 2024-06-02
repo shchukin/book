@@ -9,7 +9,7 @@ function Script({children}: ScriptProps) {
 
   return (
     <span className="script">
-      [{children}]
+      /{children}/
     </span>
   )
 }
