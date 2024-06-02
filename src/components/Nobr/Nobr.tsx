@@ -9,7 +9,7 @@ function Nobr({children}: NobrProps) {
 
   return (
     <span className="nobr">
-      /{children}/
+      {children}
     </span>
   )
 }
