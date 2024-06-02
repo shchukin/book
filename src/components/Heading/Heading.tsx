@@ -1,21 +1,14 @@
 import './Heading.css'
 import {ReactNode} from "react";
 
-// type HeadingProps = {
-//   children: ReactNode
-// }
-//
-// Heading.propTypes = {
-//   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-//   children: PropTypes.node.isRequired,
-// };
+type HeadingProps = {
+  children: ReactNode
+  level: 1 | 2 | 3 | 4 | 5 | 6,
+}
 
-function Heading({ level, children }) {
-  const Tag = `h${level}`;
-
-  // Mapping heading level to corresponding class
+function Heading({ level, children }:HeadingProps) {
+  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   const headingClass = `heading heading--0${level}`;
-
   return <Tag className={headingClass}>{children}</Tag>;
 }
 
