@@ -87,7 +87,11 @@ function App() {
           <Big><Thai>ฮ</Thai></Big> <Script>хɔ:</Script> — «филин» <Script>нокʹ ху:кˆ</Script>
         </Row>
 
-        <Big><Thai>พ ค ท ซ ม น ย ว ฮ</Thai></Big>
+        <Row>
+          <Big>
+            <Thai>พ ค ท ซ ม น ย ว ฮ</Thai>
+          </Big>
+        </Row>
 
 
         <Heading level={2}>Буквы среднего класса</Heading>
@@ -102,7 +106,11 @@ function App() {
           <Big><Thai>ต</Thai></Big> <Script>тɔ:</Script> — «черепаха» <Script>тау`</Script>
         </Row>
 
-        <Big><Thai>ก ป ต</Thai></Big>
+        <Row>
+          <Big>
+            <Thai>ก ป ต</Thai>
+          </Big>
+        </Row>
 
 
         <Heading level={2}>Долгие гласные</Heading>
@@ -120,7 +128,11 @@ function App() {
           <Big><Thai><Placeholder/>ู</Thai></Big> <Script>уː</Script> — знак гласной <Script>у:</Script> располагается под согласной буквой под правым краем.
         </Row>
 
-        <Big><Thai>กา กอ กี กู</Thai></Big>
+        <Row>
+          <Big>
+            <Thai>กา กอ กี กู</Thai>
+          </Big>
+        </Row>
 
 
         <Heading level={2}>Фонетические упражнения</Heading>
@@ -201,6 +213,7 @@ function App() {
         </Exercise>
 
         <br/>
+        <br/>
 
         <Exercise>
           <ExerciseHead>
@@ -270,6 +283,7 @@ function App() {
         </Exercise>
 
         <br/>
+        <br/>
 
         <Exercise>
           <ExerciseHead>
@@ -301,6 +315,7 @@ function App() {
         </Exercise>
 
         <br/>
+        <br/>
 
         <Exercise>
           <ExerciseHead>
@@ -326,6 +341,7 @@ function App() {
           </ExerciseEntry>
         </Exercise>
 
+        <br/>
         <br/>
 
         <Exercise>
@@ -355,6 +371,7 @@ function App() {
           </ExerciseEntry>
         </Exercise>
 
+        <br/>
         <br/>
 
         <Exercise>
@@ -387,7 +404,7 @@ function App() {
         <Heading level={2}>
           Упражнения на подстановку
         </Heading>
-        
+
         <p>7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:</p>
 
         พอม คา ทู ซอน ฮอ ยี มา วี นา ทาม วาน คาย มี ทอน ฮาย พี ยาม นู ซี ฮู นอน มาย
