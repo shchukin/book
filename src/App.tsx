@@ -14,6 +14,7 @@ import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Question from "./components/Question/Question.tsx";
 import Exercise7 from "./components/Exercise7/Exercise7.tsx";
+import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
 
 function App() {
 
@@ -440,6 +441,7 @@ function App() {
 
         <br/>
         <br/>
+
         <Heading level={2}>
           Упражнения на подстановку
         </Heading>
@@ -448,35 +450,13 @@ function App() {
 
         <br/>
         <br/>
+
+        <Exercise1x8/>
+
         <br/>
         <br/>
-
-        {/*<Exercise>*/}
-        {/*  <ExerciseHead>*/}
-        {/*    7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:*/}
-        {/*  </ExerciseHead>*/}
-        {/*  <ExerciseEntry>*/}
-
-        {/*    {exercises.map((exercise, index) => (*/}
-        {/*      <Question*/}
-        {/*        key={index}*/}
-        {/*        question={exercise.question}*/}
-        {/*        type={exercise.type as 'radio' | 'text'}*/}
-        {/*        correctAnswer={exercise.correctAnswer}*/}
-        {/*        options={exercise.options}*/}
-        {/*        maxLength={exercise.maxLength}*/}
-        {/*      />*/}
-        {/*    ))}*/}
-
-        {/*  </ExerciseEntry>*/}
-        {/*</Exercise>*/}
-
-        <p></p>
-
-
-        <p>8. Преобразуйте слог с восходящим тоном (ˇ) в слог с ровным тоном:</p>
-
-        ผี ขาว สอย หนู ขาย หวาน ขอ ผาย หมี ถู หยา ถอน หนาย ถอน หวาว หนาม ถี หอย หมา ขาม
+        <br/>
+        <br/>
 
         <h2>Проверьте себя</h2>
 
