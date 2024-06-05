@@ -13,8 +13,30 @@ import Nobr from "./components/Nobr/Nobr.tsx";
 import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Question from "./components/Question/Question.tsx";
+import Exercise7 from "./components/Exercise7/Exercise7.tsx";
 
 function App() {
+
+  const exercise7 = [
+    {
+      question: 'Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.',
+      type: 'radio',
+      correctAnswer: 'придыхательная',
+      options: ['придыхательная', 'не придыхательная']
+    },
+    {
+      question: 'Определите, каким тоном произносится слог',
+      type: 'radio',
+      correctAnswer: 'высокий',
+      options: ['ровный', 'низкий', 'восходящий', 'высокий', 'падающий']
+    },
+    {
+      question: 'Введите строку не более 10 символов',
+      type: 'text',
+      correctAnswer: 'пример',
+      maxLength: 10
+    }
+  ];
 
   const exercises = [
     {
@@ -420,113 +442,32 @@ function App() {
           Упражнения на подстановку
         </Heading>
 
-        <Exercise>
-          <ExerciseHead>
-            7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:
-          </ExerciseHead>
-          <ExerciseEntry>
-            พอม
-            คา
-            ทู
-            ซอน
-            ฮอ
-            ยี
-            มา
-            วี
-            นา
-            ทาม
-            วาน
-            คาย
-            มี
-            ทอน
-            ฮาย
-            พี
-            ยาม
-            นู
-            ซี
-            ฮู
-            นอน
-            มาย
-
-            <Question type={} correctAnswer={}>
-              <div>
-                foo
-              </div>
-              <div>
-                %input%
-              </div>
-              <div>
-                bar
-              </div>
-              <div>
-                %checkAnswer%
-              </div>
-            </Question>
-
-            <hr/>
-
-            {exercises.map((exercise, index) => (
-              <Question
-                key={index}
-                question={exercise.question}
-                type={exercise.type as 'radio' | 'text'}
-                correctAnswer={exercise.correctAnswer}
-                options={exercise.options}
-                maxLength={exercise.maxLength}
-              />
-            ))}
-
-          </ExerciseEntry>
-        </Exercise>
+        <Exercise7/>
 
         <br/>
         <br/>
         <br/>
         <br/>
 
-        <Exercise>
-          <ExerciseHead>
-            7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:
-          </ExerciseHead>
-          <ExerciseEntry>
-            พอม
-            คา
-            ทู
-            ซอน
-            ฮอ
-            ยี
-            มา
-            วี
-            นา
-            ทาม
-            วาน
-            คาย
-            มี
-            ทอน
-            ฮาย
-            พี
-            ยาม
-            นู
-            ซี
-            ฮู
-            นอน
-            มาย
+        {/*<Exercise>*/}
+        {/*  <ExerciseHead>*/}
+        {/*    7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:*/}
+        {/*  </ExerciseHead>*/}
+        {/*  <ExerciseEntry>*/}
 
-            <hr/>
+        {/*    {exercises.map((exercise, index) => (*/}
+        {/*      <Question*/}
+        {/*        key={index}*/}
+        {/*        question={exercise.question}*/}
+        {/*        type={exercise.type as 'radio' | 'text'}*/}
+        {/*        correctAnswer={exercise.correctAnswer}*/}
+        {/*        options={exercise.options}*/}
+        {/*        maxLength={exercise.maxLength}*/}
+        {/*      />*/}
+        {/*    ))}*/}
 
-            {exercise7.map((exercise, index) => (
-              <Question
-                key={index}
-                question={exercise.question}
-                type={exercise.type as 'radio' | 'text'}
-                correctAnswer={exercise.correctAnswer}
-                options={exercise.options}
-                maxLength={exercise.maxLength}
-              />
-            ))}
-
-          </ExerciseEntry>
-        </Exercise>
+        {/*  </ExerciseEntry>*/}
+        {/*</Exercise>*/}
 
         <p></p>
 
