@@ -84,7 +84,7 @@ function App() {
           <Big><Thai>ว</Thai></Big> <Script>вɔ:</Script> — «кольцо» <Script>вэ:нˇ</Script>
         </Row>
         <Row>
-          <Big><Thai>ฮ</Thai></Big> <Script>хɔ:</Script> — «филин» <Script>нокʹ ху:кˆ</Script>
+          <Big><Thai>ฮ</Thai></Big> <Script>хɔ:</Script> — «филин» <Script>нокʹху:кˆ</Script>
         </Row>
 
         <Row>
@@ -116,16 +116,16 @@ function App() {
         <Heading level={2}>Долгие гласные</Heading>
 
         <Row>
-          <Big><Thai><Placeholder/>า</Thai></Big> <Script>aː</Script> — Знак долгой гласной <Script>aː</Script> располагается после согласной буквы.
+          <Big><Thai><Placeholder/>า</Thai></Big> <Script>aː</Script> — Знак долгой гласной <Script>aː</Script>
         </Row>
         <Row>
-          <Big><Thai><Placeholder/>อ</Thai></Big> <Script>ɔː</Script> — знак долгой гласной <Script>ɔː</Script> располагается после согласной буквы.
+          <Big><Thai><Placeholder/>อ</Thai></Big> <Script>ɔː</Script> — знак долгой гласной <Script>ɔː</Script>
         </Row>
         <Row>
-          <Big><Thai><Placeholder/>ี</Thai></Big> <Script>иː</Script> — знак гласной <Script>иː</Script> располагается над согласной буквой.
+          <Big><Thai><Placeholder/>ี</Thai></Big> <Script>иː</Script> — знак гласной <Script>иː</Script>
         </Row>
         <Row>
-          <Big><Thai><Placeholder/>ู</Thai></Big> <Script>уː</Script> — знак гласной <Script>у:</Script> располагается под согласной буквой под правым краем.
+          <Big><Thai><Placeholder/>ู</Thai></Big> <Script>уː</Script> — знак гласной <Script>у:</Script>
         </Row>
 
         <Row>
