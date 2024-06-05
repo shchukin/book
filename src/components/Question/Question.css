@@ -7,123 +7,128 @@
 .question + .question {
     margin-top: 8px;
 }
-    .question__title {
-        width: 120px;
-        text-align: right;
-        white-space: nowrap;
-        margin-right: 3px;
+    .question__asking {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+        .question__title {
+            width: 120px;
+            text-align: right;
+            white-space: nowrap;
+            margin-right: 3px;
+        }
 
-    .question__text-input {
-        vertical-align: top;
-        width: 100px;
-        height: auto;
-        padding: 0 10px 2px;
-        background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
-        background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
-        background-size: 20px 20px;
-        background-repeat: no-repeat;
-        background-position: right 4px center;
-        border: 2px solid var(--input-border);
-        outline: none;
-        border-radius: 4px;
-        font-family: var(--font-thai);
-        font-size: 22px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
-        line-height: 34px;
-        color: #000000;
-        opacity: 1; /* reset select:disabled default fade on iOS */
-        -webkit-tap-highlight-color: transparent;
-        transition: background-color var(--transition-hover),
-        border-color var(--transition-hover);
-    }
+        .question__text-input {
+            vertical-align: top;
+            width: 100px;
+            height: auto;
+            padding: 0 10px 2px;
+            background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
+            background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: right 4px center;
+            border: 2px solid var(--input-border);
+            outline: none;
+            border-radius: 4px;
+            font-family: var(--font-thai);
+            font-size: 22px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+            line-height: 34px;
+            color: #000000;
+            opacity: 1; /* reset select:disabled default fade on iOS */
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color var(--transition-hover),
+            border-color var(--transition-hover);
+        }
 
-    .question__text-input::placeholder {
-        opacity: 1; /* reset opacity drop Firefox */
-        color: var(--placeholder-color);
-    }
+        .question__text-input::placeholder {
+            opacity: 1; /* reset opacity drop Firefox */
+            color: var(--placeholder-color);
+        }
 
-    .question__text-input:hover {
-        border-color: var(--input-border-hover-and-focus);
-    }
+        .question__text-input:hover {
+            border-color: var(--input-border-hover-and-focus);
+        }
 
-    .question__text-input:focus-visible {
-        border-color: var(--input-border-hover-and-focus);
-        box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
-        transition: none;
-    }
-
-
-    .question__text-input[type="password"]:not(:placeholder-shown) {
-        font-family: "Tahoma", sans-serif;
-        letter-spacing: 2px;
-    }
-
-
-    .question__text-input[type="color"] {
-        width: 100px;
-        padding: 4px 8px;
-    }
+        .question__text-input:focus-visible {
+            border-color: var(--input-border-hover-and-focus);
+            box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
+            transition: none;
+        }
 
 
-    /* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above" */
-    .question__text-input[type="date"],
-    .question__text-input[type="datetime-local"],
-    .question__text-input[type="week"],
-    .question__text-input[type="month"],
-    .question__text-input[type="time"] {
-        width: auto;
-    }
+        .question__text-input[type="password"]:not(:placeholder-shown) {
+            font-family: "Tahoma", sans-serif;
+            letter-spacing: 2px;
+        }
 
 
-
-    /* Success */
-
-    .question__text-input--success {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2My4wNTQgNDQyLjI5TDMwNS41MjcgNTg0Ljc1N0w2MjMuNjE3IDI2Ni42NjciIHN0cm9rZT0iIzAwQkUwMCIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
-        color: var(--success);
-        border-color: var(--success);
-    }
+        .question__text-input[type="color"] {
+            width: 100px;
+            padding: 4px 8px;
+        }
 
 
-    /* Error */
-
-    .question__text-input--error {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI0MSA1NTkuMDlMNTU5LjA5IDI0MSIgc3Ryb2tlPSIjRkYwMDMzIiBzdHJva2Utd2lkdGg9IjgzLjMzMzMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDEgMjQxTDU1OS4wOSA1NTkuMDkiIHN0cm9rZT0iI0ZGMDAzMyIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
-        color: var(--error);
-        border-color: var(--error);
-    }
+        /* Either "appearance: none; width: 100%;" or "width: auto; to reset the width set above" */
+        .question__text-input[type="date"],
+        .question__text-input[type="datetime-local"],
+        .question__text-input[type="week"],
+        .question__text-input[type="month"],
+        .question__text-input[type="time"] {
+            width: auto;
+        }
 
 
 
-    .question__check-handler {
-        margin-left: 10px;
-        display: inline-block;
-        vertical-align: top;
-        border: none;
-        padding: 8px 10px;
-        min-width: 100px;
-        background-color: var(--action-color);
-        border-radius: 4px;
-        font-family: inherit;
-        font-size: 14px;
-        line-height: 24px;
-        color: #FFFFFF;
-        text-align: center;
-        text-decoration: none;
-        white-space: nowrap;
-        cursor: pointer;
-        user-select: none;
-        transition: background-color var(--transition-hover);
-    }
+        /* Success */
 
-    .question__check-handler:hover {
-        background-color: var(--action-color-hover);
-    }
+        .question__text-input--success {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2My4wNTQgNDQyLjI5TDMwNS41MjcgNTg0Ljc1N0w2MjMuNjE3IDI2Ni42NjciIHN0cm9rZT0iIzAwQkUwMCIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+            color: var(--success);
+            border-color: var(--success);
+        }
 
-    .question__check-handler:active {
-        translate: 0 1px;
-        transition: none;
-    }
+
+        /* Error */
+
+        .question__text-input--error {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI0MSA1NTkuMDlMNTU5LjA5IDI0MSIgc3Ryb2tlPSIjRkYwMDMzIiBzdHJva2Utd2lkdGg9IjgzLjMzMzMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDEgMjQxTDU1OS4wOSA1NTkuMDkiIHN0cm9rZT0iI0ZGMDAzMyIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+            color: var(--error);
+            border-color: var(--error);
+        }
+
+
+
+        .question__check-handler {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            border: none;
+            padding: 8px 10px;
+            min-width: 100px;
+            background-color: var(--action-color);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color var(--transition-hover);
+        }
+
+        .question__check-handler:hover {
+            background-color: var(--action-color-hover);
+        }
+
+        .question__check-handler:active {
+            translate: 0 1px;
+            transition: none;
+        }
 
     .question__answer {
         width: 120px;
@@ -165,92 +170,101 @@
 
     .question {
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .question + .question {
         margin-top: 16px;
     }
-        .question__title {
-            width: 80px;
-            /*text-align: right;*/
-            /*margin-right: 3px;*/
+        .question__asking {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
         }
+            .question__title {
+                width: 80px;
+                /*text-align: right;*/
+                /*margin-right: 3px;*/
+            }
 
-        .question__text-input {
-            /*vertical-align: top;*/
-            /*width: 100px;*/
-            /*height: auto;*/
-            /*padding: 0 10px 2px;*/
-            /*background-color: #FFFFFF; !* reset grey background in some cases, such as <select> *!*/
-            /*background-clip: padding-box; !* hack for iOS to make box-shadow works (same as border-radius in the past) *!*/
-            /*background-size: 20px 20px;*/
-            /*background-repeat: no-repeat;*/
-            /*background-position: right 4px center;*/
-            /*border: 2px solid var(--input-border);*/
-            /*outline: none;*/
-            /*border-radius: 4px;*/
-            /*font-family: var(--font-thai);*/
-            /*font-size: 22px; !* not less than 16px (otherwise mobile browsers will zoom in on focus) *!*/
-            /*line-height: 34px;*/
-            /*color: #000000;*/
-            /*opacity: 1; !* reset select:disabled default fade on iOS *!*/
-            /*-webkit-tap-highlight-color: transparent;*/
-            /*transition: background-color var(--transition-hover),*/
-            /*border-color var(--transition-hover);*/
-        }
+            .question__text-input {
+                /*vertical-align: top;*/
+                /*width: 100px;*/
+                /*height: auto;*/
+                /*padding: 0 10px 2px;*/
+                /*background-color: #FFFFFF; !* reset grey background in some cases, such as <select> *!*/
+                /*background-clip: padding-box; !* hack for iOS to make box-shadow works (same as border-radius in the past) *!*/
+                /*background-size: 20px 20px;*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: right 4px center;*/
+                /*border: 2px solid var(--input-border);*/
+                /*outline: none;*/
+                /*border-radius: 4px;*/
+                /*font-family: var(--font-thai);*/
+                /*font-size: 22px; !* not less than 16px (otherwise mobile browsers will zoom in on focus) *!*/
+                /*line-height: 34px;*/
+                /*color: #000000;*/
+                /*opacity: 1; !* reset select:disabled default fade on iOS *!*/
+                /*-webkit-tap-highlight-color: transparent;*/
+                /*transition: background-color var(--transition-hover),*/
+                /*border-color var(--transition-hover);*/
+            }
 
-        .question__text-input::placeholder {
-            /*opacity: 1; !* reset opacity drop Firefox *!*/
-            /*color: var(--placeholder-color);*/
-        }
+            .question__text-input::placeholder {
+                /*opacity: 1; !* reset opacity drop Firefox *!*/
+                /*color: var(--placeholder-color);*/
+            }
 
-        .question__text-input:hover {
-            /*border-color: var(--input-border-hover-and-focus);*/
-        }
+            .question__text-input:hover {
+                /*border-color: var(--input-border-hover-and-focus);*/
+            }
 
-        .question__text-input:focus-visible {
-            /*border-color: var(--input-border-hover-and-focus);*/
-            /*box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);*/
-            /*transition: none;*/
-        }
-
-
-        .question__text-input[type="password"]:not(:placeholder-shown) {
-            /*font-family: "Tahoma", sans-serif;*/
-            /*letter-spacing: 2px;*/
-        }
+            .question__text-input:focus-visible {
+                /*border-color: var(--input-border-hover-and-focus);*/
+                /*box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);*/
+                /*transition: none;*/
+            }
 
 
-        .question__text-input[type="color"] {
-            /*width: 100px;*/
-            /*padding: 4px 8px;*/
-        }
+            .question__text-input[type="password"]:not(:placeholder-shown) {
+                /*font-family: "Tahoma", sans-serif;*/
+                /*letter-spacing: 2px;*/
+            }
 
-        .question__check-handler {
-            /*margin-left: 10px;*/
-            /*display: inline-block;*/
-            /*vertical-align: top;*/
-            /*border: none;*/
-            /*padding: 8px 10px;*/
-            /*min-width: 100px;*/
-            /*background-color: var(--action-color);*/
-            /*border-radius: 4px;*/
-            /*font-family: inherit;*/
-            /*font-size: 14px;*/
-            /*line-height: 24px;*/
-            /*color: #FFFFFF;*/
-            /*text-align: center;*/
-            /*text-decoration: none;*/
-            /*white-space: nowrap;*/
-            /*cursor: pointer;*/
-            /*user-select: none;*/
-            /*transition: background-color var(--transition-hover);*/
-        }
+
+            .question__text-input[type="color"] {
+                /*width: 100px;*/
+                /*padding: 4px 8px;*/
+            }
+
+            .question__check-handler {
+                /*margin-left: 10px;*/
+                /*display: inline-block;*/
+                /*vertical-align: top;*/
+                /*border: none;*/
+                /*padding: 8px 10px;*/
+                /*min-width: 100px;*/
+                /*background-color: var(--action-color);*/
+                /*border-radius: 4px;*/
+                /*font-family: inherit;*/
+                /*font-size: 14px;*/
+                /*line-height: 24px;*/
+                /*color: #FFFFFF;*/
+                /*text-align: center;*/
+                /*text-decoration: none;*/
+                /*white-space: nowrap;*/
+                /*cursor: pointer;*/
+                /*user-select: none;*/
+                /*transition: background-color var(--transition-hover);*/
+            }
 
         .question__answer {
+            display: flex;
+            justify-content: flex-end;
             width: 100%;
             height: 32px;
             margin-left: 0;

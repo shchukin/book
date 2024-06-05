@@ -43,26 +43,28 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
 
   return (
     <div className="question">
-      {type === 'radio' && options && options.map((option, index) => (
-        <div key={index}>
+      {type === 'radio' && (
+        <>
+          <Big><Thai>{question}</Thai></Big>
+          {options && options.map((option, index) => (
+            <div key={index}>
+              <input
+                type="radio"
+                id={option}
+                name={`answer-${index}`}
+                value={option}
+                checked={selectedOption === option}
+                onChange={handleOptionChange}
+              />
+              <label htmlFor={option}>{option}</label>
+            </div>
+          ))}
+        </>
+      )}
+      {type === 'text' && (
+        <div className="question__asking">
           <div className="question__title">
             <Big><Thai>{question}</Thai> –&nbsp;</Big>
-          </div>
-          <input
-            type="radio"
-            id={option}
-            name="answer"
-            value={option}
-            checked={selectedOption === option}
-            onChange={handleOptionChange}
-          />
-          <label htmlFor={option}>{option}</label>
-        </div>
-      ))}
-      {type === 'text' && (
-        <>
-          <div className="question__title">
-          <Big><Thai>{question}</Thai> –&nbsp;</Big>
           </div>
           <input
             className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : ''}${isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
@@ -71,12 +73,12 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
             onChange={handleInputChange}
             placeholder="???"
           />
-        </>
+          <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
+        </div>
       )}
-      <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
       <div className="question__answer">
-        { ! showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button> }
-        { showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
+        {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
+        {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
       </div>
     </div>
   );

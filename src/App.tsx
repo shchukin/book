@@ -14,50 +14,9 @@ import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
 import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
+import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
 
 function App() {
-
-  const exercise7 = [
-    {
-      question: 'Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.',
-      type: 'radio',
-      correctAnswer: 'придыхательная',
-      options: ['придыхательная', 'не придыхательная']
-    },
-    {
-      question: 'Определите, каким тоном произносится слог',
-      type: 'radio',
-      correctAnswer: 'высокий',
-      options: ['ровный', 'низкий', 'восходящий', 'высокий', 'падающий']
-    },
-    {
-      question: 'Введите строку не более 10 символов',
-      type: 'text',
-      correctAnswer: 'пример',
-      maxLength: 10
-    }
-  ];
-
-  const exercises = [
-    {
-      question: 'Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.',
-      type: 'radio',
-      correctAnswer: 'придыхательная',
-      options: ['придыхательная', 'не придыхательная']
-    },
-    {
-      question: 'Определите, каким тоном произносится слог',
-      type: 'radio',
-      correctAnswer: 'высокий',
-      options: ['ровный', 'низкий', 'восходящий', 'высокий', 'падающий']
-    },
-    {
-      question: 'Введите строку не более 10 символов',
-      type: 'text',
-      correctAnswer: 'пример',
-      maxLength: 10
-    }
-  ];
 
   return (
     <>
@@ -459,9 +418,7 @@ function App() {
 
         <h2>Проверьте себя</h2>
 
-        <p>Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.</p>
-
-        1.คอย 2. กาย 3.พอน 4.ตาย 5.กู 6.ตี 7.ปู 8.ทาน 9.คาว 10.ทอน 11.พาย 12.ปี 13.กา 14.ตูน
+        <Exercise1x9/>
 
         <p>Прослушайте запись, определите придыхательную или непридыхательную согласную в начале слога, запишите по-тайски.</p>
 
