@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import './Question.css'
+import Big from "../Big/Big.tsx";
+import Thai from "../Thai/Thai.tsx";
 
 type QuestionProps = {
   question: string;
@@ -8,7 +11,7 @@ type QuestionProps = {
   maxLength?: number;
 };
 
-const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, options, maxLength }) => {
+const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, options, maxLength}) => {
   const [selectedOption, setSelectedOption] = useState<string>('');
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
@@ -39,10 +42,12 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
   };
 
   return (
-    <div>
-      <p>{question}</p>
+    <div className="question">
       {type === 'radio' && options && options.map((option, index) => (
         <div key={index}>
+          <div className="question__title">
+            <Big><Thai>{question}</Thai> –&nbsp;</Big>
+          </div>
           <input
             type="radio"
             id={option}
@@ -55,19 +60,23 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
         </div>
       ))}
       {type === 'text' && (
-        <input
-          type="text"
-          value={userAnswer}
-          onChange={handleInputChange}
-          placeholder="Enter your answer"
-        />
+        <>
+          <div className="question__title">
+          <Big><Thai>{question}</Thai> –&nbsp;</Big>
+          </div>
+          <input
+            className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : ''}${isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
+            type="text"
+            value={userAnswer}
+            onChange={handleInputChange}
+          />
+        </>
       )}
-      <button onClick={checkAnswer}>Check Answer</button>
-      {isCorrect !== null && (
-        <p>{isCorrect ? 'Correct!' : 'Incorrect, try again.'}</p>
-      )}
-      <button onClick={toggleAnswer}>Toggle Answer</button>
-      {showAnswer && <p>Correct Answer: {correctAnswer}</p>}
+      <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
+      <div className="question__answer">
+        { ! showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button> }
+        { showAnswer && <div>Ответ: <Big><Thai>{correctAnswer}</Thai></Big></div>}
+      </div>
     </div>
   );
 };

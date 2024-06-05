@@ -178,7 +178,7 @@ function App() {
           </Big>
         </Row>
 
-
+        <br/>
         <Heading level={2}>Фонетические упражнения</Heading>
 
         <Exercise>
@@ -438,6 +438,8 @@ function App() {
           </ExerciseEntry>
         </Exercise>
 
+        <br/>
+        <br/>
         <Heading level={2}>
           Упражнения на подстановку
         </Heading>
