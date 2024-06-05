@@ -75,7 +75,7 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
       <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
       <div className="question__answer">
         { ! showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button> }
-        { showAnswer && <div>Ответ: <Big><Thai>{correctAnswer}</Thai></Big></div>}
+        { showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
       </div>
     </div>
   );
