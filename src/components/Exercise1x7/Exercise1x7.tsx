@@ -1,8 +1,8 @@
-import './Exercise7.css'
+import './Exercise1x7.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 
-function Exercise7() {
+function Exercise1x7() {
 
   const questionsList = [
     'พอม', 'คา', 'ทู', 'ซอน', 'ฮอ', 'ยี', 'มา', 'วี', 'นา', 'ทาม', 'วาน', 'คาย', 'มี', 'ทอน', 'ฮาย', 'พี', 'ยาม', 'นู', 'ซี', 'ฮู', 'นอน', 'มาย'
@@ -34,4 +34,4 @@ function Exercise7() {
   )
 }
 
-export default Exercise7;
+export default Exercise1x7;

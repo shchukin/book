@@ -12,8 +12,7 @@ import Airy from "./components/Airy/Airy.tsx";
 import Nobr from "./components/Nobr/Nobr.tsx";
 import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
-import Question from "./components/Question/Question.tsx";
-import Exercise7 from "./components/Exercise7/Exercise7.tsx";
+import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
 import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
 
 function App() {
@@ -446,7 +445,7 @@ function App() {
           Упражнения на подстановку
         </Heading>
 
-        <Exercise7/>
+        <Exercise1x7/>
 
         <br/>
         <br/>
