@@ -147,35 +147,35 @@ function App() {
               <Big>
                 <Thai>
                   <Airy>กา</Airy>
-                  <Airy>ตา</Airy>
-                  <Airy>ปา</Airy>
-                  <Airy>ซา</Airy>
-                  <Airy>ยา</Airy>
-                  <Airy>มา</Airy>
-                  <Airy>วา</Airy>
-                  <Airy>นา</Airy>
                   <Airy>กอ</Airy>
-                  <Airy>ปอ</Airy>
-                  <Airy>ตอ</Airy>
-                  <Airy>ซอ</Airy>
-                  <Airy>มอ</Airy>
-                  <Airy>ยอ</Airy>
-                  <Airy>วอ</Airy>
-                  <Airy>นอ</Airy>
                   <Airy>กู</Airy>
-                  <Airy>ปู</Airy>
-                  <Airy>ตู</Airy>
-                  <Airy>ยู</Airy>
-                  <Airy>มู</Airy>
-                  <Airy>วู</Airy>
-                  <Airy>นู</Airy>
                   <Airy>กี</Airy>
+                  <Airy>ปา</Airy>
+                  <Airy>ปอ</Airy>
+                  <Airy>ปู</Airy>
                   <Airy>ปี</Airy>
+                  <Airy>ตา</Airy>
+                  <Airy>ตอ</Airy>
+                  <Airy>ตู</Airy>
                   <Airy>ตี</Airy>
+                  <Airy>ซา</Airy>
+                  <Airy>ซอ</Airy>
                   <Airy>ซี</Airy>
-                  <Airy>ยี</Airy>
+                  <Airy>ฮา</Airy>
+                  <Airy>ฮอ</Airy>
+                  <Airy>มา</Airy>
                   <Airy>มี</Airy>
+                  <Airy>มู</Airy>
+                  <Airy>วา</Airy>
+                  <Airy>ยอ</Airy>
                   <Airy>นี</Airy>
+                  <Airy>มอ</Airy>
+                  <Airy>นู</Airy>
+                  <Airy>วอ</Airy>
+                  <Airy>ยี</Airy>
+                  <Airy>วู</Airy>
+                  <Airy>ยู</Airy>
+                  <Airy>ฮา</Airy>
                 </Thai></Big>
             </Voiced>
           </ExerciseEntry>
@@ -185,27 +185,25 @@ function App() {
               <Big>
                 <Thai>
                   <Airy>กาม</Airy>
+                  <Airy>กอน</Airy>
                   <Airy>กาย</Airy>
+                  <Airy>กาว</Airy>
                   <Airy>ตาย</Airy>
-                  <Airy>ตาว</Airy>
                   <Airy>ปาน</Airy>
+                  <Airy>ปอย</Airy>
                   <Airy>ปาม</Airy>
                   <Airy>ปาว</Airy>
+                  <Airy>ตาว</Airy>
+                  <Airy>ตอน</Airy>
+                  <Airy>ตอม</Airy>
+                  <Airy>ตอย</Airy>
                   <Airy>ซาน</Airy>
                   <Airy>ซาย</Airy>
-                  <Airy>วาน</Airy>
-                  <Airy>กอน</Airy>
-                  <Airy>ตอน</Airy>
-                  <Airy>ปอย</Airy>
-                  <Airy>นอน</Airy>
-                  <Airy>ยอย</Airy>
-                  <Airy>ตูน</Airy>
-                  <Airy>ปูน</Airy>
-                  <Airy>มูน</Airy>
-                  <Airy>นูม</Airy>
                   <Airy>ตีน</Airy>
-                  <Airy>วีม</Airy>
-                  <Airy>ยีน</Airy>
+                  <Airy>ปูน</Airy>
+                  <Airy>ฮาน</Airy>
+                  <Airy>ฮอม</Airy>
+                  <Airy>ฮอย</Airy>
                 </Thai>
               </Big>
             </Voiced>
@@ -227,27 +225,27 @@ function App() {
                   <Airy>ผา</Airy>
                   <Airy>ขา</Airy>
                   <Airy>ถา</Airy>
-                  <Airy>สา</Airy>
+                  <Airy>สี</Airy>
                   <Airy>หา</Airy>
-                  <Airy>หยา</Airy>
-                  <Airy>หมา</Airy>
+                  <Airy>ขอ</Airy>
+                  <Airy>สอ</Airy>
+                  <Airy>หอ</Airy>
                   <Airy>ถู</Airy>
                   <Airy>หู</Airy>
+                  <Airy>หมา</Airy>
+                  <Airy>หนี</Airy>
+                  <Airy>หยา</Airy>
+                  <Airy>หมอ</Airy>
+                  <Airy>หนอ</Airy>
+                  <Airy>สา</Airy>
+                  <Airy>หยอ</Airy>
+                  <Airy>หมี</Airy>
+                  <Airy>หวี</Airy>
+                  <Airy>หยี</Airy>
                   <Airy>หมู</Airy>
                   <Airy>หนู</Airy>
                   <Airy>หวู</Airy>
                   <Airy>หยู</Airy>
-                  <Airy>ขอ</Airy>
-                  <Airy>สอ</Airy>
-                  <Airy>หอ</Airy>
-                  <Airy>หมอ</Airy>
-                  <Airy>หนอ</Airy>
-                  <Airy>หยอ</Airy>
-                  <Airy>หนี</Airy>
-                  <Airy>หมี</Airy>
-                  <Airy>สี</Airy>
-                  <Airy>หวี</Airy>
-                  <Airy>หยี</Airy>
                 </Thai>
               </Big>
             </Voiced>
@@ -261,7 +259,6 @@ function App() {
                   <Airy>ขาม</Airy>
                   <Airy>ถาว</Airy>
                   <Airy>สาย</Airy>
-                  <Airy>หาน</Airy>
                   <Airy>ถาย</Airy>
                   <Airy>หาย</Airy>
                   <Airy>ผอม</Airy>
@@ -269,13 +266,9 @@ function App() {
                   <Airy>ถอย</Airy>
                   <Airy>สอน</Airy>
                   <Airy>หอย</Airy>
-                  <Airy>ถูม</Airy>
+                  <Airy>ถูน</Airy>
                   <Airy>สูน</Airy>
-                  <Airy>ขูน</Airy>
-                  <Airy>หูม</Airy>
-                  <Airy>ผีน</Airy>
-                  <Airy>หนีม</Airy>
-                  <Airy>หวีม</Airy>
+                  <Airy>หาน</Airy>
                 </Thai>
               </Big>
             </Voiced>
@@ -287,7 +280,7 @@ function App() {
 
         <Exercise>
           <ExerciseHead>
-            3. Прослушайте и повторяйте за диктором слоги с гласной [и:].
+            3. Прослушайте и повторяйте за диктором слоги с гласной <Script>и:</Script>.
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="05-phii-khii-thii.mp3">
@@ -326,15 +319,15 @@ function App() {
               <Big>
                 <Thai>
                   <Nobr><Airy>กา – คา</Airy></Nobr>
-                  <Nobr><Airy>กาย – คาย</Airy></Nobr>
-                  <Nobr><Airy>ตาว – ทาว</Airy></Nobr>
-                  <Nobr><Airy>ปาว – พาว</Airy></Nobr>
                   <Nobr><Airy>ตี – ที</Airy></Nobr>
                   <Nobr><Airy>ปอ – พอ</Airy></Nobr>
-                  <Nobr><Airy>กอย – คอย</Airy></Nobr>
                   <Nobr><Airy>ตู – ทู</Airy></Nobr>
                   <Nobr><Airy>ปี – พี</Airy></Nobr>
+                  <Nobr><Airy>กาย – คาย</Airy></Nobr>
+                  <Nobr><Airy>ปาว  – พาว</Airy></Nobr>
                   <Nobr><Airy>ปูม – พูม</Airy></Nobr>
+                  <Nobr><Airy>ตาว – ทาว</Airy></Nobr>
+                  <Nobr><Airy>กอย – คอย</Airy></Nobr>
                 </Thai>
               </Big>
             </Voiced>
@@ -354,17 +347,17 @@ function App() {
                 <Thai>
                   <Nobr><Airy>พี – ผี</Airy></Nobr>
                   <Nobr><Airy>คา – ขา</Airy></Nobr>
+                  <Nobr><Airy>ที – ถี</Airy></Nobr>
                   <Nobr><Airy>ซา – สา</Airy></Nobr>
-                  <Nobr><Airy>ฮา – หา</Airy></Nobr>
+                  <Nobr><Airy>ฮา  – หา</Airy></Nobr>
+                  <Nobr><Airy>ยู  – หยู</Airy></Nobr>
+                  <Nobr><Airy>มี – หมี</Airy></Nobr>
                   <Nobr><Airy>วา – หวา</Airy></Nobr>
-                  <Nobr><Airy>ทาว – ถาว</Airy></Nobr>
                   <Nobr><Airy>นาว – หนาว</Airy></Nobr>
                   <Nobr><Airy>ยอม – หยอม</Airy></Nobr>
-                  <Nobr><Airy>คอม – ขอม</Airy></Nobr>
-                  <Nobr><Airy>ซอย –สอย</Airy></Nobr>
-                  <Nobr><Airy>ที – ถี</Airy></Nobr>
-                  <Nobr><Airy>มี – หมี</Airy></Nobr>
-                  <Nobr><Airy>ยู – หยู</Airy></Nobr>
+                  <Nobr><Airy>คอม - ขอม</Airy></Nobr>
+                  <Nobr><Airy>ซอย -สอย</Airy></Nobr>
+                  <Nobr><Airy>ทาว – ถาว</Airy></Nobr>
                 </Thai>
               </Big>
             </Voiced>
@@ -383,18 +376,18 @@ function App() {
               <Big>
                 <Thai>
                   <Nobr><Airy>ผา – พา</Airy></Nobr>
-                  <Nobr><Airy>ถาว – ทาว</Airy></Nobr>
-                  <Nobr><Airy>หวาน – วาน</Airy></Nobr>
-                  <Nobr><Airy>หา – ฮา</Airy></Nobr>
-                  <Nobr><Airy>นาย – หนาย</Airy></Nobr>
                   <Nobr><Airy>ขอ – คอ</Airy></Nobr>
-                  <Nobr><Airy>หยอ – ยอ</Airy></Nobr>
-                  <Nobr><Airy>ขอม – คอม</Airy></Nobr>
-                  <Nobr><Airy>สอย – ซอย</Airy></Nobr>
                   <Nobr><Airy>ถี – ที</Airy></Nobr>
-                  <Nobr><Airy>หมี – มี</Airy></Nobr>
                   <Nobr><Airy>สู – ซู</Airy></Nobr>
-                  <Nobr><Airy>หนู – นู</Airy></Nobr>
+                  <Nobr><Airy>หา – ฮา</Airy></Nobr>
+                  <Nobr><Airy>ขอม – คอม</Airy></Nobr>
+                  <Nobr><Airy>ถาว – ทาว</Airy></Nobr>
+                  <Nobr><Airy>สอย – ซอย</Airy></Nobr>
+                  <Nobr><Airy>หาย – ฮาย</Airy></Nobr>
+                  <Nobr><Airy>หนา – นา</Airy></Nobr>
+                  <Nobr><Airy>หมี – มี</Airy></Nobr>
+                  <Nobr><Airy>หวาน  – วาน</Airy></Nobr>
+                  <Nobr><Airy>หยอ – ยอ</Airy></Nobr>
                 </Thai>
               </Big>
             </Voiced>
