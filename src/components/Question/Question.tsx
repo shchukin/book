@@ -69,6 +69,7 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
             type="text"
             value={userAnswer}
             onChange={handleInputChange}
+            placeholder="???"
           />
         </>
       )}
