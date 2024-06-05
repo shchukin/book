@@ -12,8 +12,30 @@ import Airy from "./components/Airy/Airy.tsx";
 import Nobr from "./components/Nobr/Nobr.tsx";
 import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
+import Question from "./components/Question/Question.tsx";
 
 function App() {
+
+  const exercises = [
+    {
+      question: 'Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.',
+      type: 'radio',
+      correctAnswer: 'придыхательная',
+      options: ['придыхательная', 'не придыхательная']
+    },
+    {
+      question: 'Определите, каким тоном произносится слог',
+      type: 'radio',
+      correctAnswer: 'высокий',
+      options: ['ровный', 'низкий', 'восходящий', 'высокий', 'падающий']
+    },
+    {
+      question: 'Введите строку не более 10 символов',
+      type: 'text',
+      correctAnswer: 'пример',
+      maxLength: 10
+    }
+  ];
 
   return (
     <>
@@ -324,7 +346,7 @@ function App() {
                   <Nobr><Airy>ตู – ทู</Airy></Nobr>
                   <Nobr><Airy>ปี – พี</Airy></Nobr>
                   <Nobr><Airy>กาย – คาย</Airy></Nobr>
-                  <Nobr><Airy>ปาว  – พาว</Airy></Nobr>
+                  <Nobr><Airy>ปาว – พาว</Airy></Nobr>
                   <Nobr><Airy>ปูม – พูม</Airy></Nobr>
                   <Nobr><Airy>ตาว – ทาว</Airy></Nobr>
                   <Nobr><Airy>กอย – คอย</Airy></Nobr>
@@ -349,8 +371,8 @@ function App() {
                   <Nobr><Airy>คา – ขา</Airy></Nobr>
                   <Nobr><Airy>ที – ถี</Airy></Nobr>
                   <Nobr><Airy>ซา – สา</Airy></Nobr>
-                  <Nobr><Airy>ฮา  – หา</Airy></Nobr>
-                  <Nobr><Airy>ยู  – หยู</Airy></Nobr>
+                  <Nobr><Airy>ฮา – หา</Airy></Nobr>
+                  <Nobr><Airy>ยู – หยู</Airy></Nobr>
                   <Nobr><Airy>มี – หมี</Airy></Nobr>
                   <Nobr><Airy>วา – หวา</Airy></Nobr>
                   <Nobr><Airy>นาว – หนาว</Airy></Nobr>
@@ -386,7 +408,7 @@ function App() {
                   <Nobr><Airy>หาย – ฮาย</Airy></Nobr>
                   <Nobr><Airy>หนา – นา</Airy></Nobr>
                   <Nobr><Airy>หมี – มี</Airy></Nobr>
-                  <Nobr><Airy>หวาน  – วาน</Airy></Nobr>
+                  <Nobr><Airy>หวาน – วาน</Airy></Nobr>
                   <Nobr><Airy>หยอ – ยอ</Airy></Nobr>
                 </Thai>
               </Big>
@@ -398,9 +420,115 @@ function App() {
           Упражнения на подстановку
         </Heading>
 
-        <p>7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:</p>
+        <Exercise>
+          <ExerciseHead>
+            7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:
+          </ExerciseHead>
+          <ExerciseEntry>
+            พอม
+            คา
+            ทู
+            ซอน
+            ฮอ
+            ยี
+            มา
+            วี
+            นา
+            ทาม
+            วาน
+            คาย
+            มี
+            ทอน
+            ฮาย
+            พี
+            ยาม
+            นู
+            ซี
+            ฮู
+            นอน
+            มาย
 
-        พอม คา ทู ซอน ฮอ ยี มา วี นา ทาม วาน คาย มี ทอน ฮาย พี ยาม นู ซี ฮู นอน มาย
+            <Question type={} correctAnswer={}>
+              <div>
+                foo
+              </div>
+              <div>
+                %input%
+              </div>
+              <div>
+                bar
+              </div>
+              <div>
+                %checkAnswer%
+              </div>
+            </Question>
+
+            <hr/>
+
+            {exercises.map((exercise, index) => (
+              <Question
+                key={index}
+                question={exercise.question}
+                type={exercise.type as 'radio' | 'text'}
+                correctAnswer={exercise.correctAnswer}
+                options={exercise.options}
+                maxLength={exercise.maxLength}
+              />
+            ))}
+
+          </ExerciseEntry>
+        </Exercise>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <Exercise>
+          <ExerciseHead>
+            7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:
+          </ExerciseHead>
+          <ExerciseEntry>
+            พอม
+            คา
+            ทู
+            ซอน
+            ฮอ
+            ยี
+            มา
+            วี
+            นา
+            ทาม
+            วาน
+            คาย
+            มี
+            ทอน
+            ฮาย
+            พี
+            ยาม
+            นู
+            ซี
+            ฮู
+            นอน
+            มาย
+
+            <hr/>
+
+            {exercise7.map((exercise, index) => (
+              <Question
+                key={index}
+                question={exercise.question}
+                type={exercise.type as 'radio' | 'text'}
+                correctAnswer={exercise.correctAnswer}
+                options={exercise.options}
+                maxLength={exercise.maxLength}
+              />
+            ))}
+
+          </ExerciseEntry>
+        </Exercise>
+
+        <p></p>
 
 
         <p>8. Преобразуйте слог с восходящим тоном (ˇ) в слог с ровным тоном:</p>
