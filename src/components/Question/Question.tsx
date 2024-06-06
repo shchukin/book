@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
-import './Question.css'
-import Big from "../Big/Big.tsx";
-import Thai from "../Thai/Thai.tsx";
+import React, { useState } from 'react';
+import './Question.css';
+import Big from "../Big/Big";
+import Thai from "../Thai/Thai";
+import {generateRandomString} from "../../utils.ts";
 
 type QuestionProps = {
   question: string;
@@ -11,11 +12,13 @@ type QuestionProps = {
   maxLength?: number;
 };
 
-const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, options, maxLength}) => {
+const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, options, maxLength }) => {
   const [selectedOption, setSelectedOption] = useState<string>('');
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
+  const radioName = generateRandomString(16); // Generate a random string for the radio button name
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
@@ -46,19 +49,19 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
       {type === 'radio' && (
         <>
           <Big><Thai>{question}</Thai></Big>
-          {options && options.map((option, index) => (
-            <div key={index}>
+          {options && options.map((option, optionIndex) => (
+            <label key={optionIndex}>
               <input
                 type="radio"
-                id={option}
-                name={`answer-${index}`}
+                name={`question-${radioName}`} // Use the generated random string for the name
                 value={option}
                 checked={selectedOption === option}
                 onChange={handleOptionChange}
               />
-              <label htmlFor={option}>{option}</label>
-            </div>
+              {option}
+            </label>
           ))}
+          {isCorrect ? '1': '0'}
         </>
       )}
       {type === 'text' && (
