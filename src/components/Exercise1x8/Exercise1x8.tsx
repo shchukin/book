@@ -1,6 +1,7 @@
 import './Exercise1x8.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
+import GridType2 from "../GridType2/GridType2.tsx";
 
 function Exercise1x8() {
 
@@ -11,19 +12,20 @@ function Exercise1x8() {
   return (
     <Exercise>
       <ExerciseHead>
-        8. Преобразуйте слог с восходящим тоном (ˇ) в слог с ровным тоном:
+        10. Преобразуйте слог с восходящим тоном (ˇ) в слог с ровным тоном:
       </ExerciseHead>
       <ExerciseEntry>
-
-        {questionsList.map((question, index) => (
-          <Question
-            key={index}
-            question={question}
-            type="text"
-            correctAnswer={answersList[index]}
-            maxLength={4}
-          />
-        ))}
+        <GridType2>
+          {questionsList.map((question, index) => (
+            <Question
+              key={index}
+              question={question}
+              type="text"
+              correctAnswer={answersList[index]}
+              maxLength={4}
+            />
+          ))}
+        </GridType2>
 
       </ExerciseEntry>
     </Exercise>

@@ -5,6 +5,7 @@ import TypingGridType1 from "../TypingGridType1/TypingGridType1.tsx";
 import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
 import Airy from "../Airy/Airy.tsx";
+import Thai from "../Thai/Thai.tsx";
 
 function Exercise1Keys() {
   const questions = [
@@ -19,24 +20,24 @@ function Exercise1Keys() {
         7. Наберите текст. Значки на клавиатуре:
         <div>
           <Big>
-            <Airy>ผ: <Key>z</Key></Airy>
-            <Airy>ข: <Key>-</Key></Airy>
-            <Airy>ถ: <Key>5</Key></Airy>
-            <Airy>ส: <Key>l</Key></Airy>
-            <Airy>ห: <Key>s</Key></Airy>
-            <Airy>พ: <Key>r</Key></Airy>
-            <Airy>พ: <Key>r</Key></Airy>
-            <Airy>ค: <Key>8</Key></Airy>
-            <Airy>ท: <Key>m</Key></Airy>
-            <Airy>ซ: <Key>:</Key></Airy>
-            <Airy>ม: <Key>,</Key></Airy>
-            <Airy>น: <Key>o</Key></Airy>
-            <Airy>ย: <Key>p</Key></Airy>
-            <Airy>ว: <Key>;</Key></Airy>
-            <Airy>ฮ: <Key>V</Key></Airy>
-            <Airy>ก: <Key>d</Key></Airy>
-            <Airy>ป: <Key>x</Key></Airy>
-            <Airy>ต: <Key>9</Key></Airy>
+            <Airy><Thai>ผ</Thai>: <Key>z</Key></Airy>
+            <Airy><Thai>ข</Thai>: <Key>-</Key></Airy>
+            <Airy><Thai>ถ</Thai>: <Key>5</Key></Airy>
+            <Airy><Thai>ส</Thai>: <Key>l</Key></Airy>
+            <Airy><Thai>ห</Thai>: <Key>s</Key></Airy>
+            <Airy><Thai>พ</Thai>: <Key>r</Key></Airy>
+            <Airy><Thai>พ</Thai>: <Key>r</Key></Airy>
+            <Airy><Thai>ค</Thai>: <Key>8</Key></Airy>
+            <Airy><Thai>ท</Thai>: <Key>m</Key></Airy>
+            <Airy><Thai>ซ</Thai>: <Key>:</Key></Airy>
+            <Airy><Thai>ม</Thai>: <Key>,</Key></Airy>
+            <Airy><Thai>น</Thai>: <Key>o</Key></Airy>
+            <Airy><Thai>ย</Thai>: <Key>p</Key></Airy>
+            <Airy><Thai>ว</Thai>: <Key>;</Key></Airy>
+            <Airy><Thai>ฮ</Thai>: <Key>V</Key></Airy>
+            <Airy><Thai>ก</Thai>: <Key>d</Key></Airy>
+            <Airy><Thai>ป</Thai>: <Key>x</Key></Airy>
+            <Airy><Thai>ต</Thai>: <Key>9</Key></Airy>
           </Big>
         </div>
       </ExerciseHead>
