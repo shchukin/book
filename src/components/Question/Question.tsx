@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './Question.css';
 import Big from "../Big/Big";
 import Thai from "../Thai/Thai";
-import {generateRandomString} from "../../utils.ts";
+import { generateRandomString } from "../../utils.ts";
 
 type QuestionProps = {
   question: string;
-  type: 'radio' | 'text';
+  type: 'radio' | 'text' | 'typing';
   correctAnswer: string;
   options?: string[];
   maxLength?: number;
@@ -35,7 +35,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
   const checkAnswer = () => {
     if (type === 'radio') {
       setIsCorrect(selectedOption === correctAnswer);
-    } else if (type === 'text') {
+    } else {
       setIsCorrect(userAnswer === correctAnswer);
     }
   };
@@ -61,7 +61,11 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
               {option}
             </label>
           ))}
-          {isCorrect ? '1': '0'}
+          {isCorrect ? '1' : '0'}
+          <div className="question__answer">
+            {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
+            {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
+          </div>
         </>
       )}
       {type === 'text' && (
@@ -77,12 +81,26 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
             placeholder="???"
           />
           <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
+          <div className="question__answer">
+            {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
+            {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
+          </div>
         </div>
       )}
-      <div className="question__answer">
-        {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
-        {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
-      </div>
+      {type === 'typing' && (
+        <div className="question__typing">
+          <div className="question__title">
+            <Big><Thai>{question}</Thai> –&nbsp;</Big>
+          </div>
+          <input
+            className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : ''}${isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
+            type="text"
+            value={userAnswer}
+            onChange={handleInputChange}
+            placeholder="Введите ответ"
+          />
+        </div>
+      )}
     </div>
   );
 };

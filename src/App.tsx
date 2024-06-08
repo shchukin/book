@@ -15,6 +15,7 @@ import Heading from "./components/Heading/Heading.tsx";
 import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
 import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
 import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
+import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
 
 function App() {
 
@@ -396,6 +397,16 @@ function App() {
             </Voiced>
           </ExerciseEntry>
         </Exercise>
+
+        <br/>
+        <br/>
+
+        <Heading level={2}>
+          Упражнения на изучение клавиатуры
+        </Heading>
+
+        <Exercise1Keys/>
+
 
         <br/>
         <br/>
