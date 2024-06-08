@@ -2,6 +2,9 @@ import './Exercise1Keys.css';
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import TypingGridType1 from "../TypingGridType1/TypingGridType1.tsx";
+import Key from "../Key/Key.tsx";
+import Big from "../Big/Big.tsx";
+import Airy from "../Airy/Airy.tsx";
 
 function Exercise1Keys() {
   const questionsList = [
@@ -19,7 +22,29 @@ function Exercise1Keys() {
   return (
     <Exercise>
       <ExerciseHead>
-        7. Наберите текст
+        7. Наберите текст. Значки на клавиатуре:
+        <div>
+          <Big>
+            <Airy>ผ: <Key>z</Key></Airy>
+            <Airy>ข: <Key>-</Key></Airy>
+            <Airy>ถ: <Key>5</Key></Airy>
+            <Airy>ส: <Key>l</Key></Airy>
+            <Airy>ห: <Key>s</Key></Airy>
+            <Airy>พ: <Key>r</Key></Airy>
+            <Airy>พ: <Key>r</Key></Airy>
+            <Airy>ค: <Key>8</Key></Airy>
+            <Airy>ท: <Key>m</Key></Airy>
+            <Airy>ซ: <Key>:</Key></Airy>
+            <Airy>ม: <Key>,</Key></Airy>
+            <Airy>น: <Key>o</Key></Airy>
+            <Airy>ย: <Key>p</Key></Airy>
+            <Airy>ว: <Key>;</Key></Airy>
+            <Airy>ฮ: <Key>V</Key></Airy>
+            <Airy>ก: <Key>d</Key></Airy>
+            <Airy>ป: <Key>x</Key></Airy>
+            <Airy>ต: <Key>9</Key></Airy>
+          </Big>
+        </div>
       </ExerciseHead>
       <ExerciseEntry>
         <TypingGridType1>
