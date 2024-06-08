@@ -88,17 +88,16 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
         </div>
       )}
       {type === 'typing' && (
-        <div className="question__typing">
-          <div className="question__title">
-            <Big><Thai>{question}</Thai> –&nbsp;</Big>
-          </div>
+        <div className="question__asking">
           <input
             className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : ''}${isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
             type="text"
             value={userAnswer}
             onChange={handleInputChange}
-            placeholder="Введите ответ"
           />
+          <div className="question__text-input question__text-input--pattern">
+            {correctAnswer}
+          </div>
         </div>
       )}
     </div>

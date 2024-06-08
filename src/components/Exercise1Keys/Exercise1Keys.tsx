@@ -1,6 +1,7 @@
 import './Exercise1Keys.css';
-import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
+import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
+import TypingGridType1 from "../TypingGridType1/TypingGridType1.tsx";
 
 function Exercise1Keys() {
   const questionsList = [
@@ -18,17 +19,19 @@ function Exercise1Keys() {
   return (
     <Exercise>
       <ExerciseHead>
-        7. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:
+        7. Наберите текст
       </ExerciseHead>
       <ExerciseEntry>
-        {questionsList.map((question, index) => (
-          <Question
-            key={index}
-            type="typing"
-            question={questionsList[index]}
-            correctAnswer={answersList[index]}
-          />
-        ))}
+        <TypingGridType1>
+          {questionsList.map((question, index) => (
+            <Question
+              key={index}
+              type="typing"
+              question={questionsList[index]}
+              correctAnswer={answersList[index]}
+            />
+          ))}
+        </TypingGridType1>
       </ExerciseEntry>
     </Exercise>
   );

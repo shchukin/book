@@ -21,6 +21,7 @@
     /*--disabled-color: #999999;*/
     --error: #FF0033;
     --success: #00BE00;
+    --input-short-width: 106px;
 }
 
 @media (350px <= width < 600px) {
