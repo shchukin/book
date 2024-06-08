@@ -52,7 +52,7 @@ function Exercise1Keys() {
             <Question
               key={index}
               type="typing"
-              question={questionsList[index]}
+              question={question[index]}
               correctAnswer={answersList[index]}
             />
           ))}
