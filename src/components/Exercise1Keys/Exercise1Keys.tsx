@@ -7,13 +7,7 @@ import Big from "../Big/Big.tsx";
 import Airy from "../Airy/Airy.tsx";
 
 function Exercise1Keys() {
-  const questionsList = [
-    'ผ ผ ผ ผ', 'ข ข ข ข', 'ถ ถ ถ ถ', 'ส ส ส ส', 'ห ห ห ห', 'พ พ พ พ', 'ค ค ค ค', 'ท ท ท ท',
-    'ซ ซ ซ ซ', 'ม ม ม ม', 'น น น น', 'ย ย ย ย', 'ว ว ว ว', 'ฮ ฮ ฮ ฮ', 'ก ก ก ก', 'ป ป ป ป',
-    'ต ต ต ต'
-  ];
-
-  const answersList = [
+  const questions = [
     'ผ ผ ผ ผ', 'ข ข ข ข', 'ถ ถ ถ ถ', 'ส ส ส ส', 'ห ห ห ห', 'พ พ พ พ', 'ค ค ค ค', 'ท ท ท ท',
     'ซ ซ ซ ซ', 'ม ม ม ม', 'น น น น', 'ย ย ย ย', 'ว ว ว ว', 'ฮ ฮ ฮ ฮ', 'ก ก ก ก', 'ป ป ป ป',
     'ต ต ต ต'
@@ -48,12 +42,12 @@ function Exercise1Keys() {
       </ExerciseHead>
       <ExerciseEntry>
         <TypingGridType1>
-          {questionsList.map((question, index) => (
+          {questions.map((question, index) => (
             <Question
               key={index}
               type="typing"
-              question={question[index]}
-              correctAnswer={answersList[index]}
+              question={question}
+              correctAnswer={question}
             />
           ))}
         </TypingGridType1>
