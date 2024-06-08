@@ -1,7 +1,7 @@
 import './Exercise1KeysWords.css';
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
-import TypingGridType1 from "../TypingGridType1/TypingGridType1.tsx";
+import GridType1 from "../GridType1/GridType1.tsx";
 import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
 import Airy from "../Airy/Airy.tsx";
@@ -27,7 +27,7 @@ function Exercise1KeysWords() {
         </div>
       </ExerciseHead>
       <ExerciseEntry>
-        <TypingGridType1>
+        <GridType1>
           {questions.map((question, index) => (
             <Question
               key={index}
@@ -36,7 +36,7 @@ function Exercise1KeysWords() {
               correctAnswer={question}
             />
           ))}
-        </TypingGridType1>
+        </GridType1>
       </ExerciseEntry>
     </Exercise>
   );
