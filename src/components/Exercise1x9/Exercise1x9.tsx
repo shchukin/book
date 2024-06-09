@@ -27,7 +27,7 @@ function Exercise1x9() {
           <Question
             key={index}
             type="radio"
-            question={questionsList[index]}
+            question={question}
             correctAnswer={answersList[index]}
             options={options}
           />
