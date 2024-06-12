@@ -24,6 +24,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null); // State for text and typing types
 
   const radioName = generateRandomString(16); // Generate a random string for the radio button name
 
@@ -47,37 +48,48 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
     setUserAnswer(value);
   };
 
+  const checkAnswer = () => {
+    setIsCorrect(userAnswer === correctAnswer);
+  };
+
   const toggleAnswer = () => {
     setShowAnswer(!showAnswer);
-    setSelectedOptions(prevOptions =>
-      prevOptions.map(option =>
-        option.value === correctAnswer
-          ? { ...option, isCorrect: true }
-          : option
-      )
-    );
+    if (type === 'radio') {
+      setSelectedOptions(prevOptions =>
+        prevOptions.map(option =>
+          option.value === correctAnswer
+            ? { ...option, isCorrect: true }
+            : option
+        )
+      );
+    }
   };
 
   return (
     <div className="question">
       {type === 'radio' && (
         <>
-          <Big><Thai>{question}</Thai></Big>
-          {selectedOptions.map((option, optionIndex) => (
-            <label
-              key={optionIndex}
-              className={`radio-label ${option.isCorrect === null ? '' : option.isCorrect ? 'correct' : 'incorrect'}`}
-            >
-              <input
-                type="radio"
-                name={`question-${radioName}`} // Use the generated random string for the name
-                value={option.value}
-                checked={selectedOption === option.value}
-                onChange={handleOptionChange}
-              />
-              {option.value}
-            </label>
-          ))}
+          <div className="question__radio-asking">
+            <Big><Thai>{question}</Thai></Big>
+          </div>
+          <div className="question__radio-answers">
+            {selectedOptions.map((option, optionIndex) => (
+              <label
+                key={optionIndex}
+                className={`question__radio ${option.isCorrect === null ? '' : option.isCorrect ? 'question__radio--correct' : 'question__radio--error'}`}
+              >
+                <input
+                  className="question__radio-button"
+                  type="radio"
+                  name={`question-${radioName}`} // Use the generated random string for the name
+                  value={option.value}
+                  checked={selectedOption === option.value}
+                  onChange={handleOptionChange}
+                />
+                {option.value}
+              </label>
+            ))}
+          </div>
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
           </div>
@@ -89,13 +101,13 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
             <Big><Thai>{question}</Thai> –&nbsp;</Big>
           </div>
           <input
-            className={`question__text-input${userAnswer === correctAnswer ? ' question__text-input--success' : userAnswer && ' question__text-input--error'}`}
+            className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
             type="text"
             value={userAnswer}
             onChange={handleInputChange}
             placeholder="???"
           />
-          <button className="question__check-handler" onClick={() => setUserAnswer(userAnswer)}>Проверить</button>
+          <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
             {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
@@ -105,7 +117,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
       {type === 'typing' && (
         <div className="question__asking">
           <input
-            className={`question__text-input${userAnswer === correctAnswer ? ' question__text-input--success' : userAnswer && ' question__text-input--error'}`}
+            className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
             type="text"
             value={userAnswer}
             onChange={handleInputChange}

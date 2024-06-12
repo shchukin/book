@@ -272,33 +272,44 @@
 
 
 
-.radio-label {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 4px;
+.question__radio-asking {
+    width: 100px;
+    padding-right: 20px;
+    text-align: right;
 }
 
-.radio-label.correct {
-    background-color: #d4edda; /* Light green */
-    color: #155724; /* Dark green */
-    border: 1px solid #c3e6cb; /* Green border */
+.question__radio-answers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
 }
 
-.radio-label.incorrect {
-    background-color: #f8d7da; /* Light red */
-    color: #721c24; /* Dark red */
-    border: 1px solid #f5c6cb; /* Red border */
+.question__radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 28px 6px 4px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+    border-radius: 3px;
+    user-select: none;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-.question__text-input--success {
-    background-color: #d4edda; /* Light green */
-    color: #155724; /* Dark green */
-    border: 1px solid #c3e6cb; /* Green border */
+.question__radio--correct {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2My4wNTQgNDQyLjI5TDMwNS41MjcgNTg0Ljc1N0w2MjMuNjE3IDI2Ni42NjciIHN0cm9rZT0iIzAwQkUwMCIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+    background-color: var(--success-light-background);
+    box-shadow: 0 0 0 1px var(--success);
 }
 
-.question__text-input--error {
-    background-color: #f8d7da; /* Light red */
-    color: #721c24; /* Dark red */
-    border: 1px solid #f5c6cb; /* Red border */
+.question__radio--error {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI0MSA1NTkuMDlMNTU5LjA5IDI0MSIgc3Ryb2tlPSIjRkYwMDMzIiBzdHJva2Utd2lkdGg9IjgzLjMzMzMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDEgMjQxTDU1OS4wOSA1NTkuMDkiIHN0cm9rZT0iI0ZGMDAzMyIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+    background-color: var(--error-light-background);
+    box-shadow: 0 0 0 1px var(--error); /* Red border */
 }
+    .question__radio-button {
+
+    }
