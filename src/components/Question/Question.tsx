@@ -66,9 +66,9 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
   };
 
   return (
-    <div className="question">
+    <>
       {type === 'radio' && (
-        <>
+        <div className="question question--radio">
           <div className="question__radio-asking">
             <Big><Thai>{question}</Thai></Big>
           </div>
@@ -93,41 +93,45 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
           </div>
-        </>
+        </div>
       )}
       {type === 'text' && (
-        <div className="question__asking">
-          <div className="question__title">
-            <Big><Thai>{question}</Thai> –&nbsp;</Big>
-          </div>
-          <input
-            className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
-            type="text"
-            value={userAnswer}
-            onChange={handleInputChange}
-            placeholder="???"
-          />
-          <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
-          <div className="question__answer">
-            {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
-            {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
+        <div className="question question--text">
+          <div className="question__asking">
+            <div className="question__title">
+              <Big><Thai>{question}</Thai> –&nbsp;</Big>
+            </div>
+            <input
+              className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
+              type="text"
+              value={userAnswer}
+              onChange={handleInputChange}
+              placeholder="???"
+            />
+            <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
+            <div className="question__answer">
+              {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
+              {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
+            </div>
           </div>
         </div>
       )}
       {type === 'typing' && (
-        <div className="question__asking">
-          <input
-            className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
-            type="text"
-            value={userAnswer}
-            onChange={handleInputChange}
-          />
-          <div className="question__text-input question__text-input--pattern">
-            {correctAnswer}
+        <div className="question question--typing">
+          <div className="question__asking">
+            <input
+              className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
+              type="text"
+              value={userAnswer}
+              onChange={handleInputChange}
+            />
+            <div className="question__text-input question__text-input--pattern">
+              {correctAnswer}
+            </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

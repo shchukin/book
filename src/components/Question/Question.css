@@ -272,6 +272,15 @@
 
 
 
+.question--radio {
+
+}
+
+.question--radio + .question--radio {
+    margin-top: 8px;
+}
+
+
 .question__radio-asking {
     width: 100px;
     padding-right: 20px;
