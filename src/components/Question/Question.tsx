@@ -21,7 +21,9 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
   const radioName = generateRandomString(16); // Generate a random string for the radio button name
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedOption(event.target.value);
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+    setIsCorrect(selectedValue === correctAnswer);
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,14 +32,6 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
       return;
     }
     setUserAnswer(value);
-  };
-
-  const checkAnswer = () => {
-    if (type === 'radio') {
-      setIsCorrect(selectedOption === correctAnswer);
-    } else {
-      setIsCorrect(userAnswer === correctAnswer);
-    }
   };
 
   const toggleAnswer = () => {
@@ -61,7 +55,9 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
               {option}
             </label>
           ))}
-          {isCorrect ? '1' : '0'}
+          {isCorrect !== null && (
+            <div>{isCorrect ? 'Верно' : 'Неверно'}</div>
+          )}
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
             {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
@@ -80,7 +76,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
             onChange={handleInputChange}
             placeholder="???"
           />
-          <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
+          <button className="question__check-handler" onClick={() => setIsCorrect(userAnswer === correctAnswer)}>Проверить</button>
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
             {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
