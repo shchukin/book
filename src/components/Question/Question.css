@@ -269,3 +269,37 @@
                 /*transition: text-decoration-color var(--transition-hover);*/
             }
 }
+
+
+
+
+
+
+.radio-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio-label.correct {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    border-color: #c3e6cb; /* Green border */
+}
+
+.radio-label.incorrect {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    border-color: #f5c6cb; /* Red border */
+}
+
+.question__text-input--success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    border-color: #c3e6cb; /* Green border */
+}
+
+.question__text-input--error {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    border-color: #f5c6cb; /* Red border */
+}

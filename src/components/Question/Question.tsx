@@ -44,7 +44,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
         <>
           <Big><Thai>{question}</Thai></Big>
           {options && options.map((option, optionIndex) => (
-            <label key={optionIndex}>
+            <label key={optionIndex} className={`radio-label ${selectedOption === option ? (isCorrect ? 'correct' : 'incorrect') : ''}`}>
               <input
                 type="radio"
                 name={`question-${radioName}`} // Use the generated random string for the name
@@ -55,9 +55,6 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
               {option}
             </label>
           ))}
-          {isCorrect !== null && (
-            <div>{isCorrect ? 'Верно' : 'Неверно'}</div>
-          )}
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
             {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
