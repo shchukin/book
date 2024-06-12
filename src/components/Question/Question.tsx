@@ -49,6 +49,13 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
 
   const toggleAnswer = () => {
     setShowAnswer(!showAnswer);
+    setSelectedOptions(prevOptions =>
+      prevOptions.map(option =>
+        option.value === correctAnswer
+          ? { ...option, isCorrect: true }
+          : option
+      )
+    );
   };
 
   return (
@@ -73,7 +80,6 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
           ))}
           <div className="question__answer">
             {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
-            {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
           </div>
         </>
       )}
