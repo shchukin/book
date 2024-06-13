@@ -1,9 +1,9 @@
-import './Exercise1x8.css'
+import './Exercise1x10.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
 
-function Exercise1x8() {
+function Exercise1x10() {
 
   const questionsList = ['ผี', 'ขาว', 'สอย', 'หนู', 'ขาย', 'หวาน', 'ขอ', 'ผาย', 'หมี', 'ถู', 'หยา', 'ถอน', 'หนาย', 'ถอน', 'หวาว', 'หนาม', 'ถี', 'หอย', 'หมา', 'ขาม'];
 
@@ -32,4 +32,4 @@ function Exercise1x8() {
   )
 }
 
-export default Exercise1x8;
+export default Exercise1x10;

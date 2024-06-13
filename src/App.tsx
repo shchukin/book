@@ -13,7 +13,7 @@ import Nobr from "./components/Nobr/Nobr.tsx";
 import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
-import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
+import Exercise1x10 from "./components/Exercise1x10/Exercise1x10.tsx";
 import Exercise1x11 from "./components/Exercise1x11/Exercise1x11.tsx";
 import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWords.tsx";
 import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
@@ -427,7 +427,7 @@ function App() {
         <br/>
         <br/>
 
-        <Exercise1x8/>
+        <Exercise1x10/>
 
         <br/>
         <br/>
