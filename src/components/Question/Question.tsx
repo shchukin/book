@@ -91,7 +91,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
             ))}
           </div>
           <div className="question__answer">
-            {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
+            <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>
           </div>
         </div>
       )}
