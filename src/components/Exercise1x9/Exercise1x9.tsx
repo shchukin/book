@@ -1,9 +1,9 @@
-import './Exercise1x7.css'
+import './Exercise1x9.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
 
-function Exercise1x7() {
+function Exercise1x9() {
 
   const questionsList = [
     'พอม', 'คา', 'ทู', 'ซอน', 'ฮอ', 'ยี', 'มา', 'วี', 'นา', 'ทาม', 'วาน', 'คาย', 'มี', 'ทอน', 'ฮาย', 'พี', 'ยาม', 'นู', 'ซี', 'ฮู', 'นอน', 'มาย'
@@ -16,7 +16,7 @@ function Exercise1x7() {
   return (
     <Exercise>
       <ExerciseHead>
-        9. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах:
+        9. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах. Напечатайте весь слог:
       </ExerciseHead>
       <ExerciseEntry>
         <GridType2>
@@ -35,4 +35,4 @@ function Exercise1x7() {
   )
 }
 
-export default Exercise1x7;
+export default Exercise1x9;

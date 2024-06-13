@@ -12,7 +12,7 @@ import Airy from "./components/Airy/Airy.tsx";
 import Nobr from "./components/Nobr/Nobr.tsx";
 import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
-import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
+import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
 import Exercise1x10 from "./components/Exercise1x10/Exercise1x10.tsx";
 import Exercise1x11 from "./components/Exercise1x11/Exercise1x11.tsx";
 import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWords.tsx";
@@ -422,7 +422,7 @@ function App() {
           Упражнения на подстановку
         </Heading>
 
-        <Exercise1x7/>
+        <Exercise1x9/>
 
         <br/>
         <br/>
