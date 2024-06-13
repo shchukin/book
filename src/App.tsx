@@ -14,7 +14,7 @@ import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
 import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
-import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
+import Exercise1x11 from "./components/Exercise1x11/Exercise1x11.tsx";
 import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWords.tsx";
 import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
 import Exercise1x12 from "./components/Exercise1x12/Exercise1x12.tsx";
@@ -436,7 +436,7 @@ function App() {
 
         <h2>Проверьте себя</h2>
 
-        <Exercise1x9/>
+        <Exercise1x11/>
 
         <br/>
         <br/>

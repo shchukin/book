@@ -1,8 +1,8 @@
-import './Exercise1x9.css'
+import './Exercise1x11.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 
-function Exercise1x9() {
+function Exercise1x11() {
 
   const questionsAndAnswers = [
     { question: 'คอย', answer: 'Придыхательная' },
@@ -45,4 +45,4 @@ function Exercise1x9() {
   )
 }
 
-export default Exercise1x9;
+export default Exercise1x11;
