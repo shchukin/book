@@ -1,9 +1,9 @@
-import './Exercise1x10.css'
+import './Exercise1x12.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
 
-function Exercise1x10() {
+function Exercise1x12() {
 
   const questionsAndAnswers = [
     { question: 'т/тха:м', answer: 'ทาม' },
@@ -42,4 +42,4 @@ function Exercise1x10() {
   );
 }
 
-export default Exercise1x10;
+export default Exercise1x12;
