@@ -2,15 +2,6 @@ import './Exercise1x9.css'
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 
-// Function to shuffle an array
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 function Exercise1x9() {
 
   const questionsAndAnswers = [
@@ -34,16 +25,13 @@ function Exercise1x9() {
     'Придыхательная', 'Нет'
   ];
 
-  // Shuffle questions and answers array
-  const shuffledQuestionsAndAnswers = shuffleArray(questionsAndAnswers);
-
   return (
     <Exercise>
       <ExerciseHead>
         11. Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.
       </ExerciseHead>
       <ExerciseEntry>
-        {shuffledQuestionsAndAnswers.map((item, index) => (
+        {questionsAndAnswers.map((item, index) => (
           <Question
             key={index}
             type="radio"
