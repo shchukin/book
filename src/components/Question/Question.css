@@ -306,15 +306,23 @@
     user-select: none;
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 }
 
-.question__radio--correct {
+.question__radio:hover {
+    background-color: #EEEEEE;
+    box-shadow: 0 0 0 1px #DDDDDD;
+}
+
+.question__radio--correct,
+.question__radio--correct:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2My4wNTQgNDQyLjI5TDMwNS41MjcgNTg0Ljc1N0w2MjMuNjE3IDI2Ni42NjciIHN0cm9rZT0iIzAwQkUwMCIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
     background-color: var(--success-light-background);
     box-shadow: 0 0 0 1px var(--success);
 }
 
-.question__radio--error {
+.question__radio--error,
+.question__radio--error:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI0MSA1NTkuMDlMNTU5LjA5IDI0MSIgc3Ryb2tlPSIjRkYwMDMzIiBzdHJva2Utd2lkdGg9IjgzLjMzMzMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDEgMjQxTDU1OS4wOSA1NTkuMDkiIHN0cm9rZT0iI0ZGMDAzMyIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
     background-color: var(--error-light-background);
     box-shadow: 0 0 0 1px var(--error); /* Red border */
