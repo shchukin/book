@@ -17,6 +17,7 @@ import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
 import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
 import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWords.tsx";
 import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
+import Exercise1x10 from "./components/Exercise1x10/Exercise1x10.tsx";
 
 function App() {
 
@@ -436,7 +437,10 @@ function App() {
 
         <Exercise1x9/>
 
-        Проверьте себя
+        <br/>
+        <br/>
+
+        <Exercise1x10/>
 
         Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.
 
