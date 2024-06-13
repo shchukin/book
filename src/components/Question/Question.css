@@ -2,13 +2,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
+    .question__audio {
+
+    }
+        .question__player {
+            vertical-align: top;
+        }
+
     .question__asking {
         display: flex;
         align-items: center;
         justify-content: center;
     }
         .question__title {
+            flex-shrink: 0;
             width: 120px;
             text-align: right;
             white-space: nowrap;
@@ -245,7 +254,6 @@
             justify-content: flex-end;
             width: 100%;
             height: 32px;
-            margin-left: 0;
             text-align: right;
             margin-right: 10px;
         }

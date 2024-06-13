@@ -10,6 +10,7 @@ type QuestionProps = {
   correctAnswer: string;
   options?: string[];
   maxLength?: number;
+  audio?: string;
 };
 
 type OptionStatus = {
@@ -17,7 +18,7 @@ type OptionStatus = {
   isCorrect: boolean | null;
 };
 
-const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, options, maxLength }) => {
+const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, options, maxLength, audio }) => {
   const [selectedOptions, setSelectedOptions] = useState<OptionStatus[]>(
     options?.map(option => ({ value: option, isCorrect: null })) || []
   );
@@ -97,8 +98,14 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
       )}
       {type === 'text' && (
         <div className="question question--text">
+          {
+            audio &&
+              <div className="question__audio">
+                <audio className="question__player" controls src={'/' + audio} preload="auto"></audio>
+              </div>
+          }
           <div className="question__asking">
-            <div className="question__title">
+          <div className="question__title">
               <Big><Thai>{question}</Thai> –&nbsp;</Big>
             </div>
             <input
