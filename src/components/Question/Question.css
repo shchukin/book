@@ -4,8 +4,17 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-    .question__audio {
 
+.question:has(.question__audio) {
+    margin-top: 30px;
+}
+
+.question:has(.question__audio):first-child {
+    margin-top: 0;
+}
+
+    .question__audio {
+        margin-bottom: 10px;
     }
         .question__player {
             vertical-align: top;
@@ -171,6 +180,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            flex-wrap: wrap;
         }
             .question__title {
                 width: 80px;
