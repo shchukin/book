@@ -1,6 +1,7 @@
 import './Sparse.css'
 import {ReactNode} from "react";
 
+// Основной компонент -- подходит для разреживания текстовых символов и строк разделённых пробелом.
 type SparseProps = {
   children: ReactNode
 }
@@ -14,23 +15,18 @@ function Sparse({children}: SparseProps) {
   )
 }
 
-type PairProps = {
+
+
+// Вспомогательный элемент на случай если внутри не просто текст, а теги/JSX
+// В этом случае то, что нужно разделить оборачиваем в <SparseItem>...</SparseItem>,
+// пробельчик добавляем конструкцией {' '} (иначе React удалит все пробелы между компонентами),
+// и внутри айтемов сбрасываем word-spacing, чтобы там работала любая другая разметка.
+
+type SparseItemProps = {
   children: ReactNode
 }
 
-
-// Пояснение {' '}
-//
-// Поскольку React удаляет все текстовые разделители между компонентами, вывод типа такого:
-// <Pair>...</Pair> <Pair>...</Pair> <Pair>...</Pair>
-// превращается в
-// <span className="Pair">...</span><span className="Pair">...</span><span className="Pair">...</span>
-// Пробелы между компонентами уничтожаются. А они критически важны. Во-первых для переноса
-// компонентов на новую строку (в Safari, например, это превращается в бесконечную линию).
-// Во-вторых для лучшего форматирования в контексте word-spacing: 16px и text-wrap: balance
-// Добавляем эти пробелы вручную при помощи {' '}
-
-function SparseItem({children}: PairProps) {
+function SparseItem({children}: SparseItemProps) {
 
   return (
     <>
