@@ -1,4 +1,3 @@
-import React from 'react';
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
 import Texting from '../Texting/Texting';
 
