@@ -1,6 +1,0 @@
-.grid-type-1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--input-short-width));
-    grid-gap: 1rem;
-    justify-content: center;
-}

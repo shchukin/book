@@ -1,4 +1,3 @@
-import './Exercise1Keys.css';
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import GridType1 from "../GridType1/GridType1.tsx";

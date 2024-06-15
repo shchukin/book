@@ -1,4 +1,3 @@
-import './Alphabet1.css'
 import Heading from "../Heading/Heading.tsx";
 import Row from "../Row/Row.tsx";
 import Big from "../Big/Big.tsx";
