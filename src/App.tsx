@@ -1,6 +1,6 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './global/global-styles/global-style.css';
+import './global/global-style.css';
 import Lesson from "./components/Lesson/Lesson.tsx";
 import Thai from "./components/Thai/Thai.tsx";
 import Script from "./components/Script/Script.tsx";
@@ -25,7 +25,7 @@ import Pair from "./components/Pair/Pair.tsx";
 function App() {
 
   return (
-    <>
+    <div className="container">
       <Lesson>
 
         <Heading level={1}>
@@ -448,7 +448,7 @@ function App() {
 
 
       </Lesson>
-    </>
+    </div>
   )
 }
 
