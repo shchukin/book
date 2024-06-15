@@ -1,6 +1,4 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
-import Thai from "../Thai/Thai.tsx";
 
 function Exercise1x17() {
 
