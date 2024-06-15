@@ -30,7 +30,7 @@ function Dictionary1() {
         <Thai size="dictionary">ยา</Thai> <Script>йa:</Script> — лекарство
       </Row>
       <Row>
-        <Thai size="dictionary">ปู</Thai> <Script>пуˇ</Script> — краб
+        <Thai size="dictionary">ปู</Thai> <Script>пу:</Script> — краб
       </Row>
       <Row>
         <Thai size="dictionary">หมู</Thai> <Script>му:ˇ</Script> — свинья, свинина
