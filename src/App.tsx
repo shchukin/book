@@ -7,7 +7,6 @@ import Placeholder from "./components/Placeholder/Placeholder.tsx";
 import {Exercise, ExerciseHead, ExerciseEntry} from './components/Exercise/Exercise.tsx';
 import Voiced from "./components/Voiced/Voiced.tsx";
 import Big from "./components/Big/Big.tsx";
-import Airy from "./components/Airy/Airy.tsx";
 import Nobr from "./components/Nobr/Nobr.tsx";
 import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
