@@ -8,7 +8,7 @@ type SparseProps = {
 function Sparse({children}: SparseProps) {
 
   return (
-    <span className="Sparse">
+    <span className="sparse">
       {children}
     </span>
   )
@@ -30,12 +30,12 @@ type PairProps = {
 // Во-вторых для лучшего форматирования в контексте word-spacing: 16px и text-wrap: balance
 // Добавляем эти пробелы вручную при помощи {' '}
 
-function Pair({children}: PairProps) {
+function SparseItem({children}: PairProps) {
 
   return (
     <>
       {' '}
-      <span className="Pair">
+      <span className="sparse__item">
         {children}
       </span>
       {' '}
@@ -43,6 +43,6 @@ function Pair({children}: PairProps) {
   )
 }
 
-export {Pair};
+export {SparseItem};
 
 export default Sparse;

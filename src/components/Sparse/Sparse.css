@@ -1,8 +1,8 @@
-.Sparse {
+.sparse {
     word-spacing: 16px
 }
 
-.Pair {
+.sparse__item {
     white-space: nowrap;
     word-spacing: 0;
 }

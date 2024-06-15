@@ -16,7 +16,7 @@ import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWor
 import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
 import Exercise1x12 from "./components/Exercise1x12/Exercise1x12.tsx";
 import Exercise1x13 from "./components/Exercise1x13/Exercise1x13.tsx";
-import Sparse, {Pair} from "./components/Sparse/Sparse.tsx";
+import Sparse, {SparseItem} from "./components/Sparse/Sparse.tsx";
 
 function App() {
 
@@ -235,16 +235,16 @@ function App() {
             <Sparse>
               <Big>
                 <Thai>
-                  <Pair>กา – คา</Pair>
-                  <Pair>ตี – ที</Pair>
-                  <Pair>ปอ – พอ</Pair>
-                  <Pair>ตู – ทู</Pair>
-                  <Pair>ปี – พี</Pair>
-                  <Pair>กาย – คาย</Pair>
-                  <Pair>ปาว – พาว</Pair>
-                  <Pair>ปูม – พูม</Pair>
-                  <Pair>ตาว – ทาว</Pair>
-                  <Pair>กอย – คอย</Pair>
+                  <SparseItem>กา – คา</SparseItem>
+                  <SparseItem>ตี – ที</SparseItem>
+                  <SparseItem>ปอ – พอ</SparseItem>
+                  <SparseItem>ตู – ทู</SparseItem>
+                  <SparseItem>ปี – พี</SparseItem>
+                  <SparseItem>กาย – คาย</SparseItem>
+                  <SparseItem>ปาว – พาว</SparseItem>
+                  <SparseItem>ปูม – พูม</SparseItem>
+                  <SparseItem>ตาว – ทาว</SparseItem>
+                  <SparseItem>กอย – คอย</SparseItem>
                 </Thai>
               </Big>
             </Sparse>
@@ -264,19 +264,19 @@ function App() {
             <Sparse>
               <Big>
                 <Thai>
-                  <Pair>พี – ผี</Pair>
-                  <Pair>คา – ขา</Pair>
-                  <Pair>ที – ถี</Pair>
-                  <Pair>ซา – สา</Pair>
-                  <Pair>ฮา – หา</Pair>
-                  <Pair>ยู – หยู</Pair>
-                  <Pair>มี – หมี</Pair>
-                  <Pair>วา – หวา</Pair>
-                  <Pair>นาว – หนาว</Pair>
-                  <Pair>ยอม – หยอม</Pair>
-                  <Pair>คอม - ขอม</Pair>
-                  <Pair>ซอย -สอย</Pair>
-                  <Pair>ทาว – ถาว</Pair>
+                  <SparseItem>พี – ผี</SparseItem>
+                  <SparseItem>คา – ขา</SparseItem>
+                  <SparseItem>ที – ถี</SparseItem>
+                  <SparseItem>ซา – สา</SparseItem>
+                  <SparseItem>ฮา – หา</SparseItem>
+                  <SparseItem>ยู – หยู</SparseItem>
+                  <SparseItem>มี – หมี</SparseItem>
+                  <SparseItem>วา – หวา</SparseItem>
+                  <SparseItem>นาว – หนาว</SparseItem>
+                  <SparseItem>ยอม – หยอม</SparseItem>
+                  <SparseItem>คอม - ขอม</SparseItem>
+                  <SparseItem>ซอย -สอย</SparseItem>
+                  <SparseItem>ทาว – ถาว</SparseItem>
                 </Thai>
               </Big>
             </Sparse>
@@ -296,19 +296,19 @@ function App() {
             <Sparse>
               <Big>
                 <Thai>
-                  <Pair>ผา – พา</Pair>
-                  <Pair>ขอ – คอ</Pair>
-                  <Pair>ถี – ที</Pair>
-                  <Pair>สู – ซู</Pair>
-                  <Pair>หา – ฮา</Pair>
-                  <Pair>ขอม – คอม</Pair>
-                  <Pair>ถาว – ทาว</Pair>
-                  <Pair>สอย – ซอย</Pair>
-                  <Pair>หาย – ฮาย</Pair>
-                  <Pair>หนา – นา</Pair>
-                  <Pair>หมี – มี</Pair>
-                  <Pair>หวาน – วาน</Pair>
-                  <Pair>หยอ – ยอ</Pair>
+                  <SparseItem>ผา – พา</SparseItem>
+                  <SparseItem>ขอ – คอ</SparseItem>
+                  <SparseItem>ถี – ที</SparseItem>
+                  <SparseItem>สู – ซู</SparseItem>
+                  <SparseItem>หา – ฮา</SparseItem>
+                  <SparseItem>ขอม – คอม</SparseItem>
+                  <SparseItem>ถาว – ทาว</SparseItem>
+                  <SparseItem>สอย – ซอย</SparseItem>
+                  <SparseItem>หาย – ฮาย</SparseItem>
+                  <SparseItem>หนา – นา</SparseItem>
+                  <SparseItem>หมี – มี</SparseItem>
+                  <SparseItem>หวาน – วาน</SparseItem>
+                  <SparseItem>หยอ – ยอ</SparseItem>
                 </Thai>
               </Big>
             </Sparse>

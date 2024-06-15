@@ -5,7 +5,7 @@ import GridType1 from "../GridType1/GridType1.tsx";
 import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
-import Sparse, {Pair} from "../Sparse/Sparse.tsx";
+import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 
 function Exercise1Keys() {
   const questions = [
@@ -21,24 +21,24 @@ function Exercise1Keys() {
         <div>
           <Sparse>
             <Big>
-              <Pair><Thai>ผ</Thai>: <Key>z</Key></Pair>
-              <Pair><Thai>ข</Thai>: <Key>-</Key></Pair>
-              <Pair><Thai>ถ</Thai>: <Key>5</Key></Pair>
-              <Pair><Thai>ส</Thai>: <Key>l</Key></Pair>
-              <Pair><Thai>ห</Thai>: <Key>s</Key></Pair>
-              <Pair><Thai>พ</Thai>: <Key>r</Key></Pair>
-              <Pair><Thai>พ</Thai>: <Key>r</Key></Pair>
-              <Pair><Thai>ค</Thai>: <Key>8</Key></Pair>
-              <Pair><Thai>ท</Thai>: <Key>m</Key></Pair>
-              <Pair><Thai>ซ</Thai>: <Key>:</Key></Pair>
-              <Pair><Thai>ม</Thai>: <Key>,</Key></Pair>
-              <Pair><Thai>น</Thai>: <Key>o</Key></Pair>
-              <Pair><Thai>ย</Thai>: <Key>p</Key></Pair>
-              <Pair><Thai>ว</Thai>: <Key>;</Key></Pair>
-              <Pair><Thai>ฮ</Thai>: <Key>V</Key></Pair>
-              <Pair><Thai>ก</Thai>: <Key>d</Key></Pair>
-              <Pair><Thai>ป</Thai>: <Key>x</Key></Pair>
-              <Pair><Thai>ต</Thai>: <Key>9</Key></Pair>
+              <SparseItem><Thai>ผ</Thai>: <Key>z</Key></SparseItem>
+              <SparseItem><Thai>ข</Thai>: <Key>-</Key></SparseItem>
+              <SparseItem><Thai>ถ</Thai>: <Key>5</Key></SparseItem>
+              <SparseItem><Thai>ส</Thai>: <Key>l</Key></SparseItem>
+              <SparseItem><Thai>ห</Thai>: <Key>s</Key></SparseItem>
+              <SparseItem><Thai>พ</Thai>: <Key>r</Key></SparseItem>
+              <SparseItem><Thai>พ</Thai>: <Key>r</Key></SparseItem>
+              <SparseItem><Thai>ค</Thai>: <Key>8</Key></SparseItem>
+              <SparseItem><Thai>ท</Thai>: <Key>m</Key></SparseItem>
+              <SparseItem><Thai>ซ</Thai>: <Key>:</Key></SparseItem>
+              <SparseItem><Thai>ม</Thai>: <Key>,</Key></SparseItem>
+              <SparseItem><Thai>น</Thai>: <Key>o</Key></SparseItem>
+              <SparseItem><Thai>ย</Thai>: <Key>p</Key></SparseItem>
+              <SparseItem><Thai>ว</Thai>: <Key>;</Key></SparseItem>
+              <SparseItem><Thai>ฮ</Thai>: <Key>V</Key></SparseItem>
+              <SparseItem><Thai>ก</Thai>: <Key>d</Key></SparseItem>
+              <SparseItem><Thai>ป</Thai>: <Key>x</Key></SparseItem>
+              <SparseItem><Thai>ต</Thai>: <Key>9</Key></SparseItem>
             </Big>
           </Sparse>
         </div>

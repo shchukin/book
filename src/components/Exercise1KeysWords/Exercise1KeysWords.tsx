@@ -6,7 +6,7 @@ import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Placeholder from "../Placeholder/Placeholder.tsx";
-import Sparse, {Pair} from "../Sparse/Sparse.tsx";
+import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 
 function Exercise1KeysWords() {
   const questions = [
@@ -20,10 +20,10 @@ function Exercise1KeysWords() {
         <div>
           <Sparse>
             <Big>
-              <Pair><Thai><Placeholder/>า</Thai>: <Key>-</Key></Pair>
-              <Pair><Thai><Placeholder/>อ</Thai>: <Key>v</Key></Pair>
-              <Pair><Thai><Placeholder/>ี</Thai>: <Key>u</Key></Pair>
-              <Pair><Thai><Placeholder/>ู</Thai>: <Key>^</Key></Pair>
+              <SparseItem><Thai><Placeholder/>า</Thai>: <Key>-</Key></SparseItem>
+              <SparseItem><Thai><Placeholder/>อ</Thai>: <Key>v</Key></SparseItem>
+              <SparseItem><Thai><Placeholder/>ี</Thai>: <Key>u</Key></SparseItem>
+              <SparseItem><Thai><Placeholder/>ู</Thai>: <Key>^</Key></SparseItem>
             </Big>
           </Sparse>
         </div>
