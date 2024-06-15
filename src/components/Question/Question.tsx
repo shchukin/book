@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './Question.css';
 import Big from "../Big/Big";
 import Thai from "../Thai/Thai";
-import { generateRandomString } from "../../utils.ts";
+import {generateRandomString} from "../../utils.ts";
+import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 
 type QuestionProps = {
   question: string;
@@ -18,9 +19,9 @@ type OptionStatus = {
   isCorrect: boolean | null;
 };
 
-const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, options, maxLength, audio }) => {
+const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, options, maxLength, audio}) => {
   const [selectedOptions, setSelectedOptions] = useState<OptionStatus[]>(
-    options?.map(option => ({ value: option, isCorrect: null })) || []
+    options?.map(option => ({value: option, isCorrect: null})) || []
   );
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [userAnswer, setUserAnswer] = useState<string>('');
@@ -35,7 +36,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
     setSelectedOptions(prevOptions =>
       prevOptions.map(option =>
         option.value === selectedValue
-          ? { ...option, isCorrect: selectedValue === correctAnswer }
+          ? {...option, isCorrect: selectedValue === correctAnswer}
           : option
       )
     );
@@ -59,7 +60,7 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
       setSelectedOptions(prevOptions =>
         prevOptions.map(option =>
           option.value === correctAnswer
-            ? { ...option, isCorrect: true }
+            ? {...option, isCorrect: true}
             : option
         )
       );
@@ -92,7 +93,9 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
             ))}
           </div>
           <div className="question__answer">
-            <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>
+            <div className="question__show-answer">
+              <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
+            </div>
           </div>
         </div>
       )}
@@ -101,11 +104,11 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
           {
             audio &&
               <div className="question__audio">
-                <audio className="question__player" controls src={'/' + audio} preload="auto"></audio>
+                  <audio className="question__player" controls src={'/' + audio} preload="auto"></audio>
               </div>
           }
           <div className="question__asking">
-          <div className="question__title">
+            <div className="question__title">
               <Big><Thai>{question}</Thai> –&nbsp;</Big>
             </div>
             <input
@@ -117,7 +120,10 @@ const Question: React.FC<QuestionProps> = ({ question, type, correctAnswer, opti
             />
             <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
             <div className="question__answer">
-              {!showAnswer && <button className="question__show-answer" onClick={toggleAnswer}>Показать ответ</button>}
+              {!showAnswer &&
+                  <div className="question__show-answer">
+                      <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
+                  </div>}
               {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
             </div>
           </div>
