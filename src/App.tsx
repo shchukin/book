@@ -3,11 +3,9 @@
 import './global/global-style.css';
 import Thai from "./components/Thai/Thai.tsx";
 import Script from "./components/Script/Script.tsx";
-import Placeholder from "./components/Placeholder/Placeholder.tsx";
 import {Exercise, ExerciseHead, ExerciseEntry} from './components/Exercise/Exercise.tsx';
 import Voiced from "./components/Voiced/Voiced.tsx";
 import Big from "./components/Big/Big.tsx";
-import Row from "./components/Row/Row.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
 import Exercise1x10 from "./components/Exercise1x10/Exercise1x10.tsx";
@@ -18,6 +16,7 @@ import Exercise1x12 from "./components/Exercise1x12/Exercise1x12.tsx";
 import Exercise1x13 from "./components/Exercise1x13/Exercise1x13.tsx";
 import Sparse, {SparseItem} from "./components/Sparse/Sparse.tsx";
 import Alphabet1 from "./components/Alphabet1/Alphabet1.tsx";
+import Exercise1x6 from "./components/Exercise1x6/Exercise1x6.tsx";
 
 function App() {
 
@@ -180,34 +179,7 @@ function App() {
       <br/>
       <br/>
 
-      <Exercise>
-        <ExerciseHead>
-          6. Прослушайте и повторите за диктором пары слогов восходящим и ровным тоном.
-        </ExerciseHead>
-        <ExerciseEntry>
-          <Voiced audioFile="08-phaa-phaa-thau-thau.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  <SparseItem>ผา – พา</SparseItem>
-                  <SparseItem>ขอ – คอ</SparseItem>
-                  <SparseItem>ถี – ที</SparseItem>
-                  <SparseItem>สู – ซู</SparseItem>
-                  <SparseItem>หา – ฮา</SparseItem>
-                  <SparseItem>ขอม – คอม</SparseItem>
-                  <SparseItem>ถาว – ทาว</SparseItem>
-                  <SparseItem>สอย – ซอย</SparseItem>
-                  <SparseItem>หาย – ฮาย</SparseItem>
-                  <SparseItem>หนา – นา</SparseItem>
-                  <SparseItem>หมี – มี</SparseItem>
-                  <SparseItem>หวาน – วาน</SparseItem>
-                  <SparseItem>หยอ – ยอ</SparseItem>
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-      </Exercise>
+      <Exercise1x6/>
 
       <br/>
       <br/>
