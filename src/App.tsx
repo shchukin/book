@@ -1,11 +1,6 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './global/global-style.css';
-import Thai from "./components/Thai/Thai.tsx";
-import Script from "./components/Script/Script.tsx";
-import {Exercise, ExerciseHead, ExerciseEntry} from './components/Exercise/Exercise.tsx';
-import Voiced from "./components/Voiced/Voiced.tsx";
-import Big from "./components/Big/Big.tsx";
 import Heading from "./components/Heading/Heading.tsx";
 import Exercise1x9 from "./components/Exercise1x9/Exercise1x9.tsx";
 import Exercise1x10 from "./components/Exercise1x10/Exercise1x10.tsx";
@@ -14,10 +9,13 @@ import Exercise1x8 from "./components/Exercise1x8/Exercise1x8.tsx";
 import Exercise1x7 from "./components/Exercise1x7/Exercise1x7.tsx";
 import Exercise1x12 from "./components/Exercise1x12/Exercise1x12.tsx";
 import Exercise1x13 from "./components/Exercise1x13/Exercise1x13.tsx";
-import Sparse, {SparseItem} from "./components/Sparse/Sparse.tsx";
 import Alphabet1 from "./components/Alphabet1/Alphabet1.tsx";
 import Exercise1x6 from "./components/Exercise1x6/Exercise1x6.tsx";
 import Exercise1x5 from "./components/Exercise1x5/Exercise1x5.tsx";
+import Exercise1x4 from "./components/Exercise1x4/Exercise1x4.tsx";
+import Exercise1x3 from "./components/Exercise1x3/Exercise1x3.tsx";
+import Exercise1x2 from "./components/Exercise1x2/Exercise1x2.tsx";
+import Exercise1x1 from "./components/Exercise1x1/Exercise1x1.tsx";
 
 function App() {
 
@@ -33,117 +31,22 @@ function App() {
       <br/>
       <Heading level={2}>Фонетические упражнения</Heading>
 
-      <Exercise>
-        <ExerciseHead>
-          1. Прослушайте и повторяйте за диктором слоги с долгими гласными ровным тоном.
-        </ExerciseHead>
-        <ExerciseEntry>
-          а) открытые слоги:
-          <Voiced audioFile="01-kaa-taa-paa.mp3">
-            <Thai>
-              <Big>
-                <Sparse>
-                  กา กอ กู กี ปา ปอ ปู ปี ตา ตอ ตู ตี ซา ซอ ซี ฮา ฮอ มา มี มู วา ยอ นี มอ นู วอ ยี วู ยู ฮา
-                </Sparse>
-              </Big>
-            </Thai>
-          </Voiced>
-        </ExerciseEntry>
-        <ExerciseEntry>
-          б) закрытые слоги:
-          <Voiced audioFile="02-kaam-kaay-taay.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  กาม กอน กาย กาว ตาย ปาน ปอย ปาม ปาว ตาว ตอน ตอม ตอย ซาน ซาย ตีน ปูน ฮาน ฮอม ฮอย
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-      </Exercise>
+      <Exercise1x1/>
 
       <br/>
       <br/>
 
-      <Exercise>
-        <ExerciseHead>
-          2. Прослушайте и повторяйте за диктором слоги с долгими гласными восходящим тоном:
-        </ExerciseHead>
-        <ExerciseEntry>
-          а) открытые слоги:
-          <Voiced audioFile="03-pha-kha-tha.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  ผา ขา ถา สี หา ขอ สอ หอ ถู หู หมา หนี หยา หมอ หนอ สา หยอ หมี หวี หยี หมู หนู หวู หยู
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-        <ExerciseEntry>
-          б) закрытые слоги:
-          <Voiced audioFile="04-phan-kham-thau.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  ผาน ขาม ถาว สาย ถาย หาย ผอม ขอม ถอย สอน หอย ถูน สูน หาน
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-      </Exercise>
+      <Exercise1x2/>
 
       <br/>
       <br/>
 
-      <Exercise>
-        <ExerciseHead>
-          3. Прослушайте и повторяйте за диктором слоги с гласной <Script>и:</Script>.
-        </ExerciseHead>
-        <ExerciseEntry>
-          <Voiced audioFile="05-phii-khii-thii.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-      </Exercise>
+      <Exercise1x3/>
 
       <br/>
       <br/>
 
-      <Exercise>
-        <ExerciseHead>
-          4. Прослушайте и повторяйте за диктором пары слогов, которые различаются непридыхательными и придыхательными согласными в начале слога:
-        </ExerciseHead>
-        <ExerciseEntry>
-          <Voiced audioFile="06-kaa-khaa-kaay-khaay.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  <SparseItem>กา – คา</SparseItem>
-                  <SparseItem>ตี – ที</SparseItem>
-                  <SparseItem>ปอ – พอ</SparseItem>
-                  <SparseItem>ตู – ทู</SparseItem>
-                  <SparseItem>ปี – พี</SparseItem>
-                  <SparseItem>กาย – คาย</SparseItem>
-                  <SparseItem>ปาว – พาว</SparseItem>
-                  <SparseItem>ปูม – พูม</SparseItem>
-                  <SparseItem>ตาว – ทาว</SparseItem>
-                  <SparseItem>กอย – คอย</SparseItem>
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-      </Exercise>
+      <Exercise1x4/>
 
       <br/>
       <br/>
