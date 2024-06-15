@@ -32,7 +32,7 @@ function Exercise1x17() {
         <ExerciseEntry key={index}>
           <Texting
             question={item.question}
-            correctAnswer={item.correctAnswer}
+            answer={item.correctAnswer}
           />
         </ExerciseEntry>
       ))}

@@ -23,7 +23,7 @@ function Exercise1x9() {
             <Texting
               key={index}
               question={question}
-              correctAnswer={answersList[index]}
+              answer={answersList[index]}
               maxLength={4}
             />
           ))}

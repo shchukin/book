@@ -6,12 +6,12 @@ import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 
 type TextingProps = {
   question: string;
-  correctAnswer: string;
+  answer: string;
   maxLength?: number;
   audio?: string;
 };
 
-const Texting: React.FC<TextingProps> = ({ question, correctAnswer, maxLength, audio }) => {
+const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio }) => {
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -25,7 +25,7 @@ const Texting: React.FC<TextingProps> = ({ question, correctAnswer, maxLength, a
   };
 
   const checkAnswer = () => {
-    setIsCorrect(userAnswer === correctAnswer);
+    setIsCorrect(userAnswer === answer);
   };
 
   const toggleAnswer = () => {
@@ -57,7 +57,7 @@ const Texting: React.FC<TextingProps> = ({ question, correctAnswer, maxLength, a
               <div className="question__show-answer">
                   <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
               </div>}
-          {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Thai size="big">{correctAnswer}</Thai></div>}
+          {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Thai size="big">{answer}</Thai></div>}
         </div>
       </div>
     </div>
