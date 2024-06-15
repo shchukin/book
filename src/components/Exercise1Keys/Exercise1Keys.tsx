@@ -6,6 +6,8 @@ import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
 import Airy from "../Airy/Airy.tsx";
 import Thai from "../Thai/Thai.tsx";
+import Sparse from "../Sparse/Sparse.tsx";
+import Pair from "../Pair/Pair.tsx";
 
 function Exercise1Keys() {
   const questions = [
@@ -19,26 +21,28 @@ function Exercise1Keys() {
       <ExerciseHead>
         7. Наберите текст. Значки на клавиатуре:
         <div>
-          <Big>
-            <Airy><Thai>ผ</Thai>: <Key>z</Key></Airy>
-            <Airy><Thai>ข</Thai>: <Key>-</Key></Airy>
-            <Airy><Thai>ถ</Thai>: <Key>5</Key></Airy>
-            <Airy><Thai>ส</Thai>: <Key>l</Key></Airy>
-            <Airy><Thai>ห</Thai>: <Key>s</Key></Airy>
-            <Airy><Thai>พ</Thai>: <Key>r</Key></Airy>
-            <Airy><Thai>พ</Thai>: <Key>r</Key></Airy>
-            <Airy><Thai>ค</Thai>: <Key>8</Key></Airy>
-            <Airy><Thai>ท</Thai>: <Key>m</Key></Airy>
-            <Airy><Thai>ซ</Thai>: <Key>:</Key></Airy>
-            <Airy><Thai>ม</Thai>: <Key>,</Key></Airy>
-            <Airy><Thai>น</Thai>: <Key>o</Key></Airy>
-            <Airy><Thai>ย</Thai>: <Key>p</Key></Airy>
-            <Airy><Thai>ว</Thai>: <Key>;</Key></Airy>
-            <Airy><Thai>ฮ</Thai>: <Key>V</Key></Airy>
-            <Airy><Thai>ก</Thai>: <Key>d</Key></Airy>
-            <Airy><Thai>ป</Thai>: <Key>x</Key></Airy>
-            <Airy><Thai>ต</Thai>: <Key>9</Key></Airy>
-          </Big>
+          <Sparse>
+            <Big>
+              <Pair><Thai>ผ</Thai>: <Key>z</Key></Pair>
+              <Pair><Thai>ข</Thai>: <Key>-</Key></Pair>
+              <Pair><Thai>ถ</Thai>: <Key>5</Key></Pair>
+              <Pair><Thai>ส</Thai>: <Key>l</Key></Pair>
+              <Pair><Thai>ห</Thai>: <Key>s</Key></Pair>
+              <Pair><Thai>พ</Thai>: <Key>r</Key></Pair>
+              <Pair><Thai>พ</Thai>: <Key>r</Key></Pair>
+              <Pair><Thai>ค</Thai>: <Key>8</Key></Pair>
+              <Pair><Thai>ท</Thai>: <Key>m</Key></Pair>
+              <Pair><Thai>ซ</Thai>: <Key>:</Key></Pair>
+              <Pair><Thai>ม</Thai>: <Key>,</Key></Pair>
+              <Pair><Thai>น</Thai>: <Key>o</Key></Pair>
+              <Pair><Thai>ย</Thai>: <Key>p</Key></Pair>
+              <Pair><Thai>ว</Thai>: <Key>;</Key></Pair>
+              <Pair><Thai>ฮ</Thai>: <Key>V</Key></Pair>
+              <Pair><Thai>ก</Thai>: <Key>d</Key></Pair>
+              <Pair><Thai>ป</Thai>: <Key>x</Key></Pair>
+              <Pair><Thai>ต</Thai>: <Key>9</Key></Pair>
+            </Big>
+          </Sparse>
         </div>
       </ExerciseHead>
       <ExerciseEntry>
