@@ -1,7 +1,6 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './global/global-style.css';
-import Lesson from "./components/Lesson/Lesson.tsx";
 import Thai from "./components/Thai/Thai.tsx";
 import Script from "./components/Script/Script.tsx";
 import Placeholder from "./components/Placeholder/Placeholder.tsx";
@@ -26,7 +25,6 @@ function App() {
 
   return (
     <div className="container">
-      <Lesson>
 
         <Heading level={1}>
           Урок 1
@@ -446,8 +444,6 @@ function App() {
         У бабушки есть краски. У Са есть лекарство.
         Бабушка спит. Дедушка мерзнет.
 
-
-      </Lesson>
     </div>
   )
 }
