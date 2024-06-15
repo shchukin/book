@@ -19,6 +19,8 @@ import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWor
 import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
 import Exercise1x12 from "./components/Exercise1x12/Exercise1x12.tsx";
 import Exercise1x13 from "./components/Exercise1x13/Exercise1x13.tsx";
+import Sparse from "./components/Sparse/Sparse.tsx";
+import Pair from "./components/Pair/Pair.tsx";
 
 function App() {
 
@@ -151,68 +153,24 @@ function App() {
           <ExerciseEntry>
             а) открытые слоги:
             <Voiced audioFile="01-kaa-taa-paa.mp3">
-              <Big>
+              <Sparse>
                 <Thai>
-                  <Airy>กา</Airy>
-                  <Airy>กอ</Airy>
-                  <Airy>กู</Airy>
-                  <Airy>กี</Airy>
-                  <Airy>ปา</Airy>
-                  <Airy>ปอ</Airy>
-                  <Airy>ปู</Airy>
-                  <Airy>ปี</Airy>
-                  <Airy>ตา</Airy>
-                  <Airy>ตอ</Airy>
-                  <Airy>ตู</Airy>
-                  <Airy>ตี</Airy>
-                  <Airy>ซา</Airy>
-                  <Airy>ซอ</Airy>
-                  <Airy>ซี</Airy>
-                  <Airy>ฮา</Airy>
-                  <Airy>ฮอ</Airy>
-                  <Airy>มา</Airy>
-                  <Airy>มี</Airy>
-                  <Airy>มู</Airy>
-                  <Airy>วา</Airy>
-                  <Airy>ยอ</Airy>
-                  <Airy>นี</Airy>
-                  <Airy>มอ</Airy>
-                  <Airy>นู</Airy>
-                  <Airy>วอ</Airy>
-                  <Airy>ยี</Airy>
-                  <Airy>วู</Airy>
-                  <Airy>ยู</Airy>
-                  <Airy>ฮา</Airy>
-                </Thai></Big>
+                  <Big>กา กอ กู กี ปา ปอ ปู ปี ตา ตอ ตู ตี ซา ซอ ซี ฮา ฮอ มา มี มู วา ยอ นี มอ นู วอ ยี วู ยู ฮา
+                  </Big>
+                </Thai>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
           <ExerciseEntry>
             б) закрытые слоги:
             <Voiced audioFile="02-kaam-kaay-taay.mp3">
-              <Big>
-                <Thai>
-                  <Airy>กาม</Airy>
-                  <Airy>กอน</Airy>
-                  <Airy>กาย</Airy>
-                  <Airy>กาว</Airy>
-                  <Airy>ตาย</Airy>
-                  <Airy>ปาน</Airy>
-                  <Airy>ปอย</Airy>
-                  <Airy>ปาม</Airy>
-                  <Airy>ปาว</Airy>
-                  <Airy>ตาว</Airy>
-                  <Airy>ตอน</Airy>
-                  <Airy>ตอม</Airy>
-                  <Airy>ตอย</Airy>
-                  <Airy>ซาน</Airy>
-                  <Airy>ซาย</Airy>
-                  <Airy>ตีน</Airy>
-                  <Airy>ปูน</Airy>
-                  <Airy>ฮาน</Airy>
-                  <Airy>ฮอม</Airy>
-                  <Airy>ฮอย</Airy>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>
+                    กาม กอน กาย กาว ตาย ปาน ปอย ปาม ปาว ตาว ตอน ตอม ตอย ซาน ซาย ตีน ปูน ฮาน ฮอม ฮอย
+                  </Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -227,57 +185,23 @@ function App() {
           <ExerciseEntry>
             а) открытые слоги:
             <Voiced audioFile="03-pha-kha-tha.mp3">
-              <Big>
-                <Thai>
-                  <Airy>ผา</Airy>
-                  <Airy>ขา</Airy>
-                  <Airy>ถา</Airy>
-                  <Airy>สี</Airy>
-                  <Airy>หา</Airy>
-                  <Airy>ขอ</Airy>
-                  <Airy>สอ</Airy>
-                  <Airy>หอ</Airy>
-                  <Airy>ถู</Airy>
-                  <Airy>หู</Airy>
-                  <Airy>หมา</Airy>
-                  <Airy>หนี</Airy>
-                  <Airy>หยา</Airy>
-                  <Airy>หมอ</Airy>
-                  <Airy>หนอ</Airy>
-                  <Airy>สา</Airy>
-                  <Airy>หยอ</Airy>
-                  <Airy>หมี</Airy>
-                  <Airy>หวี</Airy>
-                  <Airy>หยี</Airy>
-                  <Airy>หมู</Airy>
-                  <Airy>หนู</Airy>
-                  <Airy>หวู</Airy>
-                  <Airy>หยู</Airy>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>
+                    ผา ขา ถา สี หา ขอ สอ หอ ถู หู หมา หนี หยา หมอ หนอ สา หยอ หมี หวี หยี หมู หนู หวู หยู
+                  </Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
           <ExerciseEntry>
             б) закрытые слоги:
             <Voiced audioFile="04-phan-kham-thau.mp3">
-              <Big>
-                <Thai>
-                  <Airy>ผาน</Airy>
-                  <Airy>ขาม</Airy>
-                  <Airy>ถาว</Airy>
-                  <Airy>สาย</Airy>
-                  <Airy>ถาย</Airy>
-                  <Airy>หาย</Airy>
-                  <Airy>ผอม</Airy>
-                  <Airy>ขอม</Airy>
-                  <Airy>ถอย</Airy>
-                  <Airy>สอน</Airy>
-                  <Airy>หอย</Airy>
-                  <Airy>ถูน</Airy>
-                  <Airy>สูน</Airy>
-                  <Airy>หาน</Airy>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>ผาน ขาม ถาว สาย ถาย หาย ผอม ขอม ถอย สอน หอย ถูน สูน หาน</Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -291,25 +215,13 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="05-phii-khii-thii.mp3">
-              <Big>
-                <Thai>
-                  <Airy>ผี</Airy>
-                  <Airy>ขี</Airy>
-                  <Airy>ถี</Airy>
-                  <Airy>สี</Airy>
-                  <Airy>ปี</Airy>
-                  <Airy>กี</Airy>
-                  <Airy>ตี</Airy>
-                  <Airy>ซี</Airy>
-                  <Airy>พี</Airy>
-                  <Airy>คีม</Airy>
-                  <Airy>ปีน</Airy>
-                  <Airy>ตีน</Airy>
-                  <Airy>ซีน</Airy>
-                  <Airy>ทีม</Airy>
-                  <Airy>ผีน</Airy>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>
+                    ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน
+                  </Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -323,20 +235,22 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="06-kaa-khaa-kaay-khaay.mp3">
-              <Big>
-                <Thai>
-                  <Nobr><Airy>กา – คา</Airy></Nobr>
-                  <Nobr><Airy>ตี – ที</Airy></Nobr>
-                  <Nobr><Airy>ปอ – พอ</Airy></Nobr>
-                  <Nobr><Airy>ตู – ทู</Airy></Nobr>
-                  <Nobr><Airy>ปี – พี</Airy></Nobr>
-                  <Nobr><Airy>กาย – คาย</Airy></Nobr>
-                  <Nobr><Airy>ปาว – พาว</Airy></Nobr>
-                  <Nobr><Airy>ปูม – พูม</Airy></Nobr>
-                  <Nobr><Airy>ตาว – ทาว</Airy></Nobr>
-                  <Nobr><Airy>กอย – คอย</Airy></Nobr>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>
+                    <Pair>กา – คา</Pair>
+                    <Pair>ตี – ที</Pair>
+                    <Pair>ปอ – พอ</Pair>
+                    <Pair>ตู – ทู</Pair>
+                    <Pair>ปี – พี</Pair>
+                    <Pair>กาย – คาย</Pair>
+                    <Pair>ปาว – พาว</Pair>
+                    <Pair>ปูม – พูม</Pair>
+                    <Pair>ตาว – ทาว</Pair>
+                    <Pair>กอย – คอย</Pair>
+                  </Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -350,23 +264,25 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="07-phii-phii-khaa-khaa.mp3">
-              <Big>
-                <Thai>
-                  <Nobr><Airy>พี – ผี</Airy></Nobr>
-                  <Nobr><Airy>คา – ขา</Airy></Nobr>
-                  <Nobr><Airy>ที – ถี</Airy></Nobr>
-                  <Nobr><Airy>ซา – สา</Airy></Nobr>
-                  <Nobr><Airy>ฮา – หา</Airy></Nobr>
-                  <Nobr><Airy>ยู – หยู</Airy></Nobr>
-                  <Nobr><Airy>มี – หมี</Airy></Nobr>
-                  <Nobr><Airy>วา – หวา</Airy></Nobr>
-                  <Nobr><Airy>นาว – หนาว</Airy></Nobr>
-                  <Nobr><Airy>ยอม – หยอม</Airy></Nobr>
-                  <Nobr><Airy>คอม - ขอม</Airy></Nobr>
-                  <Nobr><Airy>ซอย -สอย</Airy></Nobr>
-                  <Nobr><Airy>ทาว – ถาว</Airy></Nobr>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>
+                    <Pair>พี – ผี</Pair>
+                    <Pair>คา – ขา</Pair>
+                    <Pair>ที – ถี</Pair>
+                    <Pair>ซา – สา</Pair>
+                    <Pair>ฮา – หา</Pair>
+                    <Pair>ยู – หยู</Pair>
+                    <Pair>มี – หมี</Pair>
+                    <Pair>วา – หวา</Pair>
+                    <Pair>นาว – หนาว</Pair>
+                    <Pair>ยอม – หยอม</Pair>
+                    <Pair>คอม - ขอม</Pair>
+                    <Pair>ซอย -สอย</Pair>
+                    <Pair>ทาว – ถาว</Pair>
+                  </Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
@@ -380,23 +296,25 @@ function App() {
           </ExerciseHead>
           <ExerciseEntry>
             <Voiced audioFile="08-phaa-phaa-thau-thau.mp3">
-              <Big>
-                <Thai>
-                  <Nobr><Airy>ผา – พา</Airy></Nobr>
-                  <Nobr><Airy>ขอ – คอ</Airy></Nobr>
-                  <Nobr><Airy>ถี – ที</Airy></Nobr>
-                  <Nobr><Airy>สู – ซู</Airy></Nobr>
-                  <Nobr><Airy>หา – ฮา</Airy></Nobr>
-                  <Nobr><Airy>ขอม – คอม</Airy></Nobr>
-                  <Nobr><Airy>ถาว – ทาว</Airy></Nobr>
-                  <Nobr><Airy>สอย – ซอย</Airy></Nobr>
-                  <Nobr><Airy>หาย – ฮาย</Airy></Nobr>
-                  <Nobr><Airy>หนา – นา</Airy></Nobr>
-                  <Nobr><Airy>หมี – มี</Airy></Nobr>
-                  <Nobr><Airy>หวาน – วาน</Airy></Nobr>
-                  <Nobr><Airy>หยอ – ยอ</Airy></Nobr>
-                </Thai>
-              </Big>
+              <Sparse>
+                <Big>
+                  <Thai>
+                    <Pair>ผา – พา</Pair>
+                    <Pair>ขอ – คอ</Pair>
+                    <Pair>ถี – ที</Pair>
+                    <Pair>สู – ซู</Pair>
+                    <Pair>หา – ฮา</Pair>
+                    <Pair>ขอม – คอม</Pair>
+                    <Pair>ถาว – ทาว</Pair>
+                    <Pair>สอย – ซอย</Pair>
+                    <Pair>หาย – ฮาย</Pair>
+                    <Pair>หนา – นา</Pair>
+                    <Pair>หมี – มี</Pair>
+                    <Pair>หวาน – วาน</Pair>
+                    <Pair>หยอ – ยอ</Pair>
+                  </Thai>
+                </Big>
+              </Sparse>
             </Voiced>
           </ExerciseEntry>
         </Exercise>
