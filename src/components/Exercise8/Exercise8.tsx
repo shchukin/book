@@ -1,4 +1,4 @@
-import './Exercise1KeysWords.css';
+import './Exercise8.css';
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import GridType1 from "../GridType1/GridType1.tsx";
@@ -8,7 +8,7 @@ import Thai from "../Thai/Thai.tsx";
 import Placeholder from "../Placeholder/Placeholder.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 
-function Exercise1KeysWords() {
+function Exercise8() {
   const questions = [
     'คอ', 'ทูม', 'ยี', 'หอย', 'ตอน', 'ขา', 'ซาว', 'ผูน', 'ทีม', 'หนา', 'คาว', 'พา', 'มอม', 'สาย', 'คีม', 'ยาน', 'หาย', 'พู', 'ยอม', 'ปา', 'หนี', 'สาม', 'หมาย', 'ผี', 'ขาย', 'กอ', 'หาว', 'ขอม', 'สอน', 'พาย', 'หยาม', 'นาน', 'ขู', 'หวี', 'ฮา', 'ทอย', 'สี', 'ถอน', 'หนู', 'มา', 'หวาน', 'ผาว', 'นาย', 'ทอน', 'ขาว', 'ซอ', 'สาว', 'ยู', 'ถาน', 'ขูน', 'วาว'
   ];
@@ -44,4 +44,4 @@ function Exercise1KeysWords() {
   );
 }
 
-export default Exercise1KeysWords;
+export default Exercise8;
