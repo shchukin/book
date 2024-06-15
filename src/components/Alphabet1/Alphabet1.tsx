@@ -1,6 +1,5 @@
 import Heading from "../Heading/Heading.tsx";
 import Row from "../Row/Row.tsx";
-import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Script from "../Script/Script.tsx";
 import Placeholder from "../Placeholder/Placeholder.tsx";
@@ -14,29 +13,27 @@ function Alphabet1() {
       </Heading>
 
       <Row>
-        <Big><Thai>ผ</Thai></Big> <Script>пхɔ:ˇ</Script> — «пчела» <Script>пхынг^</Script>
+        <Thai size="alphabet">ผ</Thai> <Script>пхɔ:ˇ</Script> — «пчела» <Script>пхынг^</Script>
       </Row>
 
       <Row>
-        <Big><Thai>ข</Thai></Big> <Script>кхɔ:ˇ</Script> — «яйцо» <Script>кхай`</Script>
+        <Thai size="alphabet">ข</Thai> <Script>кхɔ:ˇ</Script> — «яйцо» <Script>кхай`</Script>
       </Row>
 
       <Row>
-        <Big><Thai>ถ</Thai></Big> <Script>тхɔ:ˇ</Script> — «пакет»<Script>тхунгˇ</Script>
+        <Thai size="alphabet">ถ</Thai> <Script>тхɔ:ˇ</Script> — «пакет»<Script>тхунгˇ</Script>
       </Row>
 
       <Row>
-        <Big><Thai>ส</Thai></Big> <Script>сɔ:ˇ</Script> — «тигр» <Script>сы:аˇ</Script>
+        <Thai size="alphabet">ส</Thai> <Script>сɔ:ˇ</Script> — «тигр» <Script>сы:аˇ</Script>
       </Row>
 
       <Row>
-        <Big><Thai>ห</Thai></Big> <Script>хɔ:ˇ</Script> — «ящик» <Script>хи:п`</Script>
+        <Thai size="alphabet">ห</Thai> <Script>хɔ:ˇ</Script> — «ящик» <Script>хи:п`</Script>
       </Row>
 
       <Row>
-        <Big>
-          <Thai>ผ ข ถ ส ห</Thai>
-        </Big>
+        <Thai size="big">ผ ข ถ ส ห</Thai>
       </Row>
 
 
@@ -45,78 +42,72 @@ function Alphabet1() {
       </Heading>
 
       <Row>
-        <Big><Thai>พ</Thai></Big> <Script>пхɔ:</Script> — «чаша», точнее, основание для подношений, <Script>пха:н</Script>
+        <Thai size="alphabet">พ</Thai> <Script>пхɔ:</Script> — «чаша», точнее, основание для подношений, <Script>пха:н</Script>
       </Row>
       <Row>
-        <Big><Thai>ค</Thai></Big> <Script>кхɔ:</Script> — «буйвол» <Script>кхва:й</Script>
+        <Thai size="alphabet">ค</Thai> <Script>кхɔ:</Script> — «буйвол» <Script>кхва:й</Script>
       </Row>
       <Row>
-        <Big><Thai>ท</Thai></Big> <Script>тхɔ:</Script> — «военный» <Script>тхаʹха:нˇ</Script>
+        <Thai size="alphabet">ท</Thai> <Script>тхɔ:</Script> — «военный» <Script>тхаʹха:нˇ</Script>
       </Row>
       <Row>
-        <Big><Thai>ซ</Thai></Big> <Script>сɔ:</Script> — «цепь» <Script>со: ˆ</Script>
+        <Thai size="alphabet">ซ</Thai> <Script>сɔ:</Script> — «цепь» <Script>со: ˆ</Script>
       </Row>
       <Row>
-        <Big><Thai>ม</Thai></Big> <Script>мɔ:</Script> — «лошадь» <Script>ма: ʹ</Script>
+        <Thai size="alphabet">ม</Thai> <Script>мɔ:</Script> — «лошадь» <Script>ма: ʹ</Script>
       </Row>
       <Row>
-        <Big><Thai>น</Thai></Big> <Script>нɔ:</Script> — «мышь» <Script>ну:ˇ</Script>
+        <Thai size="alphabet">น</Thai> <Script>нɔ:</Script> — «мышь» <Script>ну:ˇ</Script>
       </Row>
       <Row>
-        <Big><Thai>ย</Thai></Big> <Script>йɔ:</Script> — «Якшас», мифологический персонаж <Script>йакʹ</Script>
+        <Thai size="alphabet">ย</Thai> <Script>йɔ:</Script> — «Якшас», мифологический персонаж <Script>йакʹ</Script>
       </Row>
       <Row>
-        <Big><Thai>ว</Thai></Big> <Script>вɔ:</Script> — «кольцо» <Script>вэ:нˇ</Script>
+        <Thai size="alphabet">ว</Thai> <Script>вɔ:</Script> — «кольцо» <Script>вэ:нˇ</Script>
       </Row>
       <Row>
-        <Big><Thai>ฮ</Thai></Big> <Script>хɔ:</Script> — «филин» <Script>нокʹху:кˆ</Script>
+        <Thai size="alphabet">ฮ</Thai> <Script>хɔ:</Script> — «филин» <Script>нокʹху:кˆ</Script>
       </Row>
 
       <Row>
-        <Big>
-          <Thai>พ ค ท ซ ม น ย ว ฮ</Thai>
-        </Big>
+        <Thai size="big">พ ค ท ซ ม น ย ว ฮ</Thai>
       </Row>
 
 
       <Heading level={2}>Буквы среднего класса</Heading>
 
       <Row>
-        <Big><Thai>ก</Thai></Big> <Script>кɔ:</Script> — «курица» <Script>кай`</Script>
+        <Thai size="alphabet">ก</Thai> <Script>кɔ:</Script> — «курица» <Script>кай`</Script>
       </Row>
       <Row>
-        <Big><Thai>ป</Thai></Big> <Script>пɔ:</Script> — «рыба» <Script>пла:</Script>
+        <Thai size="alphabet">ป</Thai> <Script>пɔ:</Script> — «рыба» <Script>пла:</Script>
       </Row>
       <Row>
-        <Big><Thai>ต</Thai></Big> <Script>тɔ:</Script> — «черепаха» <Script>тау`</Script>
+        <Thai size="alphabet">ต</Thai> <Script>тɔ:</Script> — «черепаха» <Script>тау`</Script>
       </Row>
 
       <Row>
-        <Big>
-          <Thai>ก ป ต</Thai>
-        </Big>
+        <Thai size="big">ก ป ต</Thai>
       </Row>
 
 
       <Heading level={2}>Долгие гласные</Heading>
 
       <Row>
-        <Big><Thai><Placeholder/>า</Thai></Big> <Script>aː</Script> — Знак долгой гласной <Script>aː</Script>
+        <Thai size="alphabet"><Placeholder/>า</Thai> <Script>aː</Script> — Знак долгой гласной <Script>aː</Script>
       </Row>
       <Row>
-        <Big><Thai><Placeholder/>อ</Thai></Big> <Script>ɔː</Script> — знак долгой гласной <Script>ɔː</Script>
+        <Thai size="alphabet"><Placeholder/>อ</Thai> <Script>ɔː</Script> — знак долгой гласной <Script>ɔː</Script>
       </Row>
       <Row>
-        <Big><Thai><Placeholder/>ี</Thai></Big> <Script>иː</Script> — знак гласной <Script>иː</Script>
+        <Thai size="alphabet"><Placeholder/>ี</Thai> <Script>иː</Script> — знак гласной <Script>иː</Script>
       </Row>
       <Row>
-        <Big><Thai><Placeholder/>ู</Thai></Big> <Script>уː</Script> — знак гласной <Script>у:</Script>
+        <Thai size="alphabet"><Placeholder/>ู</Thai> <Script>уː</Script> — знак гласной <Script>у:</Script>
       </Row>
 
       <Row>
-        <Big>
-          <Thai>กา กอ กี กู</Thai>
-        </Big>
+        <Thai size="big">กา กอ กี กู</Thai>
       </Row>
 
     </>
