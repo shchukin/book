@@ -12,67 +12,67 @@ function Dictionary1() {
       </Heading>
 
       <Row>
-        <Thai size="dictionary">ยาย</Thai> <Script>йa:й</Script> — бабушка; обращение к пожилой женщине
+        <Thai size="alphabet">ยาย</Thai> <Script>йa:й</Script> — бабушка; обращение к пожилой женщине
       </Row>
       <Row>
-        <Thai size="dictionary">ตา</Thai> <Script>тa:</Script> — дедушка; обращение к пожилому мужчине
+        <Thai size="alphabet">ตา</Thai> <Script>тa:</Script> — дедушка; обращение к пожилому мужчине
       </Row>
       <Row>
-        <Thai size="dictionary">สา</Thai> <Script>сa:ˇ</Script> — Са (женское имя)
+        <Thai size="alphabet">สา</Thai> <Script>сa:ˇ</Script> — Са (женское имя)
       </Row>
       <Row>
-        <Thai size="dictionary">ยาม</Thai> <Script>йa:м</Script> — сторож, охранник
+        <Thai size="alphabet">ยาม</Thai> <Script>йa:м</Script> — сторож, охранник
       </Row>
       <Row>
-        <Thai size="dictionary">สี</Thai> <Script>си:ˇ</Script> — цвет, краска
+        <Thai size="alphabet">สี</Thai> <Script>си:ˇ</Script> — цвет, краска
       </Row>
       <Row>
-        <Thai size="dictionary">ยา</Thai> <Script>йa:</Script> — лекарство
+        <Thai size="alphabet">ยา</Thai> <Script>йa:</Script> — лекарство
       </Row>
       <Row>
-        <Thai size="dictionary">ปู</Thai> <Script>пу:</Script> — краб
+        <Thai size="alphabet">ปู</Thai> <Script>пу:</Script> — краб
       </Row>
       <Row>
-        <Thai size="dictionary">หมู</Thai> <Script>му:ˇ</Script> — свинья, свинина
+        <Thai size="alphabet">หมู</Thai> <Script>му:ˇ</Script> — свинья, свинина
       </Row>
       <Row>
-        <Thai size="dictionary">หนู</Thai> <Script>ну:ˇ</Script> — мышь; обращение к детям и молодым девушкам
+        <Thai size="alphabet">หนู</Thai> <Script>ну:ˇ</Script> — мышь; обращение к детям и молодым девушкам
       </Row>
       <Row>
-        <Thai size="dictionary">คอ</Thai> <Script>кхɔ:</Script> — шея
+        <Thai size="alphabet">คอ</Thai> <Script>кхɔ:</Script> — шея
       </Row>
       <Row>
-        <Thai size="dictionary">หมอน</Thai> <Script>мɔ:нˇ</Script> — подушка
+        <Thai size="alphabet">หมอน</Thai> <Script>мɔ:нˇ</Script> — подушка
       </Row>
       <Row>
-        <Thai size="dictionary">ถาม</Thai> <Script>тхa:мˇ</Script> — спрашивать
+        <Thai size="alphabet">ถาม</Thai> <Script>тхa:мˇ</Script> — спрашивать
       </Row>
       <Row>
-        <Thai size="dictionary">ทา</Thai> <Script>тхa:</Script> — втирать, намазывать
+        <Thai size="alphabet">ทา</Thai> <Script>тхa:</Script> — втирать, намазывать
       </Row>
       <Row>
-        <Thai size="dictionary">ทาสี</Thai> <Script>тха: си:ˇ</Script> — красить
+        <Thai size="alphabet">ทาสี</Thai> <Script>тха: си:ˇ</Script> — красить
       </Row>
       <Row>
-        <Thai size="dictionary">ขาย</Thai> <Script>кхa:йˇ</Script> — продавать
+        <Thai size="alphabet">ขาย</Thai> <Script>кхa:йˇ</Script> — продавать
       </Row>
       <Row>
-        <Thai size="dictionary">นอน</Thai> <Script>нɔ:н</Script> — лежать, спать
+        <Thai size="alphabet">นอน</Thai> <Script>нɔ:н</Script> — лежать, спать
       </Row>
       <Row>
-        <Thai size="dictionary">สอน</Thai> <Script>сɔ:нˇ</Script> — учить, обучать
+        <Thai size="alphabet">สอน</Thai> <Script>сɔ:нˇ</Script> — учить, обучать
       </Row>
       <Row>
-        <Thai size="dictionary">ขอ</Thai> <Script>кхɔ:ˇ</Script> — просить
+        <Thai size="alphabet">ขอ</Thai> <Script>кхɔ:ˇ</Script> — просить
       </Row>
       <Row>
-        <Thai size="dictionary">มี</Thai> <Script>ми:</Script> — иметь
+        <Thai size="alphabet">มี</Thai> <Script>ми:</Script> — иметь
       </Row>
       <Row>
-        <Thai size="dictionary">ตี</Thai> <Script>ти:</Script> — бить
+        <Thai size="alphabet">ตี</Thai> <Script>ти:</Script> — бить
       </Row>
       <Row>
-        <Thai size="dictionary">หนาว</Thai> <Script>на:уˇ</Script> — мерзнуть
+        <Thai size="alphabet">หนาว</Thai> <Script>на:уˇ</Script> — мерзнуть
       </Row>
 
 
