@@ -19,8 +19,8 @@ function Exercise1Keys() {
       <ExerciseHead>
         7. Наберите текст. Значки на клавиатуре:
         <div>
-          <Sparse>
-            <Big>
+          <Big>
+            <Sparse>
               <SparseItem><Thai>ผ</Thai>: <Key>z</Key></SparseItem>
               <SparseItem><Thai>ข</Thai>: <Key>-</Key></SparseItem>
               <SparseItem><Thai>ถ</Thai>: <Key>5</Key></SparseItem>
@@ -39,8 +39,8 @@ function Exercise1Keys() {
               <SparseItem><Thai>ก</Thai>: <Key>d</Key></SparseItem>
               <SparseItem><Thai>ป</Thai>: <Key>x</Key></SparseItem>
               <SparseItem><Thai>ต</Thai>: <Key>9</Key></SparseItem>
-            </Big>
-          </Sparse>
+            </Sparse>
+          </Big>
         </div>
       </ExerciseHead>
       <ExerciseEntry>

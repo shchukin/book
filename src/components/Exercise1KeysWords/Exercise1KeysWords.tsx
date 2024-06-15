@@ -18,14 +18,14 @@ function Exercise1KeysWords() {
       <ExerciseHead>
         8. Наберите текст. Гласные на клавиатуре:
         <div>
-          <Sparse>
-            <Big>
+          <Big>
+            <Sparse>
               <SparseItem><Thai><Placeholder/>า</Thai>: <Key>-</Key></SparseItem>
               <SparseItem><Thai><Placeholder/>อ</Thai>: <Key>v</Key></SparseItem>
               <SparseItem><Thai><Placeholder/>ี</Thai>: <Key>u</Key></SparseItem>
               <SparseItem><Thai><Placeholder/>ู</Thai>: <Key>^</Key></SparseItem>
-            </Big>
-          </Sparse>
+            </Sparse>
+          </Big>
         </div>
       </ExerciseHead>
       <ExerciseEntry>
