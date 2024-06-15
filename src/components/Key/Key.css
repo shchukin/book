@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.big .key {
+.key--big {
     width: 26px;
     height: 26px;
     font-size: 16px;

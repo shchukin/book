@@ -2,7 +2,6 @@ import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Question from "../Question/Question.tsx";
 import GridType1 from "../GridType1/GridType1.tsx";
 import Key from "../Key/Key.tsx";
-import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Placeholder from "../Placeholder/Placeholder.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
@@ -17,14 +16,12 @@ function Exercise1x8() {
       <ExerciseHead>
         8. Наберите текст. Гласные на клавиатуре:
         <div>
-          <Big>
             <Sparse>
-              <SparseItem><Thai><Placeholder/>า</Thai>: <Key>-</Key></SparseItem>
-              <SparseItem><Thai><Placeholder/>อ</Thai>: <Key>v</Key></SparseItem>
-              <SparseItem><Thai><Placeholder/>ี</Thai>: <Key>u</Key></SparseItem>
-              <SparseItem><Thai><Placeholder/>ู</Thai>: <Key>^</Key></SparseItem>
+              <SparseItem><Thai size="big"><Placeholder/>า</Thai>: <Key size="big">-</Key></SparseItem>
+              <SparseItem><Thai size="big"><Placeholder/>อ</Thai>: <Key size="big">v</Key></SparseItem>
+              <SparseItem><Thai size="big"><Placeholder/>ี</Thai>: <Key size="big">u</Key></SparseItem>
+              <SparseItem><Thai size="big"><Placeholder/>ู</Thai>: <Key size="big">^</Key></SparseItem>
             </Sparse>
-          </Big>
         </div>
       </ExerciseHead>
       <ExerciseEntry>

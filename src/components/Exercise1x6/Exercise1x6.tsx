@@ -1,5 +1,4 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 import Voiced from "../Voiced/Voiced.tsx";
