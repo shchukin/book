@@ -6,7 +6,7 @@ import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 
-function Exercise1Keys() {
+function Exercise1x7() {
   const questions = [
     'ผ ผ ผ ผ', 'ข ข ข ข', 'ถ ถ ถ ถ', 'ส ส ส ส', 'ห ห ห ห', 'พ พ พ พ', 'ค ค ค ค', 'ท ท ท ท',
     'ซ ซ ซ ซ', 'ม ม ม ม', 'น น น น', 'ย ย ย ย', 'ว ว ว ว', 'ฮ ฮ ฮ ฮ', 'ก ก ก ก', 'ป ป ป ป',
@@ -58,4 +58,4 @@ function Exercise1Keys() {
   );
 }
 
-export default Exercise1Keys;
+export default Exercise1x7;
