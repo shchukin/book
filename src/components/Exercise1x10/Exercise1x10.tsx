@@ -1,6 +1,6 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Question from "../Question/Question.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
+import Texting from "../Texting/Texting.tsx";
 
 function Exercise1x10() {
 
@@ -16,10 +16,9 @@ function Exercise1x10() {
       <ExerciseEntry>
         <GridType2>
           {questionsList.map((question, index) => (
-            <Question
+            <Texting
               key={index}
               question={question}
-              type="text"
               correctAnswer={answersList[index]}
               maxLength={4}
             />

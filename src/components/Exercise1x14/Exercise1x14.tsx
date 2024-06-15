@@ -1,38 +1,38 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Question from "../Question/Question.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
+import Texting from "../Texting/Texting.tsx";
 
 function Exercise1x14() {
 
   const questionsAndAnswers = [
-    { question: 'т/тха:м', answer: 'ทาม' },
-    { question: 'к/кха:й', answer: 'คาย' },
-    { question: 'к/кхɔ:н', answer: 'กอน' },
-    { question: 'п/пха:н', answer: 'ปาน' },
-    { question: 'т/тхи:н', answer: 'ตีน' },
-    { question: 'п/пха', answer: 'ผา' },
-    { question: 'т/тхи:м', answer: 'ทีม' },
-    { question: 'п/пху:н', answer: 'ผูน' },
-    { question: 'т/тхɔ:', answer: 'ตอ' },
-    { question: 'к/кха:н', answer: 'กาน' },
-    { question: 'п/пхи:н', answer: 'ผีน' },
-    { question: 'п/пху:н', answer: 'ผูน' },
+    { question: 'ха:й', answer: 'หาย', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'пху:', answer: 'พู', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'йɔ:м', answer: 'ยอม', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'ни:', answer: 'หนี', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'са:м', answer: 'สาม', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'ма:й', answer: 'หมาย', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'пхи:', answer: 'ผี', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'ха:у', answer: 'หาว', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'пха:й', answer: 'พาย', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'на:н', answer: 'นาน', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'ну:', answer: 'หนู', audio: 'Lesson01xEx12-01-thaam.mp3' },
+    { question: 'ма:', answer: 'มา', audio: 'Lesson01xEx12-01-thaam.mp3' },
   ];
 
   return (
     <Exercise>
       <ExerciseHead>
-        12. Прослушайте запись, определите придыхательную или непридыхательную согласную в начале слога, запишите по-тайски.
+        14. Прослушайте запись, определите тон и запишите по-тайски слог
       </ExerciseHead>
       <ExerciseEntry>
         <GridType2>
           {questionsAndAnswers.map((item, index) => (
-            <Question
-              type="text"
+            <Texting
               key={index}
               question={item.question}
               correctAnswer={item.answer}
               maxLength={4}
+              audio={item.audio}
             />
           ))}
         </GridType2>

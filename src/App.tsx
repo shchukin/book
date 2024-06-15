@@ -18,6 +18,7 @@ import Exercise1x2 from "./components/Exercise1x2/Exercise1x2.tsx";
 import Exercise1x1 from "./components/Exercise1x1/Exercise1x1.tsx";
 import Dictionary1 from "./components/Dictionary1/Dictionary1.tsx";
 import Sentences1 from "./components/Sentences1/Sentences1.tsx";
+import Exercise1x14 from "./components/Exercise1x14/Exercise1x14.tsx";
 
 function App() {
 
@@ -106,6 +107,11 @@ function App() {
       <br/>
 
       <Exercise1x13/>
+
+      <br/>
+      <br/>
+
+      <Exercise1x14/>
 
       <br/>
       <br/>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Question.css';
+import './Choosing.css';
 import Thai from "../Thai/Thai";
 import { generateRandomString } from "../../utils.ts";
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";

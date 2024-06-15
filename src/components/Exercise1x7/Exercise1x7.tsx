@@ -1,9 +1,9 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Question from "../Question/Question.tsx";
 import GridType1 from "../GridType1/GridType1.tsx";
 import Key from "../Key/Key.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
+import Typing from "../Typing/Typing.tsx";
 
 function Exercise1x7() {
   const questions = [
@@ -42,10 +42,8 @@ function Exercise1x7() {
       <ExerciseEntry>
         <GridType1>
           {questions.map((question, index) => (
-            <Question
+            <Typing
               key={index}
-              type="typing"
-              question={question}
               correctAnswer={question}
             />
           ))}
