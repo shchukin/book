@@ -4,9 +4,10 @@ import Question from "../Question/Question.tsx";
 import GridType1 from "../GridType1/GridType1.tsx";
 import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
-import Airy from "../Airy/Airy.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Placeholder from "../Placeholder/Placeholder.tsx";
+import Sparse from "../Sparse/Sparse.tsx";
+import Pair from "../Pair/Pair.tsx";
 
 function Exercise1KeysWords() {
   const questions = [
@@ -18,12 +19,14 @@ function Exercise1KeysWords() {
       <ExerciseHead>
         8. Наберите текст. Гласные на клавиатуре:
         <div>
-          <Big>
-            <Airy><Thai><Placeholder/>า</Thai>: <Key>-</Key></Airy>
-            <Airy><Thai><Placeholder/>อ</Thai>: <Key>v</Key></Airy>
-            <Airy><Thai><Placeholder/>ี</Thai>: <Key>u</Key></Airy>
-            <Airy><Thai><Placeholder/>ู</Thai>: <Key>^</Key></Airy>
-          </Big>
+          <Sparse>
+            <Big>
+              <Pair><Thai><Placeholder/>า</Thai>: <Key>-</Key></Pair>
+              <Pair><Thai><Placeholder/>อ</Thai>: <Key>v</Key></Pair>
+              <Pair><Thai><Placeholder/>ี</Thai>: <Key>u</Key></Pair>
+              <Pair><Thai><Placeholder/>ู</Thai>: <Key>^</Key></Pair>
+            </Big>
+          </Sparse>
         </div>
       </ExerciseHead>
       <ExerciseEntry>
