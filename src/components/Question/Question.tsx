@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Question.css';
-import Big from "../Big/Big";
 import Thai from "../Thai/Thai";
 import {generateRandomString} from "../../utils.ts";
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
@@ -72,7 +71,7 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
       {type === 'radio' && (
         <div className="question question--radio">
           <div className="question__radio-asking">
-            <Big><Thai>{question}</Thai></Big>
+            <Thai size="big">{question}</Thai>
           </div>
           <div className="question__radio-answers">
             {selectedOptions.map((option, optionIndex) => (
@@ -109,7 +108,7 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
           }
           <div className="question__asking">
             <div className="question__title">
-              <Big><Thai>{question}</Thai> –&nbsp;</Big>
+              <Thai size="big">{question} –&nbsp;</Thai>
             </div>
             <input
               className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
@@ -124,7 +123,7 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
                   <div className="question__show-answer">
                       <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
                   </div>}
-              {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Big><Thai>{correctAnswer}</Thai></Big></div>}
+              {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Thai size="big">{correctAnswer}</Thai></div>}
             </div>
           </div>
         </div>
