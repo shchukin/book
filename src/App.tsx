@@ -17,6 +17,7 @@ import Exercise1x13 from "./components/Exercise1x13/Exercise1x13.tsx";
 import Sparse, {SparseItem} from "./components/Sparse/Sparse.tsx";
 import Alphabet1 from "./components/Alphabet1/Alphabet1.tsx";
 import Exercise1x6 from "./components/Exercise1x6/Exercise1x6.tsx";
+import Exercise1x5 from "./components/Exercise1x5/Exercise1x5.tsx";
 
 function App() {
 
@@ -147,34 +148,7 @@ function App() {
       <br/>
       <br/>
 
-      <Exercise>
-        <ExerciseHead>
-          5. Прослушайте и повторите за диктором пары слогов ровным и восходящим тоном.
-        </ExerciseHead>
-        <ExerciseEntry>
-          <Voiced audioFile="07-phii-phii-khaa-khaa.mp3">
-            <Big>
-              <Thai>
-                <Sparse>
-                  <SparseItem>พี – ผี</SparseItem>
-                  <SparseItem>คา – ขา</SparseItem>
-                  <SparseItem>ที – ถี</SparseItem>
-                  <SparseItem>ซา – สา</SparseItem>
-                  <SparseItem>ฮา – หา</SparseItem>
-                  <SparseItem>ยู – หยู</SparseItem>
-                  <SparseItem>มี – หมี</SparseItem>
-                  <SparseItem>วา – หวา</SparseItem>
-                  <SparseItem>นาว – หนาว</SparseItem>
-                  <SparseItem>ยอม – หยอม</SparseItem>
-                  <SparseItem>คอม - ขอม</SparseItem>
-                  <SparseItem>ซอย -สอย</SparseItem>
-                  <SparseItem>ทาว – ถาว</SparseItem>
-                </Sparse>
-              </Thai>
-            </Big>
-          </Voiced>
-        </ExerciseEntry>
-      </Exercise>
+      <Exercise1x5/>
 
       <br/>
       <br/>
