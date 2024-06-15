@@ -19,6 +19,7 @@ import Exercise1x1 from "./components/Exercise1x1/Exercise1x1.tsx";
 import Dictionary1 from "./components/Dictionary1/Dictionary1.tsx";
 import Sentences1 from "./components/Sentences1/Sentences1.tsx";
 import Exercise1x14 from "./components/Exercise1x14/Exercise1x14.tsx";
+import Exercise1x15 from "./components/Exercise1x15/Exercise1x15.tsx";
 
 function App() {
 
@@ -94,7 +95,9 @@ function App() {
       <br/>
       <br/>
 
-      <h2>Проверьте себя</h2>
+      <Heading level={2}>
+        Проверьте себя
+      </Heading>
 
       <Exercise1x11/>
 
@@ -122,6 +125,15 @@ function App() {
       <br/>
 
       <Sentences1/>
+
+      <br/>
+      <br/>
+
+      <Heading level={2}>
+        Грамматические упражнения
+      </Heading>
+
+      <Exercise1x15/>
 
       <br/>
       <br/>
