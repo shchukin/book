@@ -1,5 +1,5 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Question from "../Question/Question.tsx";
+import Choosing from "../Choosing/Choosing.tsx";
 
 function Exercise1x13() {
 
@@ -29,9 +29,8 @@ function Exercise1x13() {
       </ExerciseHead>
       <ExerciseEntry>
         {questionsAndAnswers.map((item, index) => (
-          <Question
+          <Choosing
             key={index}
-            type="radio"
             question={item.question}
             correctAnswer={item.answer}
             options={options}
