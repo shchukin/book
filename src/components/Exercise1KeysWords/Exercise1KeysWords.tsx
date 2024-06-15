@@ -6,8 +6,7 @@ import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Placeholder from "../Placeholder/Placeholder.tsx";
-import Sparse from "../Sparse/Sparse.tsx";
-import Pair from "../Pair/Pair.tsx";
+import Sparse, {Pair} from "../Sparse/Sparse.tsx";
 
 function Exercise1KeysWords() {
   const questions = [

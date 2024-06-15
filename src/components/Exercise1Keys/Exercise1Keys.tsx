@@ -4,10 +4,8 @@ import Question from "../Question/Question.tsx";
 import GridType1 from "../GridType1/GridType1.tsx";
 import Key from "../Key/Key.tsx";
 import Big from "../Big/Big.tsx";
-import Airy from "../Airy/Airy.tsx";
 import Thai from "../Thai/Thai.tsx";
-import Sparse from "../Sparse/Sparse.tsx";
-import Pair from "../Pair/Pair.tsx";
+import Sparse, {Pair} from "../Sparse/Sparse.tsx";
 
 function Exercise1Keys() {
   const questions = [

@@ -16,8 +16,7 @@ import Exercise1KeysWords from "./components/Exercise1KeysWords/Exercise1KeysWor
 import Exercise1Keys from "./components/Exercise1Keys/Exercise1Keys.tsx";
 import Exercise1x12 from "./components/Exercise1x12/Exercise1x12.tsx";
 import Exercise1x13 from "./components/Exercise1x13/Exercise1x13.tsx";
-import Sparse from "./components/Sparse/Sparse.tsx";
-import Pair from "./components/Pair/Pair.tsx";
+import Sparse, {Pair} from "./components/Sparse/Sparse.tsx";
 
 function App() {
 

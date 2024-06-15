@@ -1,3 +1,8 @@
 .Sparse {
     word-spacing: 16px
 }
+
+.Pair {
+    white-space: nowrap;
+    word-spacing: 0;
+}
