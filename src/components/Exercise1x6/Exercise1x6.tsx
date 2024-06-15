@@ -13,25 +13,23 @@ function Exercise1x6() {
       </ExerciseHead>
       <ExerciseEntry>
         <Voiced audioFile="08-phaa-phaa-thau-thau.mp3">
-          <Big>
-            <Thai>
-              <Sparse>
-                <SparseItem>ผา – พา</SparseItem>
-                <SparseItem>ขอ – คอ</SparseItem>
-                <SparseItem>ถี – ที</SparseItem>
-                <SparseItem>สู – ซู</SparseItem>
-                <SparseItem>หา – ฮา</SparseItem>
-                <SparseItem>ขอม – คอม</SparseItem>
-                <SparseItem>ถาว – ทาว</SparseItem>
-                <SparseItem>สอย – ซอย</SparseItem>
-                <SparseItem>หาย – ฮาย</SparseItem>
-                <SparseItem>หนา – นา</SparseItem>
-                <SparseItem>หมี – มี</SparseItem>
-                <SparseItem>หวาน – วาน</SparseItem>
-                <SparseItem>หยอ – ยอ</SparseItem>
-              </Sparse>
-            </Thai>
-          </Big>
+          <Thai size="big">
+            <Sparse>
+              <SparseItem>ผา – พา</SparseItem>
+              <SparseItem>ขอ – คอ</SparseItem>
+              <SparseItem>ถี – ที</SparseItem>
+              <SparseItem>สู – ซู</SparseItem>
+              <SparseItem>หา – ฮา</SparseItem>
+              <SparseItem>ขอม – คอม</SparseItem>
+              <SparseItem>ถาว – ทาว</SparseItem>
+              <SparseItem>สอย – ซอย</SparseItem>
+              <SparseItem>หาย – ฮาย</SparseItem>
+              <SparseItem>หนา – นา</SparseItem>
+              <SparseItem>หมี – มี</SparseItem>
+              <SparseItem>หวาน – วาน</SparseItem>
+              <SparseItem>หยอ – ยอ</SparseItem>
+            </Sparse>
+          </Thai>
         </Voiced>
       </ExerciseEntry>
     </Exercise>

@@ -14,13 +14,11 @@ function Exercise1x3() {
       </ExerciseHead>
       <ExerciseEntry>
         <Voiced audioFile="05-phii-khii-thii.mp3">
-          <Big>
-            <Thai>
-              <Sparse>
-                ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน
-              </Sparse>
-            </Thai>
-          </Big>
+          <Thai size="big">
+            <Sparse>
+              ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน
+            </Sparse>
+          </Thai>
         </Voiced>
       </ExerciseEntry>
     </Exercise>

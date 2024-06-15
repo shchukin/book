@@ -14,25 +14,21 @@ function Exercise1x1() {
       <ExerciseEntry>
         а) открытые слоги:
         <Voiced audioFile="01-kaa-taa-paa.mp3">
-          <Thai>
-            <Big>
-              <Sparse>
-                กา กอ กู กี ปา ปอ ปู ปี ตา ตอ ตู ตี ซา ซอ ซี ฮา ฮอ มา มี มู วา ยอ นี มอ นู วอ ยี วู ยู ฮา
-              </Sparse>
-            </Big>
+          <Thai size="big">
+            <Sparse>
+              กา กอ กู กี ปา ปอ ปู ปี ตา ตอ ตู ตี ซา ซอ ซี ฮา ฮอ มา มี มู วา ยอ นี มอ นู วอ ยี วู ยู ฮา
+            </Sparse>
           </Thai>
         </Voiced>
       </ExerciseEntry>
       <ExerciseEntry>
         б) закрытые слоги:
         <Voiced audioFile="02-kaam-kaay-taay.mp3">
-          <Big>
-            <Thai>
-              <Sparse>
-                กาม กอน กาย กาว ตาย ปาน ปอย ปาม ปาว ตาว ตอน ตอม ตอย ซาน ซาย ตีน ปูน ฮาน ฮอม ฮอย
-              </Sparse>
-            </Thai>
-          </Big>
+          <Thai size="big">
+            <Sparse>
+              กาม กอน กาย กาว ตาย ปาน ปอย ปาม ปาว ตาว ตอน ตอม ตอย ซาน ซาย ตีน ปูน ฮาน ฮอม ฮอย
+            </Sparse>
+          </Thai>
         </Voiced>
       </ExerciseEntry>
     </Exercise>

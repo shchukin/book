@@ -13,22 +13,20 @@ function Exercise1x4() {
       </ExerciseHead>
       <ExerciseEntry>
         <Voiced audioFile="06-kaa-khaa-kaay-khaay.mp3">
-          <Big>
-            <Thai>
-              <Sparse>
-                <SparseItem>กา – คา</SparseItem>
-                <SparseItem>ตี – ที</SparseItem>
-                <SparseItem>ปอ – พอ</SparseItem>
-                <SparseItem>ตู – ทู</SparseItem>
-                <SparseItem>ปี – พี</SparseItem>
-                <SparseItem>กาย – คาย</SparseItem>
-                <SparseItem>ปาว – พาว</SparseItem>
-                <SparseItem>ปูม – พูม</SparseItem>
-                <SparseItem>ตาว – ทาว</SparseItem>
-                <SparseItem>กอย – คอย</SparseItem>
-              </Sparse>
-            </Thai>
-          </Big>
+          <Thai size="big">
+            <Sparse>
+              <SparseItem>กา – คา</SparseItem>
+              <SparseItem>ตี – ที</SparseItem>
+              <SparseItem>ปอ – พอ</SparseItem>
+              <SparseItem>ตู – ทู</SparseItem>
+              <SparseItem>ปี – พี</SparseItem>
+              <SparseItem>กาย – คาย</SparseItem>
+              <SparseItem>ปาว – พาว</SparseItem>
+              <SparseItem>ปูม – พูม</SparseItem>
+              <SparseItem>ตาว – ทาว</SparseItem>
+              <SparseItem>กอย – คอย</SparseItem>
+            </Sparse>
+          </Thai>
         </Voiced>
       </ExerciseEntry>
     </Exercise>
