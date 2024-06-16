@@ -37,6 +37,7 @@ function Exercise1x17() {
                 question={item.question}
                 answer={item.answer}
                 answerInThai
+                inputWidth={160}
               />
           ))}
         </TextingTable>

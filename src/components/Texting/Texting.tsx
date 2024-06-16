@@ -1,14 +1,4 @@
-/* Насчёт пропсов questionInThai, questionInScript, answerInThai
- * По умолчанию без пропса, т.е. вопросы или ответы на русском языке.
- * Тайский или Транскрипция -- это как бы усложение.
- *
- * Может быть более сложный кейс, когда в вопросе нужна разметка.
- * Например комбинация русского и тайского, или русского и транскрипции.
- * В этом случае так же берётся вариант по умолчанию и разметка подаётся
- * прям в вопросе. Смотри Exercise 1x12
- */
-
-import { useState } from 'react';
+import {useState} from 'react';
 import './Texting.css';
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 import Thai from "../Thai/Thai.tsx";
@@ -23,9 +13,10 @@ type TextingProps = {
   questionInThai?: boolean;
   questionInScript?: boolean;
   answerInThai?: boolean;
+  inputWidth?: number;
 };
 
-const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, questionInThai, questionInScript, answerInThai }) => {
+const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio, questionInThai, questionInScript, answerInThai, inputWidth}) => {
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -51,7 +42,7 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
     <div className="texting">
       {audio && (
         <div className="texting__audio">
-          <MiniPlayer src={'/' + audio} />
+          <MiniPlayer src={'/' + audio}/>
         </div>
       )}
       <div className="texting__title">
@@ -64,9 +55,10 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
           value={userAnswer}
           onChange={handleInputChange}
           placeholder="???"
+          style={inputWidth ? {width: `${inputWidth}px`} : {}}
         />
       </div>
-      <div className={`texting__answer${ showAnswer ? ' texting__answer--expanded' : ''}`}>
+      <div className={`texting__answer${showAnswer ? ' texting__answer--expanded' : ''}`}>
         <div className="texting__show-answer">
           <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
         </div>

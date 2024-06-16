@@ -1,26 +1,30 @@
-.texting-table {
-    display: table;
-    vertical-align: top;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+@media (740px <= width) {
+
+    .texting-table {
+        display: table;
+        vertical-align: top;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texting-table .texting {
+        display: table-row;
+    }
+        .texting-table .texting:first-child {
+
+        }
+
+        .texting-table .texting__title {
+
+        }
+
+        .texting-table .texting__field {
+
+        }
+
+        .texting-table .texting__answer {
+
+        }
 }
 
-.texting-table .texting {
-    display: table-row;
-}
-    .texting-table .texting:first-child {
-
-    }
-
-    .texting-table .texting__title {
-
-    }
-
-    .texting-table .texting__field {
-
-    }
-
-    .texting-table .texting__answer {
-
-    }

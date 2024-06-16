@@ -1,4 +1,8 @@
-.texting-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media (740px <= width) {
+
+    .texting-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
