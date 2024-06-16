@@ -3,6 +3,22 @@ import Thai from "../Thai/Thai.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 import Voiced from "../Voiced/Voiced.tsx";
 
+const data = [
+  "พี – ผี",
+  "คา – ขา",
+  "ที – ถี",
+  "ซา – สา",
+  "ฮา – หา",
+  "ยู – หยู",
+  "มี – หมี",
+  "วา – หวา",
+  "นาว – หนาว",
+  "ยอม – หยอม",
+  "คอม - ขอม",
+  "ซอย - สอย",
+  "ทาว – ถาว"
+];
+
 function Exercise1x5() {
 
   return (
@@ -14,19 +30,9 @@ function Exercise1x5() {
         <Voiced audioFile="07-phii-phii-khaa-khaa.mp3">
           <Thai size="big">
             <Sparse>
-              <SparseItem>พี – ผี</SparseItem>
-              <SparseItem>คา – ขา</SparseItem>
-              <SparseItem>ที – ถี</SparseItem>
-              <SparseItem>ซา – สา</SparseItem>
-              <SparseItem>ฮา – หา</SparseItem>
-              <SparseItem>ยู – หยู</SparseItem>
-              <SparseItem>มี – หมี</SparseItem>
-              <SparseItem>วา – หวา</SparseItem>
-              <SparseItem>นาว – หนาว</SparseItem>
-              <SparseItem>ยอม – หยอม</SparseItem>
-              <SparseItem>คอม - ขอม</SparseItem>
-              <SparseItem>ซอย -สอย</SparseItem>
-              <SparseItem>ทาว – ถาว</SparseItem>
+              {data.map((item, index) => (
+                <SparseItem key={index}>{item}</SparseItem>
+              ))}
             </Sparse>
           </Thai>
         </Voiced>
