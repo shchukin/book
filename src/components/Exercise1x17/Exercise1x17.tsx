@@ -1,7 +1,7 @@
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
 import Texting from '../Texting/Texting';
 
-const questions = [
+const data = [
   { question: "Дедушка спрашивает бабушку", answer: "ตาถามยาย" },
   { question: "Бабушка спрашивает сторожа", answer: "ยายถามยาม" },
   { question: "Малышка просит бабушку", answer: "หนูขอยาย" },
@@ -27,7 +27,7 @@ function Exercise1x17() {
       <ExerciseHead>
         17. Переведите, запишите ответ по-тайски
       </ExerciseHead>
-      {questions.map((item, index) => (
+      {data.map((item, index) => (
         <ExerciseEntry key={index}>
           <Texting
             question={item.question}
