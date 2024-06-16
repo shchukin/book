@@ -3,11 +3,12 @@
 @media (width < 740px) {
 
     .question--radio {
+        width: auto;
 
     }
 
     .question--radio + .question--radio {
-        /*margin-top: 8px;*/
+        margin-top: 12px;
     }
 
 
@@ -42,5 +43,6 @@
     .question--radio .question__answer {
         justify-content: flex-start;
         margin: 0;
+        height: auto;   
     }
 }

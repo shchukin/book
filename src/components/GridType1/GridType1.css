@@ -4,3 +4,36 @@
     grid-gap: 1rem;
     justify-content: center;
 }
+
+
+
+@media (width < 740px) {
+
+    .grid-type-1 {
+        /*display: grid;*/
+        grid-template-columns: repeat(auto-fit, minmax(var(--input-short-width), 1fr));
+        /*grid-gap: 1rem;/*/
+        /*justify-content: center;*/
+    }
+        .grid-type-1 .question {
+            width: auto;
+            margin: 0;
+            display: block;
+        }
+            .grid-type-1 .question__asking {
+                position: relative;
+                display: block;
+            }
+
+            .grid-type-1 .question__text-input {
+                width: 100% !important;
+            }
+
+            .grid-type-1 .question__text-input--pattern {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+            }
+}
