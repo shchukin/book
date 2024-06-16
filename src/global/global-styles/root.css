@@ -24,6 +24,8 @@
     --success: #00BE00;
     --success-light-background: #2AF92A;
     --input-short-width: 106px;
+    --grid-short-width: 120px;
+    --grid-short-gap: 20px;
 }
 
 @media (350px <= width < 600px) {

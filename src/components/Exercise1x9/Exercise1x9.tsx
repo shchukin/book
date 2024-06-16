@@ -1,6 +1,7 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
 import Texting from "../Texting/Texting.tsx";
+import GridType3 from "../GridType3/GridType3.tsx";
 
 function Exercise1x9() {
 
@@ -35,7 +36,7 @@ function Exercise1x9() {
         9. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах. Напечатайте весь слог:
       </ExerciseHead>
       <ExerciseEntry>
-        <GridType2>
+        <GridType3>
           {data.map((exercise, index) => (
             <Texting
               key={index}
@@ -45,7 +46,7 @@ function Exercise1x9() {
               answerInThai
             />
           ))}
-        </GridType2>
+        </GridType3>
       </ExerciseEntry>
     </Exercise>
   )

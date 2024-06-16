@@ -1,19 +1,26 @@
 .texting {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 16px;
+}
 
+.texting + .texting {
+    margin-top: 12px;
 }
     .texting__audio {
-
+        flex-shrink: 0;
     }
         .texting__player {
             vertical-align: top;
         }
 
     .texting__title {
-
+        flex-shrink: 0;
     }
 
     .texting__field {
-
+        flex-shrink: 0;
     }
         .texting__input {
             vertical-align: top;
@@ -67,6 +74,7 @@
     }
 
     .texting__answer {
+        flex-shrink: 0;
         height: 40px;
         display: flex;
         align-items: center;
@@ -81,24 +89,34 @@
 
 
 
-/* Default layout */
 
-.texting {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-    .texting__audio {
 
-    }
+/*.texting {*/
+/*    display: flex;*/
+/*    width: fit-content;*/
+/*    align-items: center;*/
+/*    gap: 16px;*/
+/*    background-color: red;*/
+/*}*/
+/*    .texting__audio {*/
+/*        width: 40px;*/
+/*        flex-shrink: 0;*/
+/*    }*/
 
-    .texting__title {
+/*    .texting__title {*/
+/*        width: 60px;*/
+/*        white-space: nowrap;*/
+/*        text-align: right;*/
+/*        flex-shrink: 0;*/
+/*    }*/
 
-    }
+/*    .texting__field {*/
+/*        width: 120px;*/
+/*        flex-shrink: 0;*/
+/*    }*/
 
-    .texting__field {
-
-    }
-
-    .texting__answer {
-
-    }
+/*    .texting__answer {*/
+/*        width: 120px; !* 60px ответ и 60px слово "ответ" *!*/
+/*        text-align: left;*/
+/*        flex-shrink: 0;*/
+/*    }*/

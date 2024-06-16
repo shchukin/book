@@ -4,13 +4,16 @@
 
 .thai--big {
     font-size: 1.25em;
+    line-height: 1;
 }
 
 
 .thai--dictionary {
     font-size: 1.5em;
+    line-height: 1;
 }
 
 .thai--alphabet {
     font-size: 2em;
+    line-height: 1;
 }

@@ -1,3 +1,4 @@
+import "./Exercise1x12.css";
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
 import GridType2 from "../GridType2/GridType2.tsx";
 import Texting from "../Texting/Texting.tsx";
@@ -25,7 +26,7 @@ function Exercise1x12() {
         12. Прослушайте запись, определите придыхательную или непридыхательную согласную в начале слога, напечатайте по-тайски.
       </ExerciseHead>
       <ExerciseEntry>
-        <GridType2>
+        <div className="exercise1x12">
           {data.map((item, index) => (
             <Texting
               key={index}
@@ -35,7 +36,7 @@ function Exercise1x12() {
               audio={item.audio}
             />
           ))}
-        </GridType2>
+        </div>
       </ExerciseEntry>
     </Exercise>
   );
