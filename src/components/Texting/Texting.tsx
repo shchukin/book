@@ -68,9 +68,6 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
           placeholder="???"
         />
       </div>
-      <div className="texting__check-handler">
-        <Button onClick={checkAnswer}>Проверить</Button>
-      </div>
       <div className="texting__answer">
         {!showAnswer && (
           <div className="texting__show-answer">

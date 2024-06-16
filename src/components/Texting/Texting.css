@@ -66,10 +66,6 @@
         border-color: var(--success);
     }
 
-    .texting__check-handler {
-        display: none;
-    }
-
     .texting__answer {
         height: 40px;
         display: flex;
@@ -100,10 +96,6 @@
     }
 
     .texting__field {
-
-    }
-
-    .texting__check-handler {
 
     }
 
