@@ -4,6 +4,10 @@ import Sparse from "../Sparse/Sparse.tsx";
 import Voiced from "../Voiced/Voiced.tsx";
 import Script from "../Script/Script.tsx";
 
+const syllables = [
+  "ผี", "ขี", "ถี", "สี", "ปี", "กี", "ตี", "ซี", "พี", "คีม", "ปีน", "ตีน", "ซีน", "ทีม", "ผีน"
+];
+
 function Exercise1x3() {
 
   return (
@@ -15,7 +19,7 @@ function Exercise1x3() {
         <Voiced audioFile="05-phii-khii-thii.mp3">
           <Thai size="big">
             <Sparse>
-              ผี ขี ถี สี ปี กี ตี ซี พี คีม ปีน ตีน ซีน ทีม ผีน
+              {syllables.join(" ")}
             </Sparse>
           </Thai>
         </Voiced>
