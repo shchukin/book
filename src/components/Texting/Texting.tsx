@@ -48,14 +48,13 @@ const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio, qu
       <div className="texting__title">
         {questionInThai ? <Thai size="big">{question}</Thai> : questionInScript ? <Script>{question}</Script> : question}
       </div>
-      <div className="texting__field">
+      <div className="texting__field" style={inputWidth ? {width: `${inputWidth}px`} : {}}>
         <input
           className={`texting__input${isCorrect ? ' texting__input--success' : ''}`}
           type="text"
           value={userAnswer}
           onChange={handleInputChange}
           placeholder="???"
-          style={inputWidth ? {width: `${inputWidth}px`} : {}}
         />
       </div>
       <div className={`texting__answer${showAnswer ? ' texting__answer--expanded' : ''}`}>

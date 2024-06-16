@@ -35,6 +35,8 @@
         }
 
         .exercise-1x17 .texting__field {
+            width: auto !important;
+            max-width: 320px;
             /*grid-area: bottom-left;*/
         }
 
