@@ -8,7 +8,7 @@
  * прям в вопросе. Смотри Exercise 1x12
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Question.css';
 import './Texting.css';
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './Question.css';
 import Thai from "../Thai/Thai";
 import {generateRandomString} from "../../utils.ts";
