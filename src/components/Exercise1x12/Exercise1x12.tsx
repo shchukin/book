@@ -31,7 +31,7 @@ function Exercise1x12() {
               key={index}
               question={item.question}
               answer={item.answer}
-              maxLength={4}
+              answerInThai
               audio={item.audio}
             />
           ))}

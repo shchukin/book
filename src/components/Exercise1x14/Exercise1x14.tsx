@@ -32,7 +32,7 @@ function Exercise1x14() {
               question={item.question}
               questionInScript
               answer={item.answer}
-              maxLength={4}
+              answerInThai
               audio={item.audio}
             />
           ))}

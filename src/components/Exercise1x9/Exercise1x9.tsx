@@ -40,8 +40,9 @@ function Exercise1x9() {
             <Texting
               key={index}
               question={exercise.question}
+              questionInThai
               answer={exercise.answer}
-              maxLength={4}
+              answerInThai
             />
           ))}
         </GridType2>

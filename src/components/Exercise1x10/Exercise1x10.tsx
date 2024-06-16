@@ -41,7 +41,6 @@ function Exercise1x10() {
               questionInThai
               answer={exercise.answer}
               answerInThai
-              maxLength={4}
             />
           ))}
         </GridType2>
