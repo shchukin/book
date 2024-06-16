@@ -8,9 +8,9 @@ type TextingTableProps = {
 function TextingTable({children}: TextingTableProps) {
 
   return (
-    <span className="texting-table">
+    <div className="texting-table">
       {children}
-    </span>
+    </div>
   )
 }
 
