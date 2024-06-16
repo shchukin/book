@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Question.css';
 import './Texting.css';
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
+import Button from "../Button/Button.tsx";
 
 type TextingProps = {
   question: string;
@@ -51,7 +52,9 @@ const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio}) =
           placeholder="???"
         />
       </div>
-      <button className="texting__check-handler" onClick={checkAnswer}>Проверить</button>
+      <div className="texting__check-handler">
+        <Button onClick={checkAnswer}>Проверить</Button>
+      </div>
       <div className="texting__answer">
         {!showAnswer &&
             <div className="texting__show-answer">

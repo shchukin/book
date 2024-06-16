@@ -1,0 +1,28 @@
+.button {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    padding: 8px 10px;
+    min-width: var(--input-short-width);
+    background-color: var(--action-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color var(--transition-hover);
+}
+
+.button:hover {
+    background-color: var(--action-color-hover);
+}
+
+.button:active {
+    translate: 0 1px;
+    transition: none;
+}
