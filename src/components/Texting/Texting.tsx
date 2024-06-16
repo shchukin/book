@@ -1,3 +1,13 @@
+/* Насчёт пропсов questionInThai, questionInScript, answerInThai
+ * По умолчанию без пропса, т.е. вопросы или ответы на русском языке.
+ * Тайский или Транскрипция -- это как бы усложение.
+ *
+ * Может быть более сложный кейс, когда в вопросе нужна разметка.
+ * Например комбинация русского и тайского, или русского и транскрипции.
+ * В этом случае так же берётся вариант по умолчанию и разметка подаётся
+ * прям в вопросе. Смотри Exercise 1x12
+ */
+
 import React, { useState } from 'react';
 import './Question.css';
 import './Texting.css';
@@ -7,7 +17,7 @@ import Thai from "../Thai/Thai.tsx";
 import Script from "../Script/Script.tsx";
 
 type TextingProps = {
-  question: string;
+  question: React.ReactNode; // Change the type to ReactNode to allow JSX
   answer: string;
   maxLength?: number;
   audio?: string;
