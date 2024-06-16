@@ -4,9 +4,28 @@ import Texting from "../Texting/Texting.tsx";
 
 function Exercise1x10() {
 
-  const questionsList = ['ผี', 'ขาว', 'สอย', 'หนู', 'ขาย', 'หวาน', 'ขอ', 'ผาย', 'หมี', 'ถู', 'หยา', 'ถอน', 'หนาย', 'ถอน', 'หวาว', 'หนาม', 'ถี', 'หอย', 'หมา', 'ขาม'];
-
-  const answersList = ['พี', 'คาว', 'ซอย', 'นู', 'คาย', 'วาน', 'คอ', 'พาย', 'มี', 'ทู', 'ยา', 'ทอน', 'นาย', 'ทอน', 'วาว', 'นาม', 'ที', 'ฮอย', 'มา', 'คาม'];
+  const data = [
+    {question: 'ผี', answer: 'พี'},
+    {question: 'ขาว', answer: 'คาว'},
+    {question: 'สอย', answer: 'ซอย'},
+    {question: 'หนู', answer: 'นู'},
+    {question: 'ขาย', answer: 'คาย'},
+    {question: 'หวาน', answer: 'วาน'},
+    {question: 'ขอ', answer: 'คอ'},
+    {question: 'ผาย', answer: 'พาย'},
+    {question: 'หมี', answer: 'มี'},
+    {question: 'ถู', answer: 'ทู'},
+    {question: 'หยา', answer: 'ยา'},
+    {question: 'ถอน', answer: 'ทอน'},
+    {question: 'หนาย', answer: 'นาย'},
+    {question: 'ถอน', answer: 'ทอน'},
+    {question: 'หวาว', answer: 'วาว'},
+    {question: 'หนาม', answer: 'นาม'},
+    {question: 'ถี', answer: 'ที'},
+    {question: 'หอย', answer: 'ฮอย'},
+    {question: 'หมา', answer: 'มา'},
+    {question: 'ขาม', answer: 'คาม'}
+  ];
 
   return (
     <Exercise>
@@ -15,11 +34,11 @@ function Exercise1x10() {
       </ExerciseHead>
       <ExerciseEntry>
         <GridType2>
-          {questionsList.map((question, index) => (
+          {data.map((exercise, index) => (
             <Texting
               key={index}
-              question={question}
-              answer={answersList[index]}
+              question={exercise.question}
+              answer={exercise.answer}
               maxLength={4}
             />
           ))}
