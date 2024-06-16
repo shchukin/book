@@ -16,6 +16,16 @@
     text-align: center;
 }
 
+@media (prefers-color-scheme: dark) {
+    .key {
+        background-color: #1E1E1E;
+        border-color: #505050;
+        color: inherit;
+    }
+}
+
+
+
 .key--big {
     width: 26px;
     height: 26px;

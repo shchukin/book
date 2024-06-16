@@ -28,6 +28,20 @@
         border-top: 1px solid #D9DADB;
     }
 
+@media (prefers-color-scheme: dark) {
+    .exercise {
+        background-color: #2b2b2b;
+        border-color: #222222;
+    }
+        .exercise__head {
+            background-color: #333333;
+            border-color: #222222;
+        }
+
+        .exercise__entry + .exercise__entry {
+            border-top: 1px solid #222222;
+        }
+}
 
 
 @media (width < 740px) {

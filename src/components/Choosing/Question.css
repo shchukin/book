@@ -56,6 +56,14 @@
             border-color var(--transition-hover);
         }
 
+        @media (prefers-color-scheme: dark) {
+            .question__text-input {
+                background-color: #1E1E1E;
+                border-color: #505050;
+                color: inherit;
+            }
+        }
+
         .question__text-input::placeholder {
             opacity: 1; /* reset opacity drop Firefox */
             color: var(--placeholder-color);

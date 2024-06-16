@@ -121,3 +121,16 @@
                         /*font-weight: bold;*/
                     }
 }
+
+
+@media (prefers-color-scheme: dark) {
+
+    .contains {
+        background-color: #1E1E1E;
+        box-shadow: 0 1px 10px 4px #151515;
+    }
+        .contains__link:hover {
+            color: #EEEEEE;
+        }
+
+}

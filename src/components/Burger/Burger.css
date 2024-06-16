@@ -35,3 +35,21 @@
         right: var(--container-padding);
     }
 }
+
+
+
+
+@media (prefers-color-scheme: dark) {
+
+    .burger {
+        background-color: #414141;
+        box-shadow: 0 1px 2px 1px #151515;
+    }
+
+    .burger:hover {
+        background-color: #494949;
+    }
+        .burger__icon {
+            fill: #BBBBBB;
+        }
+}

@@ -30,6 +30,13 @@
     --link-color: #1B73E8;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --link-color: #1e7ab3;
+        --action-color: #1e7ab3;
+    }
+}
+
 @media (350px <= width < 600px) {
     :root {
         --container-padding: 24px;
