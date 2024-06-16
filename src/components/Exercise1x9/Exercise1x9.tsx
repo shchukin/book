@@ -1,11 +1,17 @@
 import './Exercise1x9.css';
-import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import Texting from "../Texting/Texting.tsx";
-import GridType3 from "../GridType3/GridType3.tsx";
+import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise";
+import Texting from "../Texting/Texting";
+import TextingColumns from "../TextingColumns/TextingColumns";
+import { splitArrayInHalf} from "../../utils.ts";
+import TextingTable from "../TextingTable/TextingTable.tsx";  // Adjust the import path as needed
+
+interface ExerciseData {
+  question: string;
+  answer: string;
+}
 
 function Exercise1x9() {
-
-  const data = [
+  const data: ExerciseData[] = [
     {question: 'พอม', answer: 'ผอม'},
     {question: 'คา', answer: 'ขา'},
     {question: 'ทู', answer: 'ถู'},
@@ -30,26 +36,41 @@ function Exercise1x9() {
     {question: 'มาย', answer: 'หมาย'}
   ];
 
+  const [firstHalf, secondHalf] = splitArrayInHalf(data);
+
   return (
     <Exercise>
       <ExerciseHead>
         9. Преобразуйте слог с ровным тоном в слог с восходящим тоном (ˇ), заменив начальную букву в данных слогах. Напечатайте весь слог:
       </ExerciseHead>
       <ExerciseEntry>
-        <GridType3>
-          {data.map((exercise, index) => (
-            <Texting
-              key={index}
-              question={exercise.question}
-              questionInThai
-              answer={exercise.answer}
-              answerInThai
-            />
-          ))}
-        </GridType3>
+        <TextingColumns>
+          <TextingTable>
+            {firstHalf.map((exercise, index) => (
+              <Texting
+                key={index}
+                question={exercise.question}
+                questionInThai
+                answer={exercise.answer}
+                answerInThai
+              />
+            ))}
+          </TextingTable>
+          <TextingTable>
+            {secondHalf.map((exercise, index) => (
+              <Texting
+                key={index}
+                question={exercise.question}
+                questionInThai
+                answer={exercise.answer}
+                answerInThai
+              />
+            ))}
+          </TextingTable>
+        </TextingColumns>
       </ExerciseEntry>
     </Exercise>
-  )
+  );
 }
 
 export default Exercise1x9;

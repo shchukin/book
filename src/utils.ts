@@ -7,3 +7,16 @@ export const generateRandomString = (length: number) => {
   }
   return result;
 };
+
+
+/**
+ * Splits an array into two halves, ensuring the first half is longer if the length is odd.
+ * @param {Array} array - The array to split.
+ * @returns {Array[]} - An array containing the two halves.
+ */
+export function splitArrayInHalf<T>(array: T[]): [T[], T[]] {
+  const midpoint = Math.ceil(array.length / 2);
+  const firstHalf = array.slice(0, midpoint);
+  const secondHalf = array.slice(midpoint);
+  return [firstHalf, secondHalf];
+}

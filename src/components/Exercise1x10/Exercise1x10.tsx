@@ -1,10 +1,16 @@
-import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import GridType2 from "../GridType2/GridType2.tsx";
-import Texting from "../Texting/Texting.tsx";
+import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise";
+import Texting from "../Texting/Texting";
+import TextingColumns from "../TextingColumns/TextingColumns";
+import { splitArrayInHalf } from "../../utils";  // Adjust the import path as needed
+import TextingTable from "../TextingTable/TextingTable";  // Adjust the import path as needed
+
+interface ExerciseData {
+  question: string;
+  answer: string;
+}
 
 function Exercise1x10() {
-
-  const data = [
+  const data: ExerciseData[] = [
     {question: 'ผี', answer: 'พี'},
     {question: 'ขาว', answer: 'คาว'},
     {question: 'สอย', answer: 'ซอย'},
@@ -20,12 +26,14 @@ function Exercise1x10() {
     {question: 'หนาย', answer: 'นาย'},
     {question: 'ถอน', answer: 'ทอน'},
     {question: 'หวาว', answer: 'วาว'},
-    {question: 'หนาม', answer: 'นาม'},
+    {question: 'หนам', answer: 'นาม'},
     {question: 'ถี', answer: 'ที'},
     {question: 'หอย', answer: 'ฮอย'},
     {question: 'หมา', answer: 'มา'},
     {question: 'ขาม', answer: 'คาม'}
   ];
+
+  const [firstHalf, secondHalf] = splitArrayInHalf(data);
 
   return (
     <Exercise>
@@ -33,21 +41,33 @@ function Exercise1x10() {
         10. Преобразуйте слог с восходящим тоном (ˇ) в слог с ровным тоном:
       </ExerciseHead>
       <ExerciseEntry>
-        <GridType2>
-          {data.map((exercise, index) => (
-            <Texting
-              key={index}
-              question={exercise.question}
-              questionInThai
-              answer={exercise.answer}
-              answerInThai
-            />
-          ))}
-        </GridType2>
-
+        <TextingColumns>
+          <TextingTable>
+            {firstHalf.map((exercise, index) => (
+              <Texting
+                key={index}
+                question={exercise.question}
+                questionInThai
+                answer={exercise.answer}
+                answerInThai
+              />
+            ))}
+          </TextingTable>
+          <TextingTable>
+            {secondHalf.map((exercise, index) => (
+              <Texting
+                key={index}
+                question={exercise.question}
+                questionInThai
+                answer={exercise.answer}
+                answerInThai
+              />
+            ))}
+          </TextingTable>
+        </TextingColumns>
       </ExerciseEntry>
     </Exercise>
-  )
+  );
 }
 
 export default Exercise1x10;
