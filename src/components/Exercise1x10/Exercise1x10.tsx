@@ -38,7 +38,9 @@ function Exercise1x10() {
             <Texting
               key={index}
               question={exercise.question}
+              questionInThai
               answer={exercise.answer}
+              answerInThai
               maxLength={4}
             />
           ))}
