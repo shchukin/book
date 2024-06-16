@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './global/global-style.css';
 import Contains from "./components/Contains/Contains.tsx";
 import Lesson1 from "./components/Lesson1/Lesson1.tsx";
+import Burger from "./components/Burger/Burger.tsx";
 
 function App() {
-  const [isMenuOpen, setMenuOpen] = useState(true); // Open by default on desktop
+  const [isMenuOpen, setMenuOpen] = useState(false); // Open by default on desktop
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -12,10 +13,13 @@ function App() {
 
   return (
     <div className="container">
-      <button className="burger-menu" onClick={toggleMenu}>
-        ☰
-      </button>
-      <Contains isOpen={isMenuOpen}/>
+
+      <Burger onClick={toggleMenu} expanded={isMenuOpen} />
+
+      {
+        isMenuOpen && <Contains/>
+      }
+
 
       <Lesson1/>
 

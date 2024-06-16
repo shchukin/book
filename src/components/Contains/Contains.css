@@ -36,8 +36,13 @@
     text-decoration: underline;
 }
 
+.toc-level-2 {
+    font-size: 18px;
+}
+
 .toc-level-3 {
     margin-left: 20px;
+    font-size: 16px;
 }
 
 .toc-level-3::before {
