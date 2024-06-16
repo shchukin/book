@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './Question.css';
 import './Texting.css';
-import Thai from "../Thai/Thai";
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 
 type TextingProps = {
@@ -11,7 +10,7 @@ type TextingProps = {
   audio?: string;
 };
 
-const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio }) => {
+const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio}) => {
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -33,32 +32,32 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio })
   };
 
   return (
-    <div className="question question--text">
+    <div className="texting">
       {
         audio &&
-          <div className="question__audio">
-              <audio className="question__player" controls src={'/' + audio} preload="auto"></audio>
+          <div className="texting__audio">
+              <audio className="texting__player" controls src={'/' + audio} preload="auto"></audio>
           </div>
       }
-      <div className="question__asking">
-        <div className="question__title">
-          <Thai size="big">{question} –&nbsp;</Thai>
-        </div>
+      <div className="texting__title">
+        {question}
+      </div>
+      <div className="texting__field">
         <input
-          className={`question__text-input${isCorrect !== null && isCorrect ? ' question__text-input--success' : isCorrect !== null && !isCorrect ? ' question__text-input--error' : ''}`}
+          className={`texting__input${isCorrect !== null && isCorrect ? ' texting__input--success' : isCorrect !== null && !isCorrect ? ' texting__input--error' : ''}`}
           type="text"
           value={userAnswer}
           onChange={handleInputChange}
           placeholder="???"
         />
-        <button className="question__check-handler" onClick={checkAnswer}>Проверить</button>
-        <div className="question__answer">
-          {!showAnswer &&
-              <div className="question__show-answer">
-                  <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
-              </div>}
-          {showAnswer && <div><span className="question__answer-label">Ответ:</span> <Thai size="big">{answer}</Thai></div>}
-        </div>
+      </div>
+      <button className="texting__check-handler" onClick={checkAnswer}>Проверить</button>
+      <div className="texting__answer">
+        {!showAnswer &&
+            <div className="texting__show-answer">
+                <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
+            </div>}
+        {showAnswer && <div><span className="texting__answer-label">Ответ:</span> {answer}</div>}
       </div>
     </div>
   );

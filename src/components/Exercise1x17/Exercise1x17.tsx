@@ -27,14 +27,15 @@ function Exercise1x17() {
       <ExerciseHead>
         17. Переведите, напечатайте ответ по-тайски
       </ExerciseHead>
-      {data.map((item, index) => (
-        <ExerciseEntry key={index}>
-          <Texting
-            question={item.question}
-            answer={item.answer}
-          />
-        </ExerciseEntry>
-      ))}
+      <ExerciseEntry>
+        {data.map((item, index) => (
+            <Texting
+              key={index}
+              question={item.question}
+              answer={item.answer}
+            />
+        ))}
+      </ExerciseEntry>
     </Exercise>
   );
 }

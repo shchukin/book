@@ -1,0 +1,78 @@
+.texting {
+
+}
+    .texting__audio {
+
+    }
+        .texting__player {
+            vertical-align: top;
+        }
+
+    .texting__title {
+
+    }
+
+    .texting__input {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+        padding: 0 10px 2px;
+        background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
+        background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: right 4px center;
+        border: 2px solid var(--input-border);
+        outline: none;
+        border-radius: 4px;
+        font-family: var(--font-thai);
+        font-size: 22px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+        line-height: 34px;
+        color: #000000;
+        opacity: 1; /* reset select:disabled default fade on iOS */
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color var(--transition-hover),
+        border-color var(--transition-hover);
+    }
+
+    .texting__input::placeholder {
+        opacity: 1; /* reset opacity drop Firefox */
+        color: var(--placeholder-color);
+    }
+
+    .texting__input:hover {
+        border-color: var(--input-border-hover-and-focus);
+    }
+
+    .texting__input:focus-visible {
+        border-color: var(--input-border-hover-and-focus);
+        box-shadow: 0 0 0 1px var(--input-border-hover-and-focus);
+        transition: none;
+    }
+
+    .texting__input--success {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2My4wNTQgNDQyLjI5TDMwNS41MjcgNTg0Ljc1N0w2MjMuNjE3IDI2Ni42NjciIHN0cm9rZT0iIzAwQkUwMCIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+        color: var(--success);
+        border-color: var(--success);
+    }
+
+    .texting__input--error {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI0MSA1NTkuMDlMNTU5LjA5IDI0MSIgc3Ryb2tlPSIjRkYwMDMzIiBzdHJva2Utd2lkdGg9IjgzLjMzMzMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDEgMjQxTDU1OS4wOSA1NTkuMDkiIHN0cm9rZT0iI0ZGMDAzMyIgc3Ryb2tlLXdpZHRoPSI4My4zMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+        color: var(--error);
+        border-color: var(--error);
+    }
+
+    .texting__check-handler {
+
+    }
+
+    .texting__answer {
+
+    }
+        .texting__show-answer {
+
+        }
+
+        .texting__answer-label {
+
+        }
