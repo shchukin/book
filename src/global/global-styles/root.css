@@ -27,6 +27,7 @@
     --grid-short-width: 120px;
     --cell-padding: 16px;
     --row-margin: 12px;
+    --link-color: #1B73E8;
 }
 
 @media (350px <= width < 600px) {

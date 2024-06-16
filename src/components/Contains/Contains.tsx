@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Contains.css';
 
 interface Heading {
@@ -33,23 +33,23 @@ const Contains = () => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const target = document.getElementById(id);
-    target?.scrollIntoView({ behavior: 'smooth' });
+    target?.scrollIntoView({behavior: 'smooth'});
   };
 
   return (
-    <nav className="toc-container">
-      <div className="contains__heading">
-        Урок 1
-      </div>
-      <ul>
-        {headings.map((heading) => (
-          <li key={heading.id} className={`toc-level-${heading.level}`}>
-            <a href={`#${heading.id}`} onClick={(e) => handleClick(e, heading.id)}>
+    <nav className="contains">
+      <div className="contains__scroll">
+        <div className="contains__heading">
+          Урок 1
+        </div>
+        <div className="contains__list">
+          {headings.map((heading) => (
+            <a key={heading.id} className={`contains__link contains__link--level-${heading.level}`} href={`#${heading.id}`} onClick={(e) => handleClick(e, heading.id)}>
               {heading.text}
             </a>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
     </nav>
   );
 };
