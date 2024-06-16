@@ -24,7 +24,7 @@ function Exercise1x4() {
         4. Прослушайте и повторяйте за диктором пары слогов, которые различаются непридыхательными и придыхательными согласными в начале слога:
       </ExerciseHead>
       <ExerciseEntry>
-        <Voiced audioFile="06-kaa-khaa-kaay-khaay.mp3">
+        <Voiced audioFile="Lesson01xEx04-kaa-khaa-tii-thii.mp3">
           <Thai size="big">
             <Sparse>
               {data.map((item, index) => (

@@ -19,7 +19,7 @@ function Exercise1x2() {
       </ExerciseHead>
       <ExerciseEntry>
         а) открытые слоги:
-        <Voiced audioFile="03-pha-kha-tha.mp3">
+        <Voiced audioFile="Lesson01xEx02-phaa-khaa-thaa.mp3">
           <Thai size="big">
             <Sparse>
               {data1.join(" ")}
@@ -29,7 +29,7 @@ function Exercise1x2() {
       </ExerciseEntry>
       <ExerciseEntry>
         б) закрытые слоги:
-        <Voiced audioFile="04-phan-kham-thau.mp3">
+        <Voiced audioFile="Lesson01xEx02-phan-khaam-thau.mp3">
           <Thai size="big">
             <Sparse>
               {data2.join(" ")}

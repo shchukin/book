@@ -27,7 +27,7 @@ function Exercise1x6() {
         6. Прослушайте и повторите за диктором пары слогов восходящим и ровным тоном.
       </ExerciseHead>
       <ExerciseEntry>
-        <Voiced audioFile="08-phaa-phaa-thau-thau.mp3">
+        <Voiced audioFile="Lesson01xEx06-phaa-phaa-khoo-khoo.mp3">
           <Thai size="big">
             <Sparse>
               {data.map((item, index) => (

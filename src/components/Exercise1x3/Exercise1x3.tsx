@@ -16,7 +16,7 @@ function Exercise1x3() {
         3. Прослушайте и повторяйте за диктором слоги с гласной <Script>и:</Script>.
       </ExerciseHead>
       <ExerciseEntry>
-        <Voiced audioFile="05-phii-khii-thii.mp3">
+        <Voiced audioFile="Lesson01xEx03-phii-khii-thii.mp3">
           <Thai size="big">
             <Sparse>
               {syllables.join(" ")}
