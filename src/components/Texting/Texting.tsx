@@ -15,7 +15,7 @@ import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 import Button from "../Button/Button.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Script from "../Script/Script.tsx";
-import MiniPlayer from "../MiniPlayer/MiniPlayer.tsx";  // Import MiniPlayer component
+import MiniPlayer from "../MiniPlayer/MiniPlayer.tsx"; // Import MiniPlayer component
 
 type TextingProps = {
   question: React.ReactNode;
@@ -38,10 +38,11 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
       return;
     }
     setUserAnswer(value);
+    checkAnswer(value);  // Run checkAnswer on input change
   };
 
-  const checkAnswer = () => {
-    setIsCorrect(userAnswer === answer);
+  const checkAnswer = (value: string) => {
+    setIsCorrect(value === answer);
   };
 
   const toggleAnswer = () => {
@@ -60,7 +61,7 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
       </div>
       <div className="texting__field">
         <input
-          className={`texting__input${isCorrect !== null && isCorrect ? ' texting__input--success' : isCorrect !== null && !isCorrect ? ' texting__input--error' : ''}`}
+          className={`texting__input${isCorrect ? ' texting__input--success' : ''}`}
           type="text"
           value={userAnswer}
           onChange={handleInputChange}
