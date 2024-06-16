@@ -38,8 +38,8 @@
             grid-area: bottom-left;
         }
 
-        .texting__answer {
-            padding-top: 0;
+        .exercise-1x12 .texting__answer {
+            margin-top: -2px;
             grid-area: bottom-right;
         }
 }

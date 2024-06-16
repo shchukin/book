@@ -205,7 +205,7 @@
         }
 
         .texting__answer {
-            padding-top: 6px;
+            margin-top: 2px;
             grid-area: bottom-right;
         }
 }

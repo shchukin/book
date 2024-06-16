@@ -1,0 +1,45 @@
+.exercise-1x17 {
+
+}
+
+@media (width < 740px) {
+
+    .exercise-1x17 {
+
+    }
+
+    .exercise-1x17 .texting {
+        margin-top: 8px;
+        display: block;
+        /*padding-left: 0;*/
+        /*grid-template-columns: 1fr 1fr;*/
+        /*gap: 0 20px;*/
+        /*grid-template-areas: 'top top' 'bottom-left bottom-right';*/
+    }
+
+    .exercise-1x17 .texting:first-child {
+        margin-top: 0;
+    }
+        .exercise-1x17 .texting__audio {
+            /*top: -5px;*/
+        }
+
+        .exercise-1x17 .texting__title {
+            margin-bottom: 8px;
+            /*grid-area: top;*/
+            /*text-align: left;*/
+        }
+
+        .exercise-1x17 .texting:has(.texting__audio) .texting__title {
+            /*padding-left: 30px;*/
+        }
+
+        .exercise-1x17 .texting__field {
+            /*grid-area: bottom-left;*/
+        }
+
+        .texting__answer {
+            /*padding-top: 0;*/
+            /*grid-area: bottom-right;*/
+        }
+}

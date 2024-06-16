@@ -30,8 +30,9 @@ function Exercise1x17() {
         17. Переведите, напечатайте ответ по-тайски
       </ExerciseHead>
       <ExerciseEntry>
-        <TextingTable>
-          {data.map((item, index) => (
+        <div className="exercise-1x17">
+          <TextingTable>
+            {data.map((item, index) => (
               <Texting
                 key={index}
                 question={item.question}
@@ -39,11 +40,12 @@ function Exercise1x17() {
                 answerInThai
                 inputWidth={160}
               />
-          ))}
-        </TextingTable>
+            ))}
+          </TextingTable>
+        </div>
       </ExerciseEntry>
     </Exercise>
-  );
+);
 }
 
 export default Exercise1x17;
