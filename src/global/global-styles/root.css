@@ -25,7 +25,8 @@
     --success-light-background: #2AF92A;
     --input-short-width: 106px;
     --grid-short-width: 120px;
-    --grid-short-gap: 20px;
+    --cell-padding: 16px;
+    --row-margin: 12px;
 }
 
 @media (350px <= width < 600px) {

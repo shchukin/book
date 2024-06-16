@@ -1,3 +1,4 @@
+import './Exercise1x17.css'
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
 import Texting from '../Texting/Texting';
 
@@ -28,14 +29,16 @@ function Exercise1x17() {
         17. Переведите, напечатайте ответ по-тайски
       </ExerciseHead>
       <ExerciseEntry>
-        {data.map((item, index) => (
-            <Texting
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              answerInThai
-            />
-        ))}
+        <div className="exercise1x17">
+          {data.map((item, index) => (
+              <Texting
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                answerInThai
+              />
+          ))}
+        </div>
       </ExerciseEntry>
     </Exercise>
   );

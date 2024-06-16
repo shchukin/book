@@ -1,6 +1,5 @@
 import "./Exercise1x12.css";
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
-import GridType2 from "../GridType2/GridType2.tsx";
 import Texting from "../Texting/Texting.tsx";
 import Script from "../Script/Script.tsx";
 

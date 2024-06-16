@@ -2,11 +2,11 @@
     display: flex;
     width: fit-content;
     align-items: center;
-    gap: 16px;
+    text-align: left;
 }
 
 .texting + .texting {
-    margin-top: 12px;
+    margin-top: var(--row-margin);
 }
     .texting__audio {
         flex-shrink: 0;
@@ -77,7 +77,6 @@
         flex-shrink: 0;
         height: 40px;
         display: flex;
-        align-items: center;
     }
         .texting__show-answer {
 
@@ -90,33 +89,43 @@
 
 
 
+@media (740px <= width) {
 
-/*.texting {*/
-/*    display: flex;*/
-/*    width: fit-content;*/
-/*    align-items: center;*/
-/*    gap: 16px;*/
-/*    background-color: red;*/
-/*}*/
-/*    .texting__audio {*/
-/*        width: 40px;*/
-/*        flex-shrink: 0;*/
-/*    }*/
+    .texting {
+        display: table;
+        vertical-align: top;
+        border-collapse: collapse;
+    }
+        .texting__audio {
+            display: table-cell;
+            vertical-align: middle;
+            border-right: var(--cell-padding) solid transparent;
+            width: 1px;
+        }
 
-/*    .texting__title {*/
-/*        width: 60px;*/
-/*        white-space: nowrap;*/
-/*        text-align: right;*/
-/*        flex-shrink: 0;*/
-/*    }*/
+        .texting__title {
+            display: table-cell;
+            vertical-align: middle;
+            border-right: var(--cell-padding) solid transparent;
+            /*width: 60px;*/
+            /*white-space: nowrap;*/
+            /*text-align: right;*/
+            /*flex-shrink: 0;*/
+        }
 
-/*    .texting__field {*/
-/*        width: 120px;*/
-/*        flex-shrink: 0;*/
-/*    }*/
+        .texting__field {
+            display: table-cell;
+            vertical-align: middle;
+            /*width: 120px;*/
+            /*flex-shrink: 0;*/
+        }
 
-/*    .texting__answer {*/
-/*        width: 120px; !* 60px ответ и 60px слово "ответ" *!*/
-/*        text-align: left;*/
-/*        flex-shrink: 0;*/
-/*    }*/
+        .texting__answer {
+            display: table-cell;
+            vertical-align: middle;
+            border-left: var(--cell-padding) solid transparent;
+            /*width: 120px; !* 60px ответ и 60px слово "ответ" *!*/
+            /*text-align: left;*/
+            /*flex-shrink: 0;*/
+        }
+}
