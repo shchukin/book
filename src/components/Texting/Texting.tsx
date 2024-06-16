@@ -9,10 +9,8 @@
  */
 
 import { useState } from 'react';
-import './Question.css';
 import './Texting.css';
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
-import Button from "../Button/Button.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Script from "../Script/Script.tsx";
 import MiniPlayer from "../MiniPlayer/MiniPlayer.tsx"; // Import MiniPlayer component
@@ -68,18 +66,14 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
           placeholder="???"
         />
       </div>
-      <div className="texting__answer">
-        {!showAnswer && (
-          <div className="texting__show-answer">
-            <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
-          </div>
-        )}
-        {showAnswer && (
-          <div>
-            <span className="texting__answer-label">Ответ:&nbsp;</span>
-            {answerInThai ? <Thai size="big">{answer}</Thai> : answer}
-          </div>
-        )}
+      <div className={`texting__answer${ showAnswer ? ' texting__answer--expanded' : ''}`}>
+        <div className="texting__show-answer">
+          <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
+        </div>
+        <div className="texting__answer-content">
+          Ответ:&nbsp;
+          {answerInThai ? <Thai size="big">{answer}</Thai> : answer}
+        </div>
       </div>
     </div>
   );

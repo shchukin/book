@@ -75,17 +75,46 @@
 
     .texting__answer {
         flex-shrink: 0;
-        height: 40px;
-        display: flex;
+        position: relative;
     }
         .texting__show-answer {
-
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            text-align: left;
+            transition: opacity 100ms ease,
+                        visibility 100ms ease;
         }
 
-        .texting__answer-label {
 
+        /* Ответ нужен на странице, даже если он временно скрыт.
+           Это нужно, чтобы зарезервировать место на странице.
+           Чтобы, во-первых, ничего не скакало при показе ответа,
+           а во-вторых, чтобы в табличкой разметке колонка с ответом
+           заранее получила ширину по самому широкому из ответов.
+           По-это именно opacity: 0 и visibility: hidden тута:
+        */
+        .texting__answer-content {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 100ms ease,
+                        visibility 100ms ease;
         }
 
+    .texting__answer--expanded {
+
+    }
+        .texting__answer--expanded .texting__show-answer {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .texting__answer--expanded .texting__answer-content {
+            opacity: 1;
+            visibility: visible;
+        }
 
 
 
@@ -107,25 +136,16 @@
             display: table-cell;
             vertical-align: middle;
             border-right: var(--cell-padding) solid transparent;
-            /*width: 60px;*/
-            /*white-space: nowrap;*/
-            /*text-align: right;*/
-            /*flex-shrink: 0;*/
         }
 
         .texting__field {
             display: table-cell;
             vertical-align: middle;
-            /*width: 120px;*/
-            /*flex-shrink: 0;*/
         }
 
         .texting__answer {
             display: table-cell;
             vertical-align: middle;
             border-left: var(--cell-padding) solid transparent;
-            /*width: 120px; !* 60px ответ и 60px слово "ответ" *!*/
-            /*text-align: left;*/
-            /*flex-shrink: 0;*/
         }
 }
