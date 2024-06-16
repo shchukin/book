@@ -11,7 +11,7 @@ const syllables = [
 function Exercise1x3() {
 
   return (
-    <Exercise>
+    <Exercise id="exercise3">
       <ExerciseHead>
         3. Прослушайте и повторяйте за диктором слоги с гласной <Script>и:</Script>.
       </ExerciseHead>

@@ -13,7 +13,7 @@ const data2 = [
 
 function Exercise1x1() {
   return (
-    <Exercise>
+    <Exercise id="exercise1">
       <ExerciseHead>
         1. Прослушайте и повторяйте за диктором слоги с долгими гласными ровным тоном.
       </ExerciseHead>

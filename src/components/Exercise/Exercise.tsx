@@ -1,28 +1,27 @@
-import './Exercise.css'
-import {ReactNode} from "react";
+import './Exercise.css';
+import { ReactNode, HTMLAttributes } from "react";
 
 type ExerciseProps = {
-  children: ReactNode
-}
-
+  children: ReactNode;
+} & HTMLAttributes<HTMLDivElement>;
 
 // Exercise component
-const Exercise = ({children}: ExerciseProps) => {
-  return <div className="exercise">{children}</div>;
+const Exercise = ({ children, ...rest }: ExerciseProps) => {
+  return <div className="exercise" {...rest}>{children}</div>;
 };
 
 // ExerciseHead component
-const ExerciseHead = ({children}: ExerciseProps) => {
+const ExerciseHead = ({ children }: ExerciseProps) => {
   return <div className="exercise__head">{children}</div>;
 };
 
 // ExerciseEntry component
-const ExerciseEntry = ({children}: ExerciseProps) => {
+const ExerciseEntry = ({ children }: ExerciseProps) => {
   return <div className="exercise__entry">{children}</div>;
 };
 
 // Named exports for individual components
-export {Exercise, ExerciseHead, ExerciseEntry};
+export { Exercise, ExerciseHead, ExerciseEntry };
 
 // Default export with an object containing all components
 export default {
