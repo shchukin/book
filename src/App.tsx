@@ -40,29 +40,12 @@ function App() {
   }, [isMenuOpen]);
 
   return (
-    <div className="container">
+    <div className="page container">
       <div className="menu" ref={menuRef}>
         <Burger onClick={toggleMenu} expanded={isMenuOpen} />
         {isMenuOpen && <Contains />}
       </div>
       <Lesson1 />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }

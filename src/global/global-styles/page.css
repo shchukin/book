@@ -1,0 +1,10 @@
+.page {
+    padding-bottom: 200px;
+}
+
+
+@media (width < 740px) {
+    .page {
+        padding-bottom: 140px;
+    }
+}
