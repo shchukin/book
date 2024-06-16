@@ -2,6 +2,13 @@ import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 import Thai from "../Thai/Thai.tsx";
 
+const data = [
+  "สาถามยาม",
+  "ยายสอนหนู",
+  "สาขอตา",
+  "สามีตา"
+];
+
 function Exercise1x16() {
 
   return (
@@ -12,10 +19,9 @@ function Exercise1x16() {
       <ExerciseEntry>
         <Thai size="big">
           <Sparse>
-            <SparseItem>สาถามยาม</SparseItem>
-            <SparseItem>ยายสอนหนู</SparseItem>
-            <SparseItem>สาขอตา</SparseItem>
-            <SparseItem>สามีตา</SparseItem>
+            {data.map((item, index) => (
+              <SparseItem key={index}>{item}</SparseItem>
+            ))}
           </Sparse>
         </Thai>
       </ExerciseEntry>
