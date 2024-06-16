@@ -12,6 +12,8 @@
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
         font-weight: inherit;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
         text-align: center;
         text-wrap: balance;
     }
@@ -41,6 +43,8 @@
             /*border-bottom: 1px solid #D9DADB;*/
             /*border-top-left-radius: 4px;*/
             /*border-top-right-radius: 4px;*/
+            /*font-size: 16px;*/
+            /*line-height: 24px;*/
             /*text-align: center;*/
             /*text-wrap: balance;*/
         }

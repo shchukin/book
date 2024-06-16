@@ -1,0 +1,46 @@
+
+
+@media (width < 740px) {
+
+    .question--radio {
+
+    }
+
+    .question--radio + .question--radio {
+        /*margin-top: 8px;*/
+    }
+
+
+    .question__radio-asking {
+        width: auto;
+        /*padding-right: 20px;*/
+        text-align: left;
+    }
+
+    .question__radio-answers {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*gap: 10px;*/
+        /*padding-right: 20px;*/
+    }
+
+    .question__radio {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*gap: 6px;*/
+        /*padding: 6px 28px 6px 4px;*/
+        /*background-size: 20px 20px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: right 4px center;*/
+        /*border-radius: 3px;*/
+        /*user-select: none;*/
+        /*font-size: 16px;*/
+        /*line-height: 20px;*/
+        /*cursor: pointer;*/
+    }
+
+    .question--radio .question__answer {
+        justify-content: flex-start;
+        margin: 0;
+    }
+}
