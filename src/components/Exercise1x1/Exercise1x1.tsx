@@ -3,8 +3,21 @@ import Thai from "../Thai/Thai.tsx";
 import Sparse from "../Sparse/Sparse.tsx";
 import Voiced from "../Voiced/Voiced.tsx";
 
-function Exercise1x1() {
+const data1 = [
+  "กา", "กอ", "กู", "กี", "ปา", "ปอ", "ปู", "ปี",
+  "ตา", "ตอ", "ตู", "ตี", "ซา", "ซอ", "ซี", "ฮา",
+  "ฮอ", "มา", "มี", "มู", "วา", "ยอ", "นี", "มอ",
+  "นู", "วอ", "ยี", "วู", "ยู", "ฮา"
+];
 
+const data2 = [
+  "กาม", "กอน", "กาย", "กาว", "ตาย", "ปาน",
+  "ปอย", "ปาม", "ปาว", "ตาว", "ตอน", "ตอม",
+  "ตอย", "ซาน", "ซาย", "ตีน", "ปูน", "ฮาน",
+  "ฮอม", "ฮอย"
+];
+
+function Exercise1x1() {
   return (
     <Exercise>
       <ExerciseHead>
@@ -15,7 +28,7 @@ function Exercise1x1() {
         <Voiced audioFile="01-kaa-taa-paa.mp3">
           <Thai size="big">
             <Sparse>
-              กา กอ กู กี ปา ปอ ปู ปี ตา ตอ ตู ตี ซา ซอ ซี ฮา ฮอ มา มี มู วา ยอ นี มอ นู วอ ยี วู ยู ฮา
+              {data1.join(" ")}
             </Sparse>
           </Thai>
         </Voiced>
@@ -25,7 +38,7 @@ function Exercise1x1() {
         <Voiced audioFile="02-kaam-kaay-taay.mp3">
           <Thai size="big">
             <Sparse>
-              กาม กอน กาย กาว ตาย ปาน ปอย ปาม ปาว ตาว ตอน ตอม ตอย ซาน ซาย ตีน ปูน ฮาน ฮอม ฮอย
+              {data2.join(" ")}
             </Sparse>
           </Thai>
         </Voiced>
