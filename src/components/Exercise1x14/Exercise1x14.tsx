@@ -22,7 +22,7 @@ function Exercise1x14() {
   return (
     <Exercise>
       <ExerciseHead>
-        14. Прослушайте запись, определите тон и запишите по-тайски слог
+        14. Прослушайте запись, определите тон и напечатайте по-тайски слог
       </ExerciseHead>
       <ExerciseEntry>
         <GridType2>

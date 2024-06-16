@@ -27,7 +27,7 @@ function Exercise1x11() {
   return (
     <Exercise>
       <ExerciseHead>
-        11. Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.
+        11. Прочитайте и определите, какая согласная в начале слога: придыхательная или нет
       </ExerciseHead>
       <ExerciseEntry>
         {data.map((item, index) => (

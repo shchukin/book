@@ -25,7 +25,7 @@ function Exercise1x17() {
   return (
     <Exercise>
       <ExerciseHead>
-        17. Переведите, запишите ответ по-тайски
+        17. Переведите, напечатайте ответ по-тайски
       </ExerciseHead>
       {data.map((item, index) => (
         <ExerciseEntry key={index}>
