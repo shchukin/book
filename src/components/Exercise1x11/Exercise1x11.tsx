@@ -3,7 +3,7 @@ import Choosing from "../Choosing/Choosing.tsx";
 
 function Exercise1x11() {
 
-  const questionsAndAnswers = [
+  const data = [
     { question: 'คอย', answer: 'Придыхательная' },
     { question: 'กาย', answer: 'Нет' },
     { question: 'พอน', answer: 'Придыхательная' },
@@ -30,7 +30,7 @@ function Exercise1x11() {
         11. Прочитайте и определите, какая согласная в начале слога: придыхательная или нет.
       </ExerciseHead>
       <ExerciseEntry>
-        {questionsAndAnswers.map((item, index) => (
+        {data.map((item, index) => (
           <Choosing
             key={index}
             question={item.question}
