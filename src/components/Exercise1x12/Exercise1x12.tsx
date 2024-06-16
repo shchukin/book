@@ -4,7 +4,7 @@ import Texting from "../Texting/Texting.tsx";
 
 function Exercise1x12() {
 
-  const questionsAndAnswers = [
+  const data = [
     { question: 'т/тха:м', answer: 'ทาม', audio: 'Lesson01xEx12-01-thaam.mp3' },
     { question: 'к/кха:й', answer: 'คาย', audio: 'Lesson01xEx12-02-khaay.mp3' },
     { question: 'к/кхɔ:н', answer: 'กอน', audio: 'Lesson01xEx12-03-koon.mp3' },
@@ -26,7 +26,7 @@ function Exercise1x12() {
       </ExerciseHead>
       <ExerciseEntry>
         <GridType2>
-          {questionsAndAnswers.map((item, index) => (
+          {data.map((item, index) => (
             <Texting
               key={index}
               question={item.question}
