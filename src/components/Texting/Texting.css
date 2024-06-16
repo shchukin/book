@@ -1,26 +1,52 @@
+/* Разметка по-умолчанию -- это одна табличка, в которой все столбцы схлопываются по ширине
+ * Далее родитель должен её спозиционировать. Родителем может быть дополнительный дивчик
+ * внутри упражнения, который задаст индивидуальную разметку, или повторяющийся компонент
+ * типа TextingColumn или TextingGrid. Такой компонент может задать ширины столбцам внутри
+ * рассматриваемого Texting, создать несколько колонок, вывести их в виде сетки или плитки,
+ * например.
+ *
+ * Ещё одна практика -- компонент TextingTable. Он превращает рассматриваемый Texting
+ * в строки таблицы задавая одинаковую ширину колонкам по ширине самой большой из них.
+ * Таким образом не нужно задавать ширину вручную. Смотрим пример в упражнении Exercise1x17.
+ */
+
 .texting {
-    display: flex;
+    border-top: var(--row-margin) solid transparent;
+    display: table;
+    vertical-align: top;
+    border-collapse: collapse;
     width: fit-content;
-    align-items: center;
     text-align: left;
 }
 
-.texting + .texting {
-    margin-top: var(--row-margin);
+.texting:first-child {
+    border-top: none;
 }
     .texting__audio {
-        flex-shrink: 0;
+        display: table-cell;
+        vertical-align: middle;
+        border-right: 6px solid transparent;
+        width: 1px;
     }
         .texting__player {
             vertical-align: top;
         }
 
     .texting__title {
-        flex-shrink: 0;
+        display: table-cell;
+        vertical-align: middle;
+        border-right: var(--cell-padding) solid transparent;
+        text-align: right;
+    }
+
+    .texting__audio + .texting__title {
+        text-align: center;
     }
 
     .texting__field {
-        flex-shrink: 0;
+        display: table-cell;
+        vertical-align: middle;
+        width: 160px;
     }
         .texting__input {
             vertical-align: top;
@@ -74,7 +100,9 @@
     }
 
     .texting__answer {
-        flex-shrink: 0;
+        display: table-cell;
+        vertical-align: middle;
+        border-left: var(--cell-padding) solid transparent;
         position: relative;
     }
         .texting__show-answer {
@@ -119,36 +147,3 @@
         }
 
 
-
-@media (740px <= width) {
-
-    .texting {
-        display: table;
-        vertical-align: top;
-        border-collapse: collapse;
-    }
-        .texting__audio {
-            display: table-cell;
-            vertical-align: middle;
-            border-right: var(--cell-padding) solid transparent;
-            width: 1px;
-        }
-
-        .texting__title {
-            display: table-cell;
-            vertical-align: middle;
-            border-right: var(--cell-padding) solid transparent;
-        }
-
-        .texting__field {
-            display: table-cell;
-            vertical-align: middle;
-            width: 160px;
-        }
-
-        .texting__answer {
-            display: table-cell;
-            vertical-align: middle;
-            border-left: var(--cell-padding) solid transparent;
-        }
-}

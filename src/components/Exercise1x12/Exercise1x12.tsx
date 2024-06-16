@@ -2,6 +2,7 @@ import "./Exercise1x12.css";
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
 import Texting from "../Texting/Texting.tsx";
 import Script from "../Script/Script.tsx";
+import TextingTable from "../TextingTable/TextingTable.tsx";
 
 function Exercise1x12() {
   const data = [
@@ -25,7 +26,7 @@ function Exercise1x12() {
         12. Прослушайте запись, определите придыхательную или непридыхательную согласную в начале слога, напечатайте по-тайски.
       </ExerciseHead>
       <ExerciseEntry>
-        <div className="exercise1x12">
+        <TextingTable>
           {data.map((item, index) => (
             <Texting
               key={index}
@@ -35,7 +36,7 @@ function Exercise1x12() {
               audio={item.audio}
             />
           ))}
-        </div>
+        </TextingTable>
       </ExerciseEntry>
     </Exercise>
   );

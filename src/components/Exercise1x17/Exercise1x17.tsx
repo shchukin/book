@@ -1,6 +1,7 @@
 import './Exercise1x17.css'
 import { Exercise, ExerciseEntry, ExerciseHead } from "../Exercise/Exercise.tsx";
 import Texting from '../Texting/Texting';
+import TextingTable from "../TextingTable/TextingTable.tsx";
 
 const data = [
   { question: "Дедушка спрашивает бабушку", answer: "ตาถามยาย" },
@@ -29,7 +30,7 @@ function Exercise1x17() {
         17. Переведите, напечатайте ответ по-тайски
       </ExerciseHead>
       <ExerciseEntry>
-        <div className="exercise1x17">
+        <TextingTable>
           {data.map((item, index) => (
               <Texting
                 key={index}
@@ -38,7 +39,7 @@ function Exercise1x17() {
                 answerInThai
               />
           ))}
-        </div>
+        </TextingTable>
       </ExerciseEntry>
     </Exercise>
   );

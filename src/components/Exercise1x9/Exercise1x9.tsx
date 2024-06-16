@@ -1,3 +1,4 @@
+import './Exercise1x9.css';
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
 import Texting from "../Texting/Texting.tsx";
 import GridType3 from "../GridType3/GridType3.tsx";
