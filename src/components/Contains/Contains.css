@@ -1,7 +1,3 @@
-.burger-menu {
-    display: none;
-}
-
 /* Contains.css */
 .toc-container {
     position: fixed;
@@ -78,5 +74,31 @@
         border: 1px solid #ccc;
         padding: 10px;
         cursor: pointer;
+    }
+}
+
+.burger-menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.toc-container:not(.open) {
+    transform: translateX(100%);
+}
+
+@media (min-width: 769px) {
+    .toc-container {
+        transform: none;
+    }
+
+    .toc-container:not(.open) {
+        transform: none;
     }
 }

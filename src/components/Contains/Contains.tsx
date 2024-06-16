@@ -7,7 +7,7 @@ interface Heading {
   level: number;
 }
 
-const Contains = () => {
+const Contains = ({ isOpen }: { isOpen: boolean }) => {
   const [headings, setHeadings] = useState<Heading[]>([]);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Contains = () => {
   };
 
   return (
-    <nav className="toc-component">
+    <nav className={`toc-container ${isOpen ? 'open' : ''}`}>
       <div className="contains__heading">
         Урок 1
       </div>
