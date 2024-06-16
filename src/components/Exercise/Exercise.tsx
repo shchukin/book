@@ -13,7 +13,7 @@ const Exercise = ({children}: ExerciseProps) => {
 
 // ExerciseHead component
 const ExerciseHead = ({children}: ExerciseProps) => {
-  return <div className="exercise__head">{children}</div>;
+  return <h3 className="exercise__head">{children}</h3>;
 };
 
 // ExerciseEntry component
