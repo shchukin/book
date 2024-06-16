@@ -7,7 +7,7 @@ import Sparse, {SparseItem} from "../Sparse/Sparse.tsx";
 import Typing from "../Typing/Typing.tsx";
 
 function Exercise1x8() {
-  const questions = [
+  const data = [
     'คอ', 'ทูม', 'ยี', 'หอย', 'ตอน', 'ขา', 'ซาว', 'ผูน', 'ทีม', 'หนา', 'คาว', 'พา', 'มอม', 'สาย', 'คีม', 'ยาน', 'หาย', 'พู', 'ยอม', 'ปา', 'หนี', 'สาม', 'หมาย', 'ผี', 'ขาย', 'กอ', 'หาว', 'ขอม', 'สอน', 'พาย', 'หยาม', 'นาน', 'ขู', 'หวี', 'ฮา', 'ทอย', 'สี', 'ถอน', 'หนู', 'มา', 'หวาน', 'ผาว', 'นาย', 'ทอน', 'ขาว', 'ซอ', 'สาว', 'ยู', 'ถาน', 'ขูน', 'วาว'
   ];
 
@@ -26,7 +26,7 @@ function Exercise1x8() {
       </ExerciseHead>
       <ExerciseEntry>
         <GridType1>
-          {questions.map((question, index) => (
+          {data.map((question, index) => (
             <Typing
               key={index}
               correctAnswer={question}
