@@ -42,7 +42,7 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
   };
 
   const checkAnswer = (value: string) => {
-    setIsCorrect(value === answer);
+    setIsCorrect(value.trim() === answer.trim());
   };
 
   const toggleAnswer = () => {
