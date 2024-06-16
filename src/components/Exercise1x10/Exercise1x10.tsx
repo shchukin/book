@@ -26,7 +26,7 @@ function Exercise1x10() {
     {question: 'หนาย', answer: 'นาย'},
     {question: 'ถอน', answer: 'ทอน'},
     {question: 'หวาว', answer: 'วาว'},
-    {question: 'หนам', answer: 'นาม'},
+    {question: 'หนาม', answer: 'นาม'},
     {question: 'ถี', answer: 'ที'},
     {question: 'หอย', answer: 'ฮอย'},
     {question: 'หมา', answer: 'มา'},
