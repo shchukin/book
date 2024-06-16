@@ -27,11 +27,15 @@
         }
 
     .texting__title {
+        text-align: right;
+    }
 
+    .texting__audio + .texting__title {
+        text-align: center;
     }
 
     .texting__field {
-        width: 106px;
+        width: calc(var(--cell-padding) + var(--input-short-width));
     }
         .texting__input {
             vertical-align: top;
@@ -148,11 +152,10 @@
             display: table-cell;
             vertical-align: middle;
             border-right: var(--cell-padding) solid transparent;
-            text-align: right;
         }
 
         .texting__audio + .texting__title {
-            text-align: center;
+
         }
 
         .texting__field {
@@ -196,7 +199,7 @@
         }
 
         .texting__audio + .texting__title {
-            text-align: center;
+
         }
 
         .texting__field {

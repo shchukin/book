@@ -27,7 +27,7 @@
         .exercise-1x17 .texting__title {
             margin-bottom: 8px;
             /*grid-area: top;*/
-            /*text-align: left;*/
+            text-align: left;
         }
 
         .exercise-1x17 .texting:has(.texting__audio) .texting__title {
