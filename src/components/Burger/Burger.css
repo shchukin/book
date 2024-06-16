@@ -27,3 +27,11 @@
         vertical-align: top;
         fill: #999999;
     }
+
+
+@media (width < 740px) {
+
+    .burger {
+        right: var(--container-padding);
+    }
+}
