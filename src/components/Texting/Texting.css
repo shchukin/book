@@ -11,8 +11,14 @@
  */
 
 .texting {
+    border-top: var(--row-margin) solid transparent;
     text-align: left;
 }
+
+.texting:first-child {
+    border-top: none;
+}
+
     .texting__audio {
 
     }
@@ -126,15 +132,10 @@
 @media (740px <= width) {
 
     .texting {
-        border-top: var(--row-margin) solid transparent;
         display: table;
         vertical-align: top;
         border-collapse: collapse;
         width: fit-content;
-    }
-
-    .texting:first-child {
-        border-top: none;
     }
         .texting__audio {
             display: table-cell;
@@ -171,19 +172,28 @@
 @media (width < 740px) {
 
     .texting {
-
+        position: relative;
+        display: grid;
+        align-items: center;
+        /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+        grid-template-areas: 'top-left top-right' 'bottom-left bottom-right';
     }
 
-    .texting:first-child {
-
+    .texting:has(.texting__audio) {
+        padding-left: 30px;
     }
         .texting__audio {
-
+            position: absolute;
+            left: -10px;
+            top: 6px;
         }
 
 
         .texting__title {
-
+            padding-right: 20px;
+            min-width: 80px;
+            grid-area: top-left;
+            text-align: right;
         }
 
         .texting__audio + .texting__title {
@@ -191,11 +201,13 @@
         }
 
         .texting__field {
-
+            width: auto;
+            grid-area: top-right;
         }
 
         .texting__answer {
-
+            padding-top: 6px;
+            grid-area: bottom-right;
         }
 }
 

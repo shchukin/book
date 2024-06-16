@@ -28,3 +28,9 @@
         }
 }
 
+
+@media (width < 740px) {
+    .texting-table {
+        margin-top: 16px;
+    }
+}

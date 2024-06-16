@@ -26,17 +26,19 @@ function Exercise1x12() {
         12. Прослушайте запись, определите придыхательную или непридыхательную согласную в начале слога, напечатайте по-тайски.
       </ExerciseHead>
       <ExerciseEntry>
-        <TextingTable>
-          {data.map((item, index) => (
-            <Texting
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              answerInThai
-              audio={item.audio}
-            />
-          ))}
-        </TextingTable>
+        <div className="exercise-1x12">
+          <TextingTable>
+            {data.map((item, index) => (
+              <Texting
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                answerInThai
+                audio={item.audio}
+              />
+            ))}
+          </TextingTable>
+        </div>
       </ExerciseEntry>
     </Exercise>
   );
