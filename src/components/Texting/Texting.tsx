@@ -15,9 +15,10 @@ import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 import Button from "../Button/Button.tsx";
 import Thai from "../Thai/Thai.tsx";
 import Script from "../Script/Script.tsx";
+import MiniPlayer from "../MiniPlayer/MiniPlayer.tsx";  // Import MiniPlayer component
 
 type TextingProps = {
-  question: React.ReactNode; // Change the type to ReactNode to allow JSX
+  question: React.ReactNode;
   answer: string;
   maxLength?: number;
   audio?: string;
@@ -51,7 +52,7 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, q
     <div className="texting">
       {audio && (
         <div className="texting__audio">
-          <audio className="texting__player" controls src={'/' + audio} preload="auto"></audio>
+          <MiniPlayer src={'/' + audio} />
         </div>
       )}
       <div className="texting__title">
