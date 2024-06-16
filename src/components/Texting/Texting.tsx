@@ -4,17 +4,19 @@ import './Texting.css';
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 import Button from "../Button/Button.tsx";
 import Thai from "../Thai/Thai.tsx";
+import Script from "../Script/Script.tsx";
 
 type TextingProps = {
   question: string;
   answer: string;
-  questionInThai?: boolean;
-  answerInThai?: boolean;
   maxLength?: number;
   audio?: string;
+  questionInThai?: boolean;
+  questionInScript?: boolean;
+  answerInThai?: boolean;
 };
 
-const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, answerInThai, questionInThai }) => {
+const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, questionInThai, questionInScript, answerInThai }) => {
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -43,7 +45,7 @@ const Texting: React.FC<TextingProps> = ({ question, answer, maxLength, audio, a
         </div>
       )}
       <div className="texting__title">
-        {questionInThai ? <Thai size="big">{question}</Thai> : question}
+        {questionInThai ? <Thai size="big">{question}</Thai> : questionInScript ? <Script>{question}</Script> : question}
       </div>
       <div className="texting__field">
         <input

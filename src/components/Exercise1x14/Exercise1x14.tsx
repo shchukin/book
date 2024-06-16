@@ -30,6 +30,7 @@ function Exercise1x14() {
             <Texting
               key={index}
               question={item.question}
+              questionInScript
               answer={item.answer}
               maxLength={4}
               audio={item.audio}
