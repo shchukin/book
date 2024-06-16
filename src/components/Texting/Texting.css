@@ -97,6 +97,7 @@
            По-это именно opacity: 0 и visibility: hidden тута:
         */
         .texting__answer-content {
+            min-width: 104px; /* Ширина "Показать ответ", чтобы не менее чем оно */
             opacity: 0;
             visibility: hidden;
             transition: opacity 100ms ease,
@@ -141,6 +142,7 @@
         .texting__field {
             display: table-cell;
             vertical-align: middle;
+            width: 160px;
         }
 
         .texting__answer {
