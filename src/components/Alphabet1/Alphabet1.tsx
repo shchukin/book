@@ -8,7 +8,7 @@ function Alphabet1() {
 
   return (
     <>
-      <Heading level={2} id="letters">
+      <Heading level={2}>
         Буквы высокого класса
       </Heading>
 

@@ -19,7 +19,7 @@ const data = [
 function Exercise1x4() {
 
   return (
-    <Exercise id="exercise4">
+    <Exercise>
       <ExerciseHead>
         4. Прослушайте и повторяйте за диктором пары слогов, которые различаются непридыхательными и придыхательными согласными в начале слога:
       </ExerciseHead>
