@@ -185,7 +185,7 @@
         .texting__audio {
             position: absolute;
             left: -10px;
-            top: 6px;
+            top: 0;
         }
 
 
@@ -193,11 +193,10 @@
             padding-right: 20px;
             min-width: 80px;
             grid-area: top-left;
-            text-align: right;
         }
 
         .texting__audio + .texting__title {
-
+            text-align: center;
         }
 
         .texting__field {
