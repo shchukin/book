@@ -3,15 +3,17 @@ import './Question.css';
 import './Texting.css';
 import LinkAlikeButton from "../LinkAlikeButton/LinkAlikeButton.tsx";
 import Button from "../Button/Button.tsx";
+import Thai from "../Thai/Thai.tsx";
 
 type TextingProps = {
   question: string;
   answer: string;
   maxLength?: number;
   audio?: string;
+  answerInThai?: boolean;
 };
 
-const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio}) => {
+const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio, answerInThai}) => {
   const [userAnswer, setUserAnswer] = useState<string>('');
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -34,12 +36,11 @@ const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio}) =
 
   return (
     <div className="texting">
-      {
-        audio &&
-          <div className="texting__audio">
-              <audio className="texting__player" controls src={'/' + audio} preload="auto"></audio>
-          </div>
-      }
+      {audio && (
+        <div className="texting__audio">
+          <audio className="texting__player" controls src={'/' + audio} preload="auto"></audio>
+        </div>
+      )}
       <div className="texting__title">
         {question}
       </div>
@@ -56,11 +57,17 @@ const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio}) =
         <Button onClick={checkAnswer}>Проверить</Button>
       </div>
       <div className="texting__answer">
-        {!showAnswer &&
-            <div className="texting__show-answer">
-                <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
-            </div>}
-        {showAnswer && <div><span className="texting__answer-label">Ответ:</span> {answer}</div>}
+        {!showAnswer && (
+          <div className="texting__show-answer">
+            <LinkAlikeButton onClick={toggleAnswer}>Показать ответ</LinkAlikeButton>
+          </div>
+        )}
+        {showAnswer && (
+          <div>
+            <span className="texting__answer-label">Ответ:&nbsp;</span>
+            {answerInThai ? <Thai size="big">{answer}</Thai> : answer}
+          </div>
+        )}
       </div>
     </div>
   );

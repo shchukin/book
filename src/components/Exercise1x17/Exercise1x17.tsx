@@ -33,6 +33,7 @@ function Exercise1x17() {
               key={index}
               question={item.question}
               answer={item.answer}
+              answerInThai
             />
         ))}
       </ExerciseEntry>
