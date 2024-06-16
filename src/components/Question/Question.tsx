@@ -9,7 +9,6 @@ type QuestionProps = {
   type: 'radio' | 'text' | 'typing';
   correctAnswer: string;
   options?: string[];
-  maxLength?: number;
   audio?: string;
 };
 
@@ -18,7 +17,7 @@ type OptionStatus = {
   isCorrect: boolean | null;
 };
 
-const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, options, maxLength, audio}) => {
+const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, options, audio}) => {
   const [selectedOptions, setSelectedOptions] = useState<OptionStatus[]>(
     options?.map(option => ({value: option, isCorrect: null})) || []
   );
@@ -42,11 +41,7 @@ const Question: React.FC<QuestionProps> = ({question, type, correctAnswer, optio
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    if (maxLength && value.length > maxLength) {
-      return;
-    }
-    setUserAnswer(value);
+    setUserAnswer(event.target.value);
   };
 
   const checkAnswer = () => {
