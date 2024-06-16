@@ -1,6 +1,6 @@
 import {Exercise, ExerciseEntry, ExerciseHead} from "../Exercise/Exercise.tsx";
-import GridType2 from "../GridType2/GridType2.tsx";
 import Texting from "../Texting/Texting.tsx";
+import TextingTable from "../TextingTable/TextingTable.tsx";
 
 function Exercise1x14() {
 
@@ -25,7 +25,7 @@ function Exercise1x14() {
         14. Прослушайте запись, определите тон и напечатайте по-тайски слог
       </ExerciseHead>
       <ExerciseEntry>
-        <GridType2>
+        <TextingTable>
           {data.map((item, index) => (
             <Texting
               key={index}
@@ -36,7 +36,7 @@ function Exercise1x14() {
               audio={item.audio}
             />
           ))}
-        </GridType2>
+        </TextingTable>
       </ExerciseEntry>
     </Exercise>
   );
