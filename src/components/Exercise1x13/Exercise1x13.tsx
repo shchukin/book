@@ -3,7 +3,7 @@ import Choosing from "../Choosing/Choosing.tsx";
 
 function Exercise1x13() {
 
-  const questionsAndAnswers = [
+  const data = [
     { question: 'คอ', answer: 'Ровный' },
     { question: 'หอย', answer: 'Восходящий' },
     { question: 'ขา', answer: 'Восходящий' },
@@ -28,7 +28,7 @@ function Exercise1x13() {
         13. Определите, каким тоном произносится слог
       </ExerciseHead>
       <ExerciseEntry>
-        {questionsAndAnswers.map((item, index) => (
+        {data.map((item, index) => (
           <Choosing
             key={index}
             question={item.question}
