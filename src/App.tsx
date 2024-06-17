@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './global/global-style.css';
 import Contains from "./components/Contains/Contains";
 import Lesson1 from "./components/Lesson1/Lesson1";
@@ -9,22 +9,31 @@ function App() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
+    setMenuOpen((prev) => {
+      const newState = !prev;
+      if (newState && window.matchMedia('(max-width: 739px)').matches) {
+        document.documentElement.style.overflow = 'hidden';
+      } else {
+        document.documentElement.style.overflow = '';
+      }
+      return newState;
+    });
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
+    document.documentElement.style.overflow = '';
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === 'Escape') {
-      setMenuOpen(false);
+      closeMenu();
     }
   };
 
   const handleClickOutside = (event: MouseEvent) => {
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-      setMenuOpen(false);
+      closeMenu();
     }
   };
 
