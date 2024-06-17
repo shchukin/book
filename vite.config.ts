@@ -33,13 +33,24 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,woff2}'],
+        globPatterns: ['**/*.{js,css,html,png,svg,woff2,mp3}'],
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/your\.cdn\.domain\/.*\.(css|js|woff2)$/,
-            handler: 'CacheFirst',
+            urlPattern: /\/audio\/.*\.(mp3|wav)$/,
+            handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'cdn-cache',
+              cacheName: 'audio-cache',
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+              },
+            },
+          },
+          {
+            urlPattern: /^https:\/\/shchukin\.website\/.*\.(css|js|woff2)$/,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'static-resources',
               expiration: {
                 maxEntries: 30,
                 maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
@@ -47,7 +58,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /^https:\/\/your\.api\.domain\/.*$/,
+            urlPattern: /^https:\/\/shchukin\.website\/.*$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'api-cache',
