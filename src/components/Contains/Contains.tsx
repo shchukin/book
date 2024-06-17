@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './Contains.css';
 
 interface Heading {
@@ -7,7 +7,11 @@ interface Heading {
   level: number;
 }
 
-const Contains = () => {
+interface ContainsProps {
+  closeMenu: () => void;
+}
+
+const Contains: React.FC<ContainsProps> = ({ closeMenu }) => {
   const [headings, setHeadings] = useState<Heading[]>([]);
 
   useEffect(() => {
@@ -34,6 +38,9 @@ const Contains = () => {
     e.preventDefault();
     const target = document.getElementById(id);
     if (target) {
+      if (window.matchMedia('(max-width: 739px)').matches) {
+        closeMenu();
+      }
       const offset = 42;
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - offset;

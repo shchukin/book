@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './global/global-style.css';
-import Contains from "./components/Contains/Contains.tsx";
-import Lesson1 from "./components/Lesson1/Lesson1.tsx";
-import Burger from "./components/Burger/Burger.tsx";
+import Contains from "./components/Contains/Contains";
+import Lesson1 from "./components/Lesson1/Lesson1";
+import Burger from "./components/Burger/Burger";
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -10,6 +10,10 @@ function App() {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -43,7 +47,7 @@ function App() {
     <div className="page container">
       <div className="menu" ref={menuRef}>
         <Burger onClick={toggleMenu} expanded={isMenuOpen} />
-        {isMenuOpen && <Contains />}
+        {isMenuOpen && <Contains closeMenu={closeMenu} />}
       </div>
       <Lesson1 />
     </div>
