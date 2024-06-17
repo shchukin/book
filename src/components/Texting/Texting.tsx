@@ -42,7 +42,7 @@ const Texting: React.FC<TextingProps> = ({question, answer, maxLength, audio, qu
     <div className="texting">
       {audio && (
         <div className="texting__audio">
-          <MiniPlayer src={'/' + audio}/>
+          <MiniPlayer src={audio}/>
         </div>
       )}
       <div className="texting__title">

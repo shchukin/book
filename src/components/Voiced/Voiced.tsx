@@ -14,7 +14,7 @@ function Voiced({children, audioFile}: VoicedProps) {
         {children}
       </div>
       <div className="voiced__audio">
-        <audio controls src={'/' + audioFile} preload="auto"></audio>
+        <audio controls src={'/audio/' + audioFile} preload="auto"></audio>
       </div>
     </div>
   )
