@@ -65,7 +65,7 @@
         /*position: fixed;*/
         /*z-index: 100;*/
         right: var(--container-padding);
-        max-width: calc(100% - 2 * var(var(--container-padding)));
+        max-width: calc(100% - 2 * var(--container-padding));
         /*bottom: 120px;*/
         /*background-color: #FFFFFF;*/
         /*box-shadow: 0 1px 10px 4px #EAEAEA;*/
